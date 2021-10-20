@@ -1,22 +1,27 @@
 import json
 import json_stream
-input=open("C:/Users/aymen/OneDrive/Desktop/test_json_streaming/firstString.json")
-output=open("C:/Users/aymen/OneDrive/Desktop/test_json_streaming/authorshipRecords.json",'a')
+
+#identify input and output
+input=open("publications_20000.json")
+output=open("authorshipRecords.json",'a')
+
+#begin streaming
 citationRs = json_stream.load(input)
-frTitle=""
-enTitle=""
-authors=[]
-publicationYear=""
-dict={}
-citationTitle={}
+
+
 for citationR in citationRs :
+
     citationTitle=citationR['title']
     frTitle=citationTitle['fr']
     enTitle=citationTitle['en']
     authors=[]
+
     for author in citationR['authors'] :
         authors.append(author['fullName'])
+
     publicationYear=citationR['year']
+
+    #one authorship record per coauthor
     for author in authors :
         dict={}
         dict['author']=author
@@ -24,6 +29,11 @@ for citationR in citationRs :
         dict['publicationYear']=publicationYear
         dict['enTitle']=enTitle
         dict['frTitle']=frTitle
+
+        #dump everything in one authorship record
         json.dump(dict,output,ensure_ascii=False, indent=4)
+        output.write(',')
+
+
 input.close()
 output.close()
