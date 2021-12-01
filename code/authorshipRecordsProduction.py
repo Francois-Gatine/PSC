@@ -3,8 +3,8 @@
 import ujson
 import json_stream
 
-input=open("/home/arakotoa/Desktop/PSC/publications.json")
-output_publications=open("/home/arakotoa/Desktop/PSC/AuthorshipRecordsPublications2.json",'a')
+input=open("input folder directory/publications.json")
+output_publications=open("output folder directory/AuthorshipRecordsPublications.json",'a')
 
 citationRs = json_stream.load(input)
 
@@ -106,7 +106,7 @@ for citationR in citationRs :
                     ujson.dump(dict,output_publications,ensure_ascii=False, indent=4)
 
                 except UnicodeEncodeError:
-                    print("Erreur Unicode en " + str(packNumber * packCapacity + currentPackSize))
+                    print("Unicode error : " + str(packNumber * packCapacity + currentPackSize))
                     print(dict['author'])
                     #to avoid printing too many commas
                     comma = False

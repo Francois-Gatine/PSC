@@ -5,7 +5,7 @@ import time
 #get execution time
 startTime = time.clock()
 
-input=open("/home/arakotoa/Desktop/PSC/AuthorshipRecordsPublications.json")
+input=open("file directory") #authorship records file directory
 AuthorshipRs = json_stream.load(input)
 
 #duplication ID, to keep track of which records are duplicated
@@ -60,7 +60,7 @@ for AuthorshipR in AuthorshipRs:
 
 
         #If we create a new file, we should add '[' and no comma
-        newFile = not (os.path.isfile("/home/arakotoa/Desktop/PSC/testAmbiGroups/"+Identifier+".json"))
+        newFile = not (os.path.isfile("output folder directory/"+Identifier+".json")) #output folder directory
 
 
 
@@ -85,7 +85,7 @@ for AuthorshipR in AuthorshipRs:
             dict['duplicId']=duplicId
 
 
-            file = open("/home/arakotoa/Desktop/PSC/testAmbiGroups/"+Identifier+".json",'a')
+            file = open("output folder directory/"+Identifier+".json",'a') #output folder directory
 
             #adding comma if needed, file with special characters
             if(newFile):
@@ -101,10 +101,10 @@ for AuthorshipR in AuthorshipRs:
 
 
             #repeat new file test for new file
-            newFile2 = not (os.path.isfile("/home/arakotoa/Desktop/PSC/testAmbiGroups/"+IdentifierWithNoAccent+".json"))
+            newFile2 = not (os.path.isfile("output folder directory/"+IdentifierWithNoAccent+".json")) #output folder directory
 
 
-            fileNoAccent = open("/home/arakotoa/Desktop/PSC/testAmbiGroups/"+IdentifierWithNoAccent+".json",'a')
+            fileNoAccent = open("output folder directory/"+IdentifierWithNoAccent+".json",'a') #output folder directory
 
             #adding comma if needed, file without special characters
             if(newFile2):
@@ -121,7 +121,7 @@ for AuthorshipR in AuthorshipRs:
         #otherwise, duplication ID is 0, only one dump
         else :
 
-            file = open("/home/arakotoa/Desktop/PSC/testAmbiGroups/"+Identifier+".json",'a')
+            file = open("output folder directory/"+Identifier+".json",'a') #output folder directory
 
             #adding comma if needed
             if(newFile):
@@ -143,9 +143,9 @@ input.close()
 
 
 #adds ']' at the end of every file
-for fileName in os.listdir("/home/arakotoa/Desktop/PSC/testAmbiGroups/") :
+for fileName in os.listdir("output folder directory/") :
 
-    file = open("/home/arakotoa/Desktop/PSC/testAmbiGroups/" + fileName, 'a')
+    file = open("output folder directory/" + fileName, 'a')
     file.write(']')
     file.close()
 
