@@ -118,9 +118,15 @@ def sortShortAndLongNameRecords(g):
     Require: Ambiguous group g (the file json g opened)
     Ensure: List S of clusters of authorship records (write a file json S)
     """
-    outputShort_name = ".\shortNameRecordsOf" + g.name.strip(".\\")
+    
+    ambiguousGroupName = os.path.basename(g.name)
+    ambiguousGroupName = ambiguousGroupName.rstrip(".json")
+    
+    ambiguousGroupDirname = os.path.dirname(g.name)
+    
+    outputShort_name = ambiguousGroupDirname + "/shortNameRecordsOf" + ambiguousGroupName + ".json"
     outputShort = open(outputShort_name,'w+',encoding="utf-8")
-    outputLong_name = ".\longNameRecordsOf" + g.name.strip(".\\")
+    outputLong_name = ambiguousGroupDirname + "/longNameRecordsOf" + ambiguousGroupName + ".json"
     outputLong = open(outputLong_name,'w+',encoding="utf-8")
     
     outputShort.write('[')
@@ -130,6 +136,7 @@ def sortShortAndLongNameRecords(g):
     
     author = ""
     lastName = ""
+    idRef = ""
     coauthors = []
     defaultTitle = ""
     venue = ""
@@ -140,7 +147,7 @@ def sortShortAndLongNameRecords(g):
     nb_shortName = 0
 
     for authorshipRecord in authorshipRecords :
-    
+
         author = authorshipRecord["author"]
         
         #test the name is in short format or not
@@ -163,6 +170,7 @@ def sortShortAndLongNameRecords(g):
             outputLong.write(',')
         
         lastName = authorshipRecord["last name"]
+        idRef = authorshipRecord["idRef"]
         coauthors = [ coauthor for coauthor in authorshipRecord["coauthors"] ]
         defaultTitle = authorshipRecord["defaultTitle"]
         venue = authorshipRecord["venue"]
@@ -171,6 +179,7 @@ def sortShortAndLongNameRecords(g):
         Dict = {}
         Dict["author"] = author
         Dict["last name"] = lastName
+        Dict["idRef"] = idRef
         Dict["coauthors"] = coauthors
         Dict["defaultTitle"] = defaultTitle
         Dict["venue"] = venue
@@ -184,14 +193,15 @@ def sortShortAndLongNameRecords(g):
     outputShort.close()
     outputLong.close()
     
-    print("Il y a", nb_longName, "Authorship Record de long nom")
-    print("Il y a", nb_shortName, "Authorship Record de court nom")
+    print("There are", nb_longName, "Authorship Records of long name")
+    print("There are", nb_shortName, "Authorship Records of short name")
+    return
     
 import os
  
 def mkdir(path): 
     """
-    path exemple: .\\firstStep
+    path exemple: ./firstStep
     """
     folder = os.path.exists(path)
  
@@ -219,11 +229,14 @@ def processList (A, Ci, folderAddress):
     
     authorshipRecords = json_stream.load(A)
     
+    s = 1
     C0 = Ci
     for authorshipRecord in authorshipRecords:
-        
+        print(s)
+        s += 1
         author = authorshipRecord["author"]
         lastName = authorshipRecord["last name"]
+        idRef = authorshipRecord["idRef"]
         coauthors = [ coauthor for coauthor in authorshipRecord["coauthors"] ]
         defaultTitle = authorshipRecord["defaultTitle"]
         venue = authorshipRecord["venue"]
@@ -232,6 +245,7 @@ def processList (A, Ci, folderAddress):
         Dict = {}
         Dict["author"] = author
         Dict["last name"] = lastName
+        Dict["idRef"] = idRef
         Dict["coauthors"] = coauthors
         Dict["defaultTitle"] = defaultTitle
         Dict["venue"] = venue
@@ -244,7 +258,7 @@ def processList (A, Ci, folderAddress):
             #if the author name from a is similar with author name from the first authorship record of c
             if (fragmentComparison(author,c,lim)):
                 #if it exists a coauthor name in a that is similar with some coauthor name in c
-                file_check = open(folderAddress + "\\" + str(i) + "authorshipRecordCluster.json", 'r', encoding="utf-8")
+                file_check = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'r', encoding="utf-8")
                 authorshipRecords_check = json_stream.load(file_check)
                 coauthors_check = [] #the list of the coauthor names in c
                 
@@ -260,12 +274,12 @@ def processList (A, Ci, folderAddress):
                         if (fragmentComparison(coauthorCompared,coauthors_check[l],lim)):
                             
                             #delete ']'
-                            file_write = open(folderAddress + "\\" + str(i) + "authorshipRecordCluster.json", 'rb+')
+                            file_write = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'rb+')
                             file_write.seek(-1, os.SEEK_END)
                             file_write.truncate()
                             file_write.close()
 
-                            file_write = open(folderAddress + "\\" + str(i) + "authorshipRecordCluster.json", 'a', encoding="utf-8")
+                            file_write = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'a', encoding="utf-8")
                             file_write.write(',')
                             json.dump(Dict, file_write, ensure_ascii=False, indent=4)
                             file_write.write(']')
@@ -282,7 +296,7 @@ def processList (A, Ci, folderAddress):
             i += 1
         #a new cluster is created with this authorship record a
         if (not inserted):
-            file_write = open(folderAddress + "\\" + str(len(C0)) + "authorshipRecordCluster.json", 'w', encoding="utf-8")
+            file_write = open(folderAddress + "/" + str(len(C0)) + "authorshipRecordCluster.json", 'w', encoding="utf-8")
             file_write.write('[')
             json.dump(Dict, file_write, ensure_ascii=False, indent=4)
             file_write.write(']')
@@ -321,6 +335,7 @@ def processListEfficient (A, Ci, folderAddress):
         
         author = authorshipRecord["author"]
         lastName = authorshipRecord["last name"]
+        idRef = authorshipRecord["idRef"]
         coauthors = [ coauthor for coauthor in authorshipRecord["coauthors"] ]
         defaultTitle = authorshipRecord["defaultTitle"]
         venue = authorshipRecord["venue"]
@@ -329,6 +344,7 @@ def processListEfficient (A, Ci, folderAddress):
         Dict = {}
         Dict["author"] = author
         Dict["last name"] = lastName
+        Dict["idRef"] = idRef
         Dict["coauthors"] = coauthors
         Dict["defaultTitle"] = defaultTitle
         Dict["venue"] = venue
@@ -342,7 +358,7 @@ def processListEfficient (A, Ci, folderAddress):
             if (fragmentComparison(author,c,lim)):
                 #if it exists a coauthor name in a that is similar with some coauthor name in c
                 if C0coauthors[i] == []:
-                    file_check = open(folderAddress + "\\" + str(i) + "authorshipRecordCluster.json", 'r', encoding="utf-8")
+                    file_check = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'r', encoding="utf-8")
                     
                     authorshipRecords_check = json_stream.load(file_check)
                     for authorshipRecord_check in authorshipRecords_check:
@@ -356,12 +372,12 @@ def processListEfficient (A, Ci, folderAddress):
                         if (fragmentComparison(coauthorCompared,C0coauthors[i][l],lim)):
                             
                             #delete ']'
-                            file_write = open(folderAddress + "\\" + str(i) + "authorshipRecordCluster.json", 'rb+')
+                            file_write = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'rb+')
                             file_write.seek(-1, os.SEEK_END)
                             file_write.truncate()
                             file_write.close()
 
-                            file_write = open(folderAddress + "\\" + str(i) + "authorshipRecordCluster.json", 'a', encoding="utf-8")
+                            file_write = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'a', encoding="utf-8")
                             file_write.write(',')
                             json.dump(Dict, file_write, ensure_ascii=False, indent=4)
                             file_write.write(']')
@@ -379,7 +395,7 @@ def processListEfficient (A, Ci, folderAddress):
             i += 1
         #a new cluster is created with this authorship record a
         if (not inserted):
-            file_write = open(folderAddress + "\\" + str(len(C0)) + "authorshipRecordCluster.json", 'w', encoding="utf-8")
+            file_write = open(folderAddress + "/" + str(len(C0)) + "authorshipRecordCluster.json", 'w', encoding="utf-8")
             file_write.write('[')
             json.dump(Dict, file_write, ensure_ascii=False, indent=4)
             file_write.write(']')
@@ -402,16 +418,18 @@ def firstStep(ambiguousGroupAddress):
     
     g = open(ambiguousGroupAddress,'r',encoding="utf-8")
     
-    ambiguousGroupName = g.name.strip(".\\")
+    ambiguousGroupName = os.path.basename(g.name)
     ambiguousGroupName = ambiguousGroupName.rstrip(".json")
+    
+    ambiguousGroupDirname = os.path.dirname(g.name)
     
     sortShortAndLongNameRecords(g)
     
     g.close()
     
-    folderAddress = ".\\firstStepOf" + ambiguousGroupName
+    folderAddress = ambiguousGroupDirname + "/clustersOf" + ambiguousGroupName
     
-    outputLong_name = ".\longNameRecordsOf" + ambiguousGroupName + ".json"
+    outputLong_name = ambiguousGroupDirname + "/longNameRecordsOf" + ambiguousGroupName + ".json"
     
     L = open(outputLong_name,'r',encoding="utf-8")
     C1 = []
@@ -419,12 +437,16 @@ def firstStep(ambiguousGroupAddress):
     C2 = processListEfficient(L,C1,folderAddress)
     L.close()
 
-    outputShort_name = ".\shortNameRecordsOf" + ambiguousGroupName + ".json"
+    outputShort_name = ambiguousGroupDirname + "/shortNameRecordsOf" + ambiguousGroupName + ".json"
     S = open(outputShort_name,'r',encoding="utf-8")
     #C3 = processList(S,C2,folderAddress)
     C3 = processListEfficient(S,C2,folderAddress)
     S.close()
 
-    return C3
+    return (C3,folderAddress)
 
-C3 = firstStep(".\\ambiguousGroup.json")
+#(C3,folderAddress) = firstStep("../data/AG_sample.json")
+#print(C3)
+#print(folderAddress)
+
+

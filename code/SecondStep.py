@@ -14,8 +14,6 @@ import os
 
 import string
 
-folderAddress = ".\\firstStepOf" + "ambiguousGroup"
-
 def getWorkTitleTerms(identity, folderAddress, stopWords):
     """
     Require: Cluster of authorship record at work (the id identity of this cluster)
@@ -25,7 +23,7 @@ def getWorkTitleTerms(identity, folderAddress, stopWords):
     
     L_title = [] #list of the words of the title
     
-    file_check = open(folderAddress + "\\" + str(identity) + "authorshipRecordCluster.json", 'r', encoding="utf-8")
+    file_check = open(folderAddress + "/" + str(identity) + "authorshipRecordCluster.json", 'r', encoding="utf-8")
     
     authorshipRecords = json_stream.load(file_check)
     
@@ -105,15 +103,15 @@ def secondStep(Ci, folderAddress):
                 if titleSimilarity(T_t1, T_t2, lim_title):
                     print("merge",i,j)
                     #delete ']'
-                    file_i = open(folderAddress + "\\" + str(i) + "authorshipRecordCluster.json", 'rb+')
+                    file_i = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'rb+')
                     file_i.seek(-1, os.SEEK_END)
                     file_i.truncate()
                     file_i.close()
                     
-                    file_i = open(folderAddress + "\\" + str(i) + "authorshipRecordCluster.json", 'a+', encoding="utf-8")
+                    file_i = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'a+', encoding="utf-8")
                     file_i.write(',')
                     
-                    file_j = open(folderAddress + "\\" + str(j) + "authorshipRecordCluster.json", 'r', encoding="utf-8")
+                    file_j = open(folderAddress + "/" + str(j) + "authorshipRecordCluster.json", 'r', encoding="utf-8")
                     
                     #delete the first '['
                     firstLine = True
@@ -126,7 +124,7 @@ def secondStep(Ci, folderAddress):
                     file_i.close()
                     file_j.close()
                     
-                    os.remove(folderAddress + "\\" + str(j) + "authorshipRecordCluster.json")
+                    os.remove(folderAddress + "/" + str(j) + "authorshipRecordCluster.json")
                     
                     Co[j] = ""
                     existedCo[j] = False
@@ -139,8 +137,11 @@ def secondStep(Ci, folderAddress):
         i += 1
         j = i + 1
     
-    print(Co)
+    #print(Co)
     return Co
 
-Ci = FirstStep.firstStep(".\\ambiguousGroup.json")
+(Ci,folderAddress) = FirstStep.firstStep("../data/ada.json")
+print(Ci)
 Co = secondStep(Ci, folderAddress)
+print(Co)
+
