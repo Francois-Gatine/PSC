@@ -67,8 +67,8 @@ def titleSimilarity(T_t1, T_t2, lim_title):
                 if (nbCommonWords == 0):
                     return True
     return False
-    
-def secondStep(Ci, folderAddress):
+
+def secondStepSlow(Ci, folderAddress):
     """
     Require: List Ci of clusters of authorship records
     Ensure: List Co of clusters of authorship records
@@ -98,7 +98,7 @@ def secondStep(Ci, folderAddress):
                 j += 1
                 continue
             if FirstStep.fragmentComparison(Co[i],Co[j],lim_name):
-                print("compare",i,j)
+                #print("compare",i,j)
                 T_t2 = getWorkTitleTerms(j, folderAddress, stopWords)
                 if titleSimilarity(T_t1, T_t2, lim_title):
                     print("merge",i,j)
@@ -140,8 +140,82 @@ def secondStep(Ci, folderAddress):
     #print(Co)
     return Co
 
-(Ci,folderAddress) = FirstStep.firstStep("../data/ada.json")
+def secondStep(Ci, folderAddress):
+    """
+    Require: List Ci of clusters of authorship records
+    Ensure: List Co of clusters of authorship records
+    """
+    
+    lim_name = 2 #name threshold
+    lim_title = 2 #title threshold 
+    
+    stopWords = set(stopwords.words("english"))
+    
+    Co = Ci[:]
+    lenCo = len(Co)
+    
+    existedCo = [] #this ith file existe or not
+    for i in range(lenCo):
+        existedCo.append(True)
+    
+    CoTitleTerms = []
+    for i in range(len(Co)):
+        CoTitleTerms.append(getWorkTitleTerms(i, folderAddress, stopWords))
+    
+    i = 0
+    j = 1
+    while i < lenCo:
+        if not existedCo[i] :
+            i += 1
+            continue
+        while j < lenCo:
+            if i == j or (not existedCo[j]):
+                j += 1
+                continue
+            if FirstStep.fragmentComparison(Co[i],Co[j],lim_name):
+                #print("compare",i,j)
+                if titleSimilarity(CoTitleTerms[i], CoTitleTerms[j], lim_title):
+                    print("merge",i,j)
+                    #delete ']'
+                    file_i = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'rb+')
+                    file_i.seek(-1, os.SEEK_END)
+                    file_i.truncate()
+                    file_i.close()
+                    
+                    file_i = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'a+', encoding="utf-8")
+                    file_i.write(',')
+                    
+                    file_j = open(folderAddress + "/" + str(j) + "authorshipRecordCluster.json", 'r', encoding="utf-8")
+                    
+                    #delete the first '['
+                    firstLine = True
+                    for line in file_j:
+                        if firstLine:
+                            firstLine = False
+                            line = line.strip('[')
+                        file_i.write(line)
+                    
+                    file_i.close()
+                    file_j.close()
+                    
+                    os.remove(folderAddress + "/" + str(j) + "authorshipRecordCluster.json")
+                    
+                    Co[j] = ""
+                    existedCo[j] = False
+                    
+                    CoTitleTerms[i] = getWorkTitleTerms(i, folderAddress, stopWords)
+                    CoTitleTerms[j] = []
+                    
+                    j = 0
+                    
+            j += 1
+        i += 1
+        j = i + 1
+    
+    #print(Co)
+    return Co
+
+(Ci,folderAddress) = FirstStep.firstStep("../data/ambiguousGroup.json")
 print(Ci)
 Co = secondStep(Ci, folderAddress)
 print(Co)
-
