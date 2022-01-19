@@ -10,10 +10,11 @@
 # reasons for choosing this model among others: "SPECTER is a model trained on scientific citations and can be used to estimate the similarity of two publications. We can use it to find similar papers."
 
 from transformers import AutoTokenizer, AutoModel
+from sentence_transformers import util
 
 #                                  WARNING
 #the following three lines should be done once !
-load model and tokenizer
+#load model and tokenizer
 tokenizer = AutoTokenizer.from_pretrained('allenai/specter')
 model = AutoModel.from_pretrained('allenai/specter')
 
