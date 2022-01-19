@@ -1,12 +1,19 @@
-import ujson,json_stream
+import ujson,json_stream,re
 import unicodedata
 import os.path
+
+
+# FILE DIRECTORIES
+personsDir = "/home/arakotoa/Desktop/PSC/persons.json"
+publiDir = "/home/arakotoa/Desktop/PSC/publications.json"
+ambiGroupsDir = "/home/arakotoa/Desktop/PSC/AmbiGroupsV2/"
+
 
 # Step 1
 # We extract idref values from persons.json and store them in a hashtable
 
 # open persons.json
-input=open("/home/arakotoa/Desktop/PSC/persons.json",'r')
+input=open(personsDir,'r')
 publicationsByAuthor = json_stream.load(input)
 
 # create a hashTable :  key = publicationId ; value = {authorId,authorName} itself being a hashtable
@@ -67,7 +74,7 @@ print("Dictonary size : ", len(publicationTable))
 
 
 # open publications.json
-input = open("/home/arakotoa/Desktop/PSC/publications.json",'r')
+input = open(publiDir,'r')
 publications = json_stream.load(input)
 
 
@@ -103,7 +110,7 @@ for citationR in publications :
         packNumber2 += 1
         currentPackSize2 = 0
         #prints how many citation records have been dealt with
-        print("Step 2 : ", packNumber2 * packCapacity2, " entries done.")
+        print("Step 2 : ", packNumber2 * packCapacity2, " entries done. Different IDs : ", count_different_Ids, ". Different duplicIds : ", duplicId)
 
 
 
@@ -238,21 +245,27 @@ for citationR in publications :
                 AuthorName = dict['author']
                 AuthorNameWithNoAccent=''.join((c for c in unicodedata.normalize('NFD', AuthorName) if unicodedata.category(c) != 'Mn'))
 
-                #remove unexpected blank spaces
-                LastName = dict['last name'].replace(" ","")
-
 
 
                 #create file names
+                #we split the last name into its different words
+                #we only consider words longer than 2 to be additionnal last names
+                #we create one authorship per last name (stored in LastNameParts)
+                #the corresponding file names are in Identifier
                 AuthorNameBlocks = AuthorName.split()
-                Identifier = (AuthorNameBlocks[0][0]+LastName[0:2]).lower()
-                IdentifierWithNoAccent=''.join((c for c in unicodedata.normalize('NFD', Identifier) if unicodedata.category(c) != 'Mn'))
+                LastNameParts_0=re.split('\-|\-\-|\.| ',dict['last name'])
+                LastNameParts = []
+                Identifier=[]
+                IdentifierWithNoAccent=[]
 
+                for LastName in LastNameParts_0:
+                    if(len(LastName)>2) :
+                        #if the word has 3 letters, it is another last name
+                        #we add an identifier and store it in LastNameParts
+                        LastNameParts.append(LastName)
+                        Identifier.append((AuthorNameBlocks[0][0]+LastName[0:2]).lower())
+                        IdentifierWithNoAccent.append(''.join((c for c in unicodedata.normalize('NFD', Identifier[-1]) if unicodedata.category(c) != 'Mn')))
 
-
-
-                #If we create a new file, we should add '[' and no comma
-                newFile = not (os.path.isfile("/home/arakotoa/Desktop/PSC/AmbiGroups/"+Identifier+".json"))
 
 
 
@@ -260,61 +273,103 @@ for citationR in publications :
                 #file and fileNoAccent are opened one at a time, to avoid an obscure mixing bug
                 if(AuthorName!=AuthorNameWithNoAccent) :
 
+
                     #Add a new duplication ID, then dump the record twice
                     duplicId+=1
                     dict['duplicId']=duplicId
 
+                    for identifier in Identifier :
 
-                    file = open("/home/arakotoa/Desktop/PSC/AmbiGroups/"+Identifier+".json",'a')
+                        #If we create a new file, we should add '[' and no comma
+                        newFile = not (os.path.isfile(ambiGroupsDir+identifier+".json"))
 
-                    #adding comma if needed, file with special characters
-                    if(newFile):
-                        file.write('[')
-                    else:
-                        file.write(',')
+                        file = open(ambiGroupsDir+identifier+".json",'a')
 
-                    #dump
-                    dict['author']=AuthorName
-                    ujson.dump(dict,file,ensure_ascii=False, indent=4)
-                    file.close()
+                        #adding comma if needed, file with special characters
+                        if(newFile):
+                            file.write('[')
+                        else:
+                            file.write(',')
 
-
-
-
-                    #repeat new file test for new file
-                    newFile2 = not (os.path.isfile("AmbiGroups/"+IdentifierWithNoAccent+".json"))
+                        #dump
+                        dict['author']=AuthorName
+                        ujson.dump(dict,file,ensure_ascii=False, indent=4)
+                        file.close()
 
 
-                    fileNoAccent = open("/home/arakotoa/Desktop/PSC/AmbiGroups/"+IdentifierWithNoAccent+".json",'a')
 
-                    #adding comma if needed, file without special characters
-                    if(newFile2):
-                        fileNoAccent.write('[')
-                    else:
-                        fileNoAccent.write(',')
+                    for identifierWithNoAccent in IdentifierWithNoAccent :
+
+                        #repeat new file test for new file
+                        newFile = not (os.path.isfile(ambiGroupsDir+identifierWithNoAccent+".json"))
 
 
-                    #dump
-                    dict['author']=AuthorNameWithNoAccent
-                    ujson.dump(dict,fileNoAccent,ensure_ascii=False, indent=4)
-                    fileNoAccent.close()
+                        fileNoAccent = open(ambiGroupsDir+identifierWithNoAccent+".json",'a')
+
+                        #adding comma if needed, file without special characters
+                        if(newFile):
+                            fileNoAccent.write('[')
+                        else:
+                            fileNoAccent.write(',')
 
 
-                #otherwise, duplication ID is 0, only one dump
+                        #dump
+                        dict['author']=AuthorNameWithNoAccent
+                        ujson.dump(dict,fileNoAccent,ensure_ascii=False, indent=4)
+                        fileNoAccent.close()
+
+
+
+                #otherwise, no special characters
+                #Check if multiple last names
+                elif(len(LastNameParts)>1) :
+
+                    #Add a new duplication ID
+                    #then dump the record once per distinct identifier
+                    duplicId+=1
+                    dict['duplicId']=duplicId
+                    for identifier in list(dict.fromkeys(Identifier)) :
+
+                        #If we create a new file, we should add '[' and no comma
+                        newFile = not (os.path.isfile(ambiGroupsDir+identifier+".json"))
+
+                        file = open(ambiGroupsDir+identifier+".json",'a')
+
+                        #adding comma if needed
+                        if(newFile):
+                            file.write('[')
+                        else:
+                            file.write(',')
+
+                        #dump
+                        dict['author']=AuthorName
+                        ujson.dump(dict,file,ensure_ascii=False, indent=4)
+                        file.close()
+
+
+
+                #else, no special characters, one last name
+                # => duplicId 0, only one dump
                 else :
-
-                    file = open("/home/arakotoa/Desktop/PSC/AmbiGroups/"+Identifier+".json",'a')
-
-                    #adding comma if needed
-                    if(newFile):
-                        file.write('[')
-                    else:
-                        file.write(',')
-
-                    #dump
                     dict['duplicId']=0
-                    ujson.dump(dict,file,ensure_ascii=False, indent=4)
-                    file.close()
+
+                    for identifier in Identifier :
+
+                        #If we create a new file, we should add '[' and no comma
+                        newFile = not (os.path.isfile(ambiGroupsDir+identifier+".json"))
+
+                        file = open(ambiGroupsDir+identifier+".json",'a')
+
+                        #adding comma if needed, file with special characters
+                        if(newFile):
+                            file.write('[')
+                        else:
+                            file.write(',')
+
+                        #dump
+                        dict['author']=AuthorName
+                        ujson.dump(dict,file,ensure_ascii=False, indent=4)
+                        file.close()
 
 
 
@@ -330,9 +385,9 @@ input.close()
 
 
 #adds ']' at the end of every file
-for fileName in os.listdir("/home/arakotoa/Desktop/PSC/AmbiGroups/") :
+for fileName in os.listdir(ambiGroupsDir) :
 
-    file = open("/home/arakotoa/Desktop/PSC/AmbiGroups/" + fileName, 'a')
+    file = open(ambiGroupsDir + fileName, 'a')
     file.write(']')
     file.close()
 
@@ -341,5 +396,6 @@ print("Steps 2 and 3 done.")
 
 
 print(count_different_Ids, " different IDs.")
+print(duplicIds, " duplicIds")
 
 
