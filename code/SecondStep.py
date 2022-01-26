@@ -14,6 +14,14 @@ import os
 
 import string
 
+from transformers import AutoTokenizer, AutoModel
+from sentence_transformers import util
+
+#the following three lines should be done once !
+#load model and tokenizer
+tokenizer = AutoTokenizer.from_pretrained('allenai/specter')
+model = AutoModel.from_pretrained('allenai/specter')
+
 def getWorkTitleTerms(identity, folderAddress, stopWords):
     """
     Require: Cluster of authorship record at work (the id identity of this cluster)
@@ -53,6 +61,13 @@ def getWorkTitleTerms(identity, folderAddress, stopWords):
     return T_t
         
 #print(getWorkTitleTerms(0,folderAddress,set(stopwords.words("english"))))
+
+def getPublicationVenueTitleTerms(identity, folderAddress):
+    """
+    Require: Cluster of authorship record at work (the id identity of this cluster)
+    Ensure: feature vector of the venue titles in this cluster
+    """
+    
     
 def titleSimilarity(T_t1, T_t2, lim_title):
     """
@@ -67,15 +82,28 @@ def titleSimilarity(T_t1, T_t2, lim_title):
                 if (nbCommonWords == 0):
                     return True
     return False
-
+    
+def venueSimilarity(V_1, V_2, lim_venue):
+    """
+    We use word-embedding to compare the similarity between the 2 publication venues.
+    We compare the feature vector of 2 clusters respectively, and if their included angle is small enough, then they are similar.
+    """
+    papers = [V_1, V_2] # preprocess the input
+    inputs = tokenizer(papers, padding=True, truncation=True, return_tensors="pt", max_length=512)  # computing the embedding
+    result = model(**inputs)     # take the first token in the batch as the embedding
+    embeddings = result.last_hidden_state[:, 0, :]  # computing the cosine similarity between the two titles
+    cos_sim = util.cos_sim(embeddings[0], embeddings[1])
+    print("Cosine-Similarity:", cos_sim)
+    
 def secondStepSlow(Ci, folderAddress):
     """
     Require: List Ci of clusters of authorship records
     Ensure: List Co of clusters of authorship records
     """
     
-    lim_name = 2 #name threshold
-    lim_title = 2 #title threshold 
+    lim_name = 2    #name threshold
+    lim_title = 2   #title threshold 
+    lim_venue =     #venue threshold
     
     stopWords = set(stopwords.words("english"))
     
@@ -100,7 +128,8 @@ def secondStepSlow(Ci, folderAddress):
             if FirstStep.fragmentComparison(Co[i],Co[j],lim_name):
                 #print("compare",i,j)
                 T_t2 = getWorkTitleTerms(j, folderAddress, stopWords)
-                if titleSimilarity(T_t1, T_t2, lim_title):
+                getPublicationVenueTitleTerms
+                if titleSimilarity(T_t1, T_t2, lim_title) :
                     print("merge",i,j)
                     #delete ']'
                     file_i = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'rb+')
@@ -146,8 +175,9 @@ def secondStep(Ci, folderAddress):
     Ensure: List Co of clusters of authorship records
     """
     
-    lim_name = 2 #name threshold
-    lim_title = 2 #title threshold 
+    lim_name = 2    #name threshold
+    lim_title = 2   #title threshold 
+    lim_venue =     #venue threshold
     
     stopWords = set(stopwords.words("english"))
     
@@ -159,8 +189,10 @@ def secondStep(Ci, folderAddress):
         existedCo.append(True)
     
     CoTitleTerms = []
+    VenueTerms = []
     for i in range(len(Co)):
         CoTitleTerms.append(getWorkTitleTerms(i, folderAddress, stopWords))
+        VenueTerms.qppend(getPublicationVenueTitleTerms(i, folderAddress))
     
     i = 0
     j = 1
@@ -174,7 +206,7 @@ def secondStep(Ci, folderAddress):
                 continue
             if FirstStep.fragmentComparison(Co[i],Co[j],lim_name):
                 #print("compare",i,j)
-                if titleSimilarity(CoTitleTerms[i], CoTitleTerms[j], lim_title):
+                if titleSimilarity(CoTitleTerms[i], CoTitleTerms[j], lim_title) or venueSimilarity(VenueTerms[i], VenueTerms[j], lim_venue):
                     print("merge",i,j)
                     #delete ']'
                     file_i = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'rb+')
@@ -204,7 +236,9 @@ def secondStep(Ci, folderAddress):
                     existedCo[j] = False
                     
                     CoTitleTerms[i] = getWorkTitleTerms(i, folderAddress, stopWords)
+                    VenueTerms[i] = getPublicationVenueTitleTerms(i, folderAddress)
                     CoTitleTerms[j] = []
+                    VenueTerms[j] =  []
                     
                     j = 0
                     
