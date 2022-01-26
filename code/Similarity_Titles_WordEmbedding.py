@@ -15,6 +15,7 @@ from sentence_transformers import util
 #                                  WARNING
 #the following three lines should be done once !
 #load model and tokenizer
+
 tokenizer = AutoTokenizer.from_pretrained('allenai/specter')
 model = AutoModel.from_pretrained('allenai/specter')
 
@@ -27,4 +28,6 @@ result = model(**inputs)
 embeddings = result.last_hidden_state[:, 0, :]
 # computing the cosine similarity between the two titles
 cos_sim = util.cos_sim(embeddings[0], embeddings[1])
+
 print("Cosine-Similarity:", cos_sim)
+
