@@ -187,7 +187,7 @@ def secondStep(Ci, folderAddress):
     
     lim_name = 2    #name threshold
     lim_title = 2   #title threshold 
-    lim_venue =     #venue threshold
+    #lim_venue =     #venue threshold
     
     stopWords = set(stopwords.words("english"))
     
@@ -258,6 +258,49 @@ def secondStep(Ci, folderAddress):
     
     #print(Co)
     return Co
+    
+def getAllWorkTitleTerms(identity,folderAddress):
+    """
+    Require: Cluster of authorship record at work (the id identity of this cluster)
+    Ensure: List T_t of the titles of this cluster
+    """
+    
+    L_title = [] #list of the titles of the cluster
+    
+    file_check = open(folderAddress + "/" + str(identity) + "authorshipRecordCluster.json", 'r', encoding="utf-8")
+    
+    authorshipRecords = json_stream.load(file_check)
+    
+    for authorshipRecord in authorshipRecords:
+        title = authorshipRecord["defaultTitle"]
+        L_title.append(title)
+    
+    file_check.close()
+    
+    return L_title
+    
+def titleSimilarityWE(L1_title, L2_title, lim_title):
+    
+    
+    
+def secondStepWordEmbedding(Ci, folderAddress):
+    """
+    Require: List Ci of clusters of authorship records
+    Ensure: List Co of clusters of authorship records
+    """
+    
+    lim_name = 2    #name threshold
+    
+    Co = Ci[:]
+    lenCo = len(Co)
+    
+    existedCo = [] #this ith file exist or not
+    for i in range(lenCo):
+        existedCo.append(True)
+    
+    CoTitleTerms = []
+    for i in range(len(Co)):
+        CoTitleTerms.append(getWorkTitleTerms(i, folderAddress))
 
 (Ci,folderAddress) = FirstStep.firstStep("../data/ambiguousGroup.json")
 print(Ci)
