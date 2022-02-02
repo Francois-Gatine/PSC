@@ -17,7 +17,7 @@ import string
 from transformers import AutoTokenizer, AutoModel
 from sentence_transformers import util
 
-def getWorkTitleTerms(identity, folderAddress, stopWords):
+def getWorkTitleTermsFre(identity, folderAddress, stopWords):
     """
     Require: Cluster of authorship record at work (the id identity of this cluster)
     Require: Set stopWords of stop words in English
@@ -216,7 +216,7 @@ def secondStep(Ci, folderAddress):
                 continue
             if FirstStep.fragmentComparison(Co[i],Co[j],lim_name):
                 #print("compare",i,j)
-                if titleSimilarity(CoTitleTerms[i], CoTitleTerms[j], lim_title) or venueSimilarity(VenueTerms[i], VenueTerms[j], lim_venue):
+                if titleSimilarity(CoTitleTerms[i], CoTitleTerms[j], lim_title): #or venueSimilarity(VenueTerms[i], VenueTerms[j], lim_venue):
                     print("merge",i,j)
                     #delete ']'
                     file_i = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'rb+')
@@ -259,7 +259,7 @@ def secondStep(Ci, folderAddress):
     #print(Co)
     return Co
     
-def getAllWorkTitleTerms(identity,folderAddress):
+def getWorkTitleTerms(identity,folderAddress):
     """
     Require: Cluster of authorship record at work (the id identity of this cluster)
     Ensure: List T_t of the titles of this cluster
@@ -279,28 +279,12 @@ def getAllWorkTitleTerms(identity,folderAddress):
     
     return L_title
     
-def titleSimilarityWE(L1_title, L2_title, lim_title):
+def titleSimilarity(L1_title, L2_title, lim_title):
+    for title1 in L1_title:
+        for title2 in L2_title:
+            if cos    
     
     
-    
-def secondStepWordEmbedding(Ci, folderAddress):
-    """
-    Require: List Ci of clusters of authorship records
-    Ensure: List Co of clusters of authorship records
-    """
-    
-    lim_name = 2    #name threshold
-    
-    Co = Ci[:]
-    lenCo = len(Co)
-    
-    existedCo = [] #this ith file exist or not
-    for i in range(lenCo):
-        existedCo.append(True)
-    
-    CoTitleTerms = []
-    for i in range(len(Co)):
-        CoTitleTerms.append(getWorkTitleTerms(i, folderAddress))
 
 (Ci,folderAddress) = FirstStep.firstStep("../data/ambiguousGroup.json")
 print(Ci)
