@@ -17,11 +17,6 @@ import string
 from transformers import AutoTokenizer, AutoModel
 from sentence_transformers import util
 
-#the following three lines should be done once !
-#load model and tokenizer
-tokenizer = AutoTokenizer.from_pretrained('allenai/specter')
-model = AutoModel.from_pretrained('allenai/specter')
-
 def getWorkTitleTerms(identity, folderAddress, stopWords):
     """
     Require: Cluster of authorship record at work (the id identity of this cluster)
@@ -69,7 +64,7 @@ def getPublicationVenueTitleTerms(identity, folderAddress):
     """
     
     
-def titleSimilarity(T_t1, T_t2, lim_title):
+def titleSimilarityFre(T_t1, T_t2, lim_title):
     """
     We compare the LevenshteinDistance of each pairs from T_t1, T_t2 respectively.
     If the 2 lists have certain numbers (nbCommonWords) in common, then they are similar.
@@ -81,6 +76,17 @@ def titleSimilarity(T_t1, T_t2, lim_title):
                 nbCommonWords -= 1
                 if (nbCommonWords == 0):
                     return True
+    return False
+
+def titleSimilarity(T_t1, T_t2, lim_title):
+    """
+    We compare the cos similarity of each pairs from T_t1, T_t2 respectively.
+    If the biggest similarity between two lists is bigger than lim_title, then they are similar.
+    """
+    for i in rang(len(T_t1)):
+        for j in range(len(T_t2)):
+            if(util.cos_sim(T_t1[i], T_t2[j]) > lim_title):
+                return True
     return False
     
 def venueSimilarity(V_1, V_2, lim_venue):
@@ -103,7 +109,6 @@ def secondStepSlow(Ci, folderAddress):
     
     lim_name = 2    #name threshold
     lim_title = 2   #title threshold 
-    lim_venue =     #venue threshold
     
     stopWords = set(stopwords.words("english"))
     
@@ -175,6 +180,11 @@ def secondStep(Ci, folderAddress):
     Ensure: List Co of clusters of authorship records
     """
     
+    #the following two lines should be done once !
+    #load model and tokenizer
+    tokenizer = AutoTokenizer.from_pretrained('allenai/specter')
+    model = AutoModel.from_pretrained('allenai/specter')
+    
     lim_name = 2    #name threshold
     lim_title = 2   #title threshold 
     lim_venue =     #venue threshold
@@ -192,7 +202,7 @@ def secondStep(Ci, folderAddress):
     VenueTerms = []
     for i in range(len(Co)):
         CoTitleTerms.append(getWorkTitleTerms(i, folderAddress, stopWords))
-        VenueTerms.qppend(getPublicationVenueTitleTerms(i, folderAddress))
+        VenueTerms.append(getPublicationVenueTitleTerms(i, folderAddress))
     
     i = 0
     j = 1
