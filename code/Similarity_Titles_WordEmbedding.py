@@ -28,6 +28,9 @@ result = model(**inputs)
 embeddings = result.last_hidden_state[:, 0, :]
 
 print(embeddings.size())
+import sys
+print(sys.getsizeof(embeddings[0][0]))
+print(embeddings[0][0])
 
 # computing the cosine similarity between the two titles
 cos_sim = util.cos_sim(embeddings[0], embeddings[1])

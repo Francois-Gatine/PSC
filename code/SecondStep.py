@@ -155,15 +155,6 @@ def getWorkVenueTerms(identity, folderAddress, stopWords, venueStopWords):
     
     return (V_fd, V_acronym)
 
-stopWords = set(stopwords.words("english"))
-venueStopWords = {"journal","j","review","reviews","theory","theories"}
-L_V = []
-L_V.append(getWorkVenueTerms(0, "../data/AG_sample/clustersOfAG_sample", stopWords, venueStopWords))
-L_V.append(getWorkVenueTerms(1, "../data/AG_sample/clustersOfAG_sample", stopWords, venueStopWords))
-(V_fd, V_acronym) = L_V[0]
-print(V_fd)
-print(V_acronym)
-
 def addWorkVenueTerms(identity, folderAddress, stopWords, venueStopWords, V_t):
     """
     Require: Cluster of authorship record at work (the id identity of this cluster)
@@ -266,10 +257,6 @@ def venueSimilarity(V_t1, V_t2, lim_venue):
             return True
     
     return False
-
-venueSimilarity(L_V[0], L_V[1], 4)
-
-
 
 # def secondStepSlow(Ci, folderAddress):
 #     """
