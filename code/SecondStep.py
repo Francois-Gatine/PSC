@@ -17,6 +17,10 @@ import string
 from transformers import AutoTokenizer, AutoModel
 from sentence_transformers import util
 
+import torch
+
+from memory_profiler import profile
+
 def getWorkTitleTermsFre(identity, folderAddress, stopWords):
     """
     Require: Cluster of authorship record at work (the id identity of this cluster)
@@ -56,7 +60,7 @@ def getWorkTitleTermsFre(identity, folderAddress, stopWords):
     return T_t
         
 #print(getWorkTitleTerms(0,folderAddress,set(stopwords.words("english"))))
-    
+
 def getWorkTitleTerms(identity, folderAddress, tokenizer, model):
     """
     Require: Cluster of authorship record at work (the id identity of this cluster)
@@ -80,7 +84,7 @@ def getWorkTitleTerms(identity, folderAddress, tokenizer, model):
     # computing the embedding
     result = model(**inputs)
     # take the first token in the batch as the embedding
-    T_t = result.last_hidden_state[:, 0, :]
+    T_t = result.last_hidden_state[:, 0, :].clone().detach()
     
     return T_t
 
@@ -107,7 +111,7 @@ def addWorkTitleTerms(identity, folderAddress, tokenizer, model, T_t):
     # computing the embedding
     result = model(**inputs)
     # take the first token in the batch as the embedding
-    T_t.extend(result.last_hidden_state[:, 0, :])
+    T_t = torch.cat((T_t, result.last_hidden_state[:, 0, :].clone().detach()), dim = 0)
     
     return T_t
 
@@ -404,8 +408,7 @@ def venueSimilarity(V_t1, V_t2, lim_venue):
     
 #     #print(Co)
 #     return Co
-
-
+@profile(precision=4,stream=open('memory_profiler.log','w+'))
 def secondStep(Ci, folderAddress):
     """
     Require: List Ci of clusters of authorship records
@@ -436,7 +439,7 @@ def secondStep(Ci, folderAddress):
     
     for i in range(len(Co)):
         CoTitleTerms.append(getWorkTitleTerms(i, folderAddress, tokenizer, model))
-        #CoVenueTerms.append(getWorkVenueTerms(i, folderAddress, stopWords, venueStopWords))
+        CoVenueTerms.append(getWorkVenueTerms(i, folderAddress, stopWords, venueStopWords))
     
     i = 0
     j = 1
@@ -444,13 +447,14 @@ def secondStep(Ci, folderAddress):
         if not existedCo[i] :
             i += 1
             continue
+        print("compare", i, "th Authorship Record Cluster with others")
         while j < lenCo:
             if i == j or (not existedCo[j]):
                 j += 1
                 continue
             if FirstStep.fragmentComparison(Co[i],Co[j],lim_name):
                 #print("compare",i,j)
-                if titleSimilarity(CoTitleTerms[i], CoTitleTerms[j], lim_title): #or venueSimilarity(CoVenueTerms[i], CoVenueTerms[j], lim_venue):
+                if titleSimilarity(CoTitleTerms[i], CoTitleTerms[j], lim_title) or venueSimilarity(CoVenueTerms[i], CoVenueTerms[j], lim_venue):
                     print("merge",i,j)
                     #delete ']'
                     file_i = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'rb+')
@@ -479,17 +483,19 @@ def secondStep(Ci, folderAddress):
                     Co[j] = ""
                     existedCo[j] = False
                     
-                    CoTitleTerms[i] = getWorkTitleTerms(i, folderAddress, tokenizer, model)
-                    #CoVenueTerms[i] = getWorkVenueTerms(i, folderAddress, stopWords, venueStopWords)
+                    CoTitleTerms[i] = addWorkTitleTerms(i, folderAddress, tokenizer, model, CoTitleTerms[i])
+                    CoVenueTerms[i] = addWorkVenueTerms(i, folderAddress, stopWords, venueStopWords, CoVenueTerms[i])
                     CoTitleTerms[j] = None
-                    #CoVenueTerms[j] = None
+                    CoVenueTerms[j] = None
                     
                     j = 0
                     
             j += 1
         i += 1
         j = i + 1
-
+        
+    tokenizer = None
+    model = None
     #print(Co)
     return Co
 

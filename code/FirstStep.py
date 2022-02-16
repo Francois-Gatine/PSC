@@ -176,8 +176,13 @@ def sortShortAndLongNameRecords(ambiguousGroupAddress, resultAddress):
     nb_longName = 0
     nb_shortName = 0
 
+    #counter of execution
+    nb_AR = 0
     for authorshipRecord in authorshipRecords :
-
+        
+        nb_AR += 1
+        if(nb_AR % 500 == 0): print("read", nb_AR, "Authorship Records (sort Authorship Record)")
+        
         author = authorshipRecord["author"]
         
         #test the name is in short format or not
@@ -233,6 +238,7 @@ def sortShortAndLongNameRecords(ambiguousGroupAddress, resultAddress):
     g.close()
     
     #print the counters
+    print("sort Authorship Records successfully")
     print("There are", nb_longName, "Authorship Records of long name")
     print("There are", nb_shortName, "Authorship Records of short name")
     
@@ -260,6 +266,7 @@ def processList (A, Ci, folderAddress):
     
     C0 = Ci
     for authorshipRecord in authorshipRecords:
+        
         
         #keep all the variables in memory
         author = authorshipRecord["author"]
@@ -342,7 +349,7 @@ def processList (A, Ci, folderAddress):
             
     f.close()        
     
-    print("The numbers of the files which have several Autorchip Records",L_severalARs)
+    print("The identifiers of the files which have several Authorship Records",L_severalARs)
     
     return C0
 
@@ -376,7 +383,12 @@ def processListEfficient (A, Ci, folderAddress):
     for i in range(len(C0)):
         C0coauthors.append([])
     
+    #counter of execution
+    nb_AR = 0
     for authorshipRecord in authorshipRecords:
+        
+        nb_AR += 1
+        if(nb_AR % 500 == 0): print("read", nb_AR, "Authorship Records (creat Authorship Record Clusters)")
         
         #keep all the variables in memory
         author = authorshipRecord["author"]
@@ -458,8 +470,9 @@ def processListEfficient (A, Ci, folderAddress):
             C0coauthors.append([])
             C0coauthors[-1] += coauthors 
             C0.append(author)
-            
-    print("The identities of the files which have several Autorchip Records", L_severalARs)
+    
+    print("creat Authorship Record Cluters successfully")            
+    print("The identitiers of the files which have several Authorship Records", L_severalARs)
     
     return C0
 

@@ -11,6 +11,7 @@
 
 from transformers import AutoTokenizer, AutoModel
 from sentence_transformers import util
+import torch
 
 #                                  WARNING
 #the following three lines should be done once !
@@ -20,6 +21,7 @@ tokenizer = AutoTokenizer.from_pretrained('allenai/specter')
 model = AutoModel.from_pretrained('allenai/specter')
 
 papers = ["ICONBM: INTERNATIONAL CONFERENCE ON BIOMASS, PTS 1 AND 2", "Comparison in Dimethyl Ether Steam Reforming of Conventional Cu-ZnO-Al2O3 and Supported Pt Metal Catalysts"]
+papers2 = ["dfsortsjtsat","ICONBM: IETETETERNATIONAL CONFERENCE ON BIOMASS, PTS 1 AND 2", "Comparssfdteison in Dimethyl Ether Steam Reforming of Conventional Cu-ZnO-Al2O3 and Supported Pt Metal Catalysts"]
 # preprocess the input
 inputs = tokenizer(papers, padding=True, truncation=True, return_tensors="pt", max_length=512)
 # computing the embedding
@@ -27,10 +29,22 @@ result = model(**inputs)
 # take the first token in the batch as the embedding
 embeddings = result.last_hidden_state[:, 0, :]
 
+inputs = tokenizer(papers2, padding=True, truncation=True, return_tensors="pt", max_length=512)
+# computing the embedding
+result = model(**inputs)
+# take the first token in the batch as the embedding
+embeddings2 = result.last_hidden_state[:, 0, :]
+
 print(embeddings.size())
-import sys
-print(sys.getsizeof(embeddings[0][0]))
-print(embeddings[0][0])
+
+print(embeddings2.size())
+
+embeddings = torch.cat((embeddings,embeddings2),)
+
+print(embeddings.size())
+
+print(type(embeddings.detach().numpy()))
+print(embeddings[0].detach().numpy().nbytes)
 
 # computing the cosine similarity between the two titles
 cos_sim = util.cos_sim(embeddings[0], embeddings[1])
