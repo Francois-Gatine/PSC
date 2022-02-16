@@ -26,6 +26,12 @@ inputs = tokenizer(papers, padding=True, truncation=True, return_tensors="pt", m
 result = model(**inputs)
 # take the first token in the batch as the embedding
 embeddings = result.last_hidden_state[:, 0, :]
+
+print(embeddings.size())
+import sys
+print(sys.getsizeof(embeddings[0][0]))
+print(embeddings[0][0])
+
 # computing the cosine similarity between the two titles
 cos_sim = util.cos_sim(embeddings[0], embeddings[1])
 
