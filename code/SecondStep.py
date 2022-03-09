@@ -502,7 +502,11 @@ def secondStep(Ci, folderAddress):
 
 #test
 if __name__ == '__main__':
-    (Ci,folderAddress) = FirstStep.firstStep("../data/AG_sample.json", "../data/AG_sample")
+    import time
+    
+    start = time.time()
+    
+    (Ci,folderAddress) = FirstStep.firstStep("../data/ada.json", "../data/ada")
     print(Ci)
     
     # Co = secondStepFre(Ci, folderAddress)
@@ -510,3 +514,8 @@ if __name__ == '__main__':
     
     Co = secondStep(Ci, folderAddress)
     print(Co)
+    
+    end = time.time()
+    print("runtime is ",end - start,"s")
+    
+    
