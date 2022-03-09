@@ -19,7 +19,7 @@ from sentence_transformers import util
 
 import torch
 
-from memory_profiler import profile
+#from memory_profiler import profile # test memory
 
 def getWorkTitleTermsFre(identity, folderAddress, stopWords):
     """
@@ -408,7 +408,8 @@ def venueSimilarity(V_t1, V_t2, lim_venue):
     
 #     #print(Co)
 #     return Co
-@profile(precision=4,stream=open('memory_profiler.log','w+'))
+
+#@profile(precision=4,stream=open('memory_profiler.log','w+'))
 def secondStep(Ci, folderAddress):
     """
     Require: List Ci of clusters of authorship records
@@ -499,13 +500,13 @@ def secondStep(Ci, folderAddress):
     #print(Co)
     return Co
 
-
+#test
+if __name__ == '__main__':
+    (Ci,folderAddress) = FirstStep.firstStep("../data/AG_sample.json", "../data/AG_sample")
+    print(Ci)
     
-(Ci,folderAddress) = FirstStep.firstStep("../data/AG_sample.json", "../data/AG_sample")
-print(Ci)
-
-# Co = secondStepFre(Ci, folderAddress)
-# print(Co)
-
-Co = secondStep(Ci, folderAddress)
-print(Co)
+    # Co = secondStepFre(Ci, folderAddress)
+    # print(Co)
+    
+    Co = secondStep(Ci, folderAddress)
+    print(Co)

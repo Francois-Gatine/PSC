@@ -39,7 +39,7 @@ print(embeddings.size())
 
 print(embeddings2.size())
 
-embeddings = torch.cat((embeddings,embeddings2),)
+embeddings = torch.cat((embeddings,embeddings2))
 
 print(embeddings.size())
 

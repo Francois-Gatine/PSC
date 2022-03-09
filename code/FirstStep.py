@@ -502,8 +502,11 @@ def firstStep(ambiguousGroupAddress, resultAddress):
 
     return (C3,folderAddress)
 
-#(C3,folderAddress) = firstStep("../data/AG_sample.json","../data/AG_sample")
-#print(C3)
-#print(folderAddress)
+
+#test
+if __name__ == '__main__':
+    (C3,folderAddress) = firstStep("../data/AG_sample.json","../data/AG_sample")
+    print(C3)
+    print(folderAddress)
 
 
