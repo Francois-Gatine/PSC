@@ -80,11 +80,22 @@ def getWorkTitleTerms(identity, folderAddress, tokenizer, model):
     file_check.close()
     
     # preprocess the input
-    inputs = tokenizer(L_title, padding=True, truncation=True, return_tensors="pt", max_length=512)
+    inputs = tokenizer(L_title[0], padding=True, truncation=True, return_tensors="pt", max_length=512)
     # computing the embedding
     result = model(**inputs)
     # take the first token in the batch as the embedding
     T_t = result.last_hidden_state[:, 0, :].clone().detach()
+    
+    for i in range(1, len(L_title)):
+        # preprocess the input
+        inputs = tokenizer(L_title[i], padding=True, truncation=True, return_tensors="pt", max_length=512)
+        # computing the embedding
+        result = model(**inputs)
+        # take the first token in the batch as the embedding
+        T_t = torch.cat((T_t, result.last_hidden_state[:, 0, :].clone().detach()), dim = 0)
+    
+    result = None
+    inputs = None
     
     return T_t
 
@@ -106,12 +117,16 @@ def addWorkTitleTerms(identity, folderAddress, tokenizer, model, T_t):
     
     file_check.close()
     
-    # preprocess the input
-    inputs = tokenizer(L_title, padding=True, truncation=True, return_tensors="pt", max_length=512)
-    # computing the embedding
-    result = model(**inputs)
-    # take the first token in the batch as the embedding
-    T_t = torch.cat((T_t, result.last_hidden_state[:, 0, :].clone().detach()), dim = 0)
+    for i in range(0,len(L_title)):
+        # preprocess the input
+        inputs = tokenizer(L_title[i], padding=True, truncation=True, return_tensors="pt", max_length=512)
+        # computing the embedding
+        result = model(**inputs)
+        # take the first token in the batch as the embedding
+        T_t = torch.cat((T_t, result.last_hidden_state[:, 0, :].clone().detach()), dim = 0)
+    
+    result = None
+    inputs = None
     
     return T_t
 
@@ -262,77 +277,95 @@ def venueSimilarity(V_t1, V_t2, lim_venue):
     
     return False
 
-# def secondStepSlow(Ci, folderAddress):
-#     """
-#     Require: List Ci of clusters of authorship records
-#     Ensure: List Co of clusters of authorship records
-#     """
+def secondStepSlow(Ci, folderAddress):
+    """
+    Require: List Ci of clusters of authorship records
+    Ensure: List Co of clusters of authorship records
+    """
     
-#     lim_name = 2    #name threshold
-#     lim_title = 2   #title threshold 
+    lim_name = 2    #name threshold
+    lim_title = 0.7   #title threshold 
+    lim_venue = 2    #venue threshold
     
-#     stopWords = set(stopwords.words("english"))
+    Co = Ci[:]
+    lenCo = len(Co)
     
-#     Co = Ci[:]
-#     lenCo = len(Co)
+    existedCo = [] #this ith file existe or not
+    for i in range(lenCo):
+        existedCo.append(True)
     
-#     existedCo = [] #this ith file existe or not
-#     for i in range(lenCo):
-#         existedCo.append(True)
+    #CoTitleTerms = []
+    CoVenueTerms = []
     
-#     i = 0
-#     j = 1
-#     while i < lenCo:
-#         if not existedCo[i] :
-#             i += 1
-#             continue
-#         T_t1 = getWorkTitleTerms(i, folderAddress, stopWords)
-#         while j < lenCo:
-#             if i == j or (not existedCo[j]):
-#                 j += 1
-#                 continue
-#             if FirstStep.fragmentComparison(Co[i],Co[j],lim_name):
-#                 #print("compare",i,j)
-#                 T_t2 = getWorkTitleTerms(j, folderAddress, stopWords)
-#                 if titleSimilarity(T_t1, T_t2, lim_title) :
-#                     print("merge",i,j)
-#                     #delete ']'
-#                     file_i = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'rb+')
-#                     file_i.seek(-1, os.SEEK_END)
-#                     file_i.truncate()
-#                     file_i.close()
-                    
-#                     file_i = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'a+', encoding="utf-8")
-#                     file_i.write(',')
-                    
-#                     file_j = open(folderAddress + "/" + str(j) + "authorshipRecordCluster.json", 'r', encoding="utf-8")
-                    
-#                     #delete the first '['
-#                     firstLine = True
-#                     for line in file_j:
-#                         if firstLine:
-#                             firstLine = False
-#                             line = line.strip('[')
-#                         file_i.write(line)
-                    
-#                     file_i.close()
-#                     file_j.close()
-                    
-#                     os.remove(folderAddress + "/" + str(j) + "authorshipRecordCluster.json")
-                    
-#                     Co[j] = ""
-#                     existedCo[j] = False
-                    
-#                     T_t1 = getWorkTitleTerms(i, folderAddress, stopWords)
-                    
-#                     j = 0
-                    
-#             j += 1
-#         i += 1
-#         j = i + 1
+    #the following two lines should be done once !
+    #load model and tokenizer
+    tokenizer = AutoTokenizer.from_pretrained('allenai/specter')
+    model = AutoModel.from_pretrained('allenai/specter')
     
-#     #print(Co)
-#     return Co
+    stopWords = set(stopwords.words("english"))
+    venueStopWords = {"journal","j","review","reviews","theory","theories"}
+    
+    for i in range(len(Co)):
+        #CoTitleTerms.append(getWorkTitleTerms(i, folderAddress, tokenizer, model))
+        CoVenueTerms.append(getWorkVenueTerms(i, folderAddress, stopWords, venueStopWords))
+    
+    i = 0
+    j = 1
+    while i < lenCo:
+        if not existedCo[i] :
+            i += 1
+            continue
+        print("compare", i, "th Authorship Record Cluster with others")
+        while j < lenCo:
+            if i == j or (not existedCo[j]):
+                j += 1
+                continue
+            if FirstStep.fragmentComparison(Co[i],Co[j],lim_name):
+                #print("compare",i,j)
+                if titleSimilarity(getWorkTitleTerms(i, folderAddress, tokenizer, model), getWorkTitleTerms(j, folderAddress, tokenizer, model), lim_title) or venueSimilarity(CoVenueTerms[i], CoVenueTerms[j], lim_venue):
+                    print("merge",i,j)
+                    #delete ']'
+                    file_i = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'rb+')
+                    file_i.seek(-1, os.SEEK_END)
+                    file_i.truncate()
+                    file_i.close()
+                    
+                    file_i = open(folderAddress + "/" + str(i) + "authorshipRecordCluster.json", 'a+', encoding="utf-8")
+                    file_i.write(',')
+                    
+                    file_j = open(folderAddress + "/" + str(j) + "authorshipRecordCluster.json", 'r', encoding="utf-8")
+                    
+                    #delete the first '['
+                    firstLine = True
+                    for line in file_j:
+                        if firstLine:
+                            firstLine = False
+                            line = line.strip('[')
+                        file_i.write(line)
+                    
+                    file_i.close()
+                    file_j.close()
+                    
+                    os.remove(folderAddress + "/" + str(j) + "authorshipRecordCluster.json")
+                    
+                    Co[j] = ""
+                    existedCo[j] = False
+                    
+                    #CoTitleTerms[i] = addWorkTitleTerms(i, folderAddress, tokenizer, model, CoTitleTerms[i])
+                    CoVenueTerms[i] = addWorkVenueTerms(i, folderAddress, stopWords, venueStopWords, CoVenueTerms[i])
+                    #CoTitleTerms[j] = None
+                    CoVenueTerms[j] = None
+                    
+                    j = 0
+                    
+            j += 1
+        i += 1
+        j = i + 1
+        
+    tokenizer = None
+    model = None
+    #print(Co)
+    return Co
 
 # def secondStepFre(Ci, folderAddress):
 #     """
@@ -500,22 +533,56 @@ def secondStep(Ci, folderAddress):
     #print(Co)
     return Co
 
+def folderAddress_save(codeAddress):
+    f_name = codeAddress + "/folderAddress.txt"
+    f = open(f_name,"w", encoding="utf-8")
+    f.close()
+    
+def folderAddress_read(codeAddress):
+    f_name = codeAddress + "/folderAddress.txt"
+    f = open(f_name,"r", encoding="utf-8")
+    folderAddress = f.read()
+    f.close()
+    return folderAddress
+    
+def Ci_save(Ci, codeAddress):
+    f_name = codeAddress + "/Ci.txt"
+    f = open(f_name,"w", encoding="utf-8")
+    for line in Ci:
+        f.write(line+'\n')
+    f.close()
+    return
+    
+def Ci_read(codeAddress):
+    Ci = []
+    f_name = codeAddress + "/Ci.txt"
+    with open(f_name, "r") as f:
+        for line in f:
+            Ci.append(line.strip('\n'))
+    return Ci
+
 #test
 if __name__ == '__main__':
     import time
     
     start = time.time()
     
-    (Ci,folderAddress) = FirstStep.firstStep("../data/ada.json", "../data/ada")
-    print(Ci)
+    # (Ci,folderAddress) = FirstStep.firstStep("../data/ada.json", "../data/ada")
+    # print(Ci)
+    
+    # end = time.time()
+    # print("runtime of first step is",end - start,"s")
     
     # Co = secondStepFre(Ci, folderAddress)
     # print(Co)
+    
+    Ci = Ci_read(".")
+    folderAddress = folderAddress_read(".")
     
     Co = secondStep(Ci, folderAddress)
     print(Co)
     
     end = time.time()
-    print("runtime is ",end - start,"s")
+    print("runtime of second step is",end - start,"s")
     
     
