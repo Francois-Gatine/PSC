@@ -79,21 +79,26 @@ def getWorkTitleTerms(identity, folderAddress, tokenizer, model):
     
     file_check.close()
     
+    nb_calcul = 5 # number of titles to calculate for each iteration
+    
+    nb_ite = len(L_title)//nb_calcul
+    
     # preprocess the input
-    inputs = tokenizer(L_title[0], padding=True, truncation=True, return_tensors="pt", max_length=512)
+    inputs = tokenizer(L_title[0:min(nb_calcul, len(L_title))], padding=True, truncation=True, return_tensors="pt", max_length=512)
     # computing the embedding
     result = model(**inputs)
     # take the first token in the batch as the embedding
     T_t = result.last_hidden_state[:, 0, :].clone().detach()
     
-    for i in range(1, len(L_title)):
+    for i in range(1, nb_ite+1):
+        start = i*nb_calcul
         # preprocess the input
-        inputs = tokenizer(L_title[i], padding=True, truncation=True, return_tensors="pt", max_length=512)
+        inputs = tokenizer(L_title[start:min(start+nb_calcul, len(L_title))], padding=True, truncation=True, return_tensors="pt", max_length=512)
         # computing the embedding
         result = model(**inputs)
         # take the first token in the batch as the embedding
         T_t = torch.cat((T_t, result.last_hidden_state[:, 0, :].clone().detach()), dim = 0)
-    
+      
     result = None
     inputs = None
     
@@ -117,9 +122,14 @@ def addWorkTitleTerms(identity, folderAddress, tokenizer, model, T_t):
     
     file_check.close()
     
-    for i in range(0,len(L_title)):
+    nb_calcul = 5 # number of titles to calculate for each iteration
+    
+    nb_ite = len(L_title)//nb_calcul
+    
+    for i in range(nb_ite+1):
+        start = i*nb_calcul
         # preprocess the input
-        inputs = tokenizer(L_title[i], padding=True, truncation=True, return_tensors="pt", max_length=512)
+        inputs = tokenizer(L_title[start:min(start+nb_calcul, len(L_title))], padding=True, truncation=True, return_tensors="pt", max_length=512)
         # computing the embedding
         result = model(**inputs)
         # take the first token in the batch as the embedding
