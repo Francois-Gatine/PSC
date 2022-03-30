@@ -1,0 +1,47 @@
+[
+    {
+        "id": 0,
+        "name": "cluster0.json",
+        "idRefs": [
+            "idref03372329X",
+            "",
+            "idref03372329Y"
+        ],
+        "duplicIds": {
+            "45": [
+                "dad",
+                "bob"
+            ],
+            "46": [
+                "did",
+                "bob"
+            ]
+        }
+    },
+    {
+        "id": 1,
+        "name": "cluster1.json",
+        "idRefs": [
+            "idref03372329X",
+            "",
+            "idref03372329Y",
+            "idref000100000",
+            "idref0",
+            "4464"
+        ],
+        "duplicIds": {
+            "45": [
+                "dad",
+                "bob"
+            ],
+            "46": [
+                "did",
+                "bob",
+                "da"
+            ],
+            "43": [
+                ""
+            ]
+        }
+    }
+]

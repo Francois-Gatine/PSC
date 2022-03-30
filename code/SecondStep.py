@@ -2,6 +2,8 @@
 
 #Second Step
 
+import sys
+sys.path.append(".")
 import FirstStep
 
 import nltk
@@ -17,9 +19,9 @@ import string
 from transformers import AutoTokenizer, AutoModel
 from sentence_transformers import util
 
-import torch
-
 #from memory_profiler import profile # test memory
+
+import math
 
 def getWorkTitleTermsFre(identity, folderAddress, stopWords):
     """
@@ -81,23 +83,23 @@ def getWorkTitleTerms(identity, folderAddress, tokenizer, model):
     
     nb_calcul = 5 # number of titles to calculate for each iteration
     
-    nb_ite = len(L_title)//nb_calcul
+    nb_ite = math.ceil(len(L_title)/nb_calcul)
     
-    # preprocess the input
-    inputs = tokenizer(L_title[0:min(nb_calcul, len(L_title))], padding=True, truncation=True, return_tensors="pt", max_length=512)
-    # computing the embedding
-    result = model(**inputs)
-    # take the first token in the batch as the embedding
-    T_t = result.last_hidden_state[:, 0, :].clone().detach()
-    
-    for i in range(1, nb_ite+1):
+    # # preprocess the input
+    # inputs = tokenizer(L_title[0:min(nb_calcul, len(L_title))], padding=True, truncation=True, return_tensors="pt", max_length=512)
+    # # computing the embedding
+    # result = model(**inputs)
+    # # take the first token in the batch as the embedding
+    # T_t = result.last_hidden_state[:, 0, :].detach()
+    T_t = []
+    for i in range(0, nb_ite):
         start = i*nb_calcul
         # preprocess the input
         inputs = tokenizer(L_title[start:min(start+nb_calcul, len(L_title))], padding=True, truncation=True, return_tensors="pt", max_length=512)
         # computing the embedding
         result = model(**inputs)
         # take the first token in the batch as the embedding
-        T_t = torch.cat((T_t, result.last_hidden_state[:, 0, :].clone().detach()), dim = 0)
+        T_t += result.last_hidden_state[:, 0, :].detach()
       
     result = None
     inputs = None
@@ -124,16 +126,16 @@ def addWorkTitleTerms(identity, folderAddress, tokenizer, model, T_t):
     
     nb_calcul = 5 # number of titles to calculate for each iteration
     
-    nb_ite = len(L_title)//nb_calcul
+    nb_ite = math.ceil(len(L_title)/nb_calcul)
     
-    for i in range(nb_ite+1):
+    for i in range(nb_ite):
         start = i*nb_calcul
         # preprocess the input
         inputs = tokenizer(L_title[start:min(start+nb_calcul, len(L_title))], padding=True, truncation=True, return_tensors="pt", max_length=512)
         # computing the embedding
         result = model(**inputs)
         # take the first token in the batch as the embedding
-        T_t = torch.cat((T_t, result.last_hidden_state[:, 0, :].clone().detach()), dim = 0)
+        T_t += result.last_hidden_state[:, 0, :].detach()
     
     result = None
     inputs = None
