@@ -1,9 +1,8 @@
 # -*- coding: utf-8 -*-
 
 #Second Step
-
 import sys
-sys.path.append(".")
+
 import FirstStep
 
 import nltk
@@ -573,28 +572,44 @@ def Ci_read(codeAddress):
             Ci.append(line.strip('\n'))
     return Ci
 
+def HHC(AGsAddress,resultAddress):
+    """
+    Require: address of ambigous groups
+    Require: address of results
+    Ensure: execute HHC in those ambigous groups
+    """
+
+    #make a new folder if resultAddress doesn't exist
+    FirstStep.mkdir(resultAddress)
+
+    for root,dirs,files in os.walk(AGsAddress):
+        for name in files:
+            (Ci,folderAddress) = FirstStep.firstStep(os.path.join(root, name), os.path.join(resultAddress, name.rstrip(".json")))
+            Co = secondStep(Ci, folderAddress)
+
+
 #test
 if __name__ == '__main__':
-    import time
+    # import time
     
-    start = time.time()
-    
-    # (Ci,folderAddress) = FirstStep.firstStep("../data/ada.json", "../data/ada")
+    # start = time.time()
+    # List Ci of clusters of authorship records
+    # (Ci,folderAddress) = FirstStep.firstStep("./dob.json", "./dob")
     # print(Ci)
     
     # end = time.time()
     # print("runtime of first step is",end - start,"s")
     
-    # Co = secondStepFre(Ci, folderAddress)
+    # # Co = secondStepFre(Ci, folderAddress)
+    # # print(Co)
+    
+    # # Ci = Ci_read(".")
+    # # folderAddress = folderAddress_read(".")
+    
+    # Co = secondStep(Ci, folderAddress)
     # print(Co)
     
-    Ci = Ci_read(".")
-    folderAddress = folderAddress_read(".")
-    
-    Co = secondStep(Ci, folderAddress)
-    print(Co)
-    
-    end = time.time()
-    print("runtime of second step is",end - start,"s")
-    
-    
+    # end = time.time()
+    # print("runtime of second step is",end - start,"s")
+
+    HHC("./AGs_test","./AGs_test_result")
