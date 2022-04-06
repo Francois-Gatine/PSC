@@ -14,22 +14,24 @@ map_duplicId={}
 info_dir="/home/echarghaoui/github_Aymen/PSC/code/fusion/Info/"
 
 num_clusters = 0
+num_AG = 0
 for AG in os.listdir(info_dir) :
 
-        file = open(info_dir+AG,'r')
-        # example AG = 'dad.json'
-        AG_info = json.load(file)
-        for cluster in AG_info :
-            for duplicId in cluster["duplicIds"] :
-                if not(duplicId in map_duplicId.keys()) :
-                    map_duplicId[duplicId]=[]
-                map_duplicId[duplicId].append(AG[:3]+str(cluster["id"]))
+    file = open(info_dir+AG,'r')
+    # example AG = 'dad.json'
+    AG_info = json.load(file)
+    for cluster in AG_info :
+        for duplicId in cluster["duplicIds"] :
+            if not(duplicId in map_duplicId.keys()) :
+                map_duplicId[duplicId]=[]
+            map_duplicId[duplicId].append(AG[:3]+str(cluster["id"]))
 
-            str2int[AG[:3]+str(cluster["id"])]=num_clusters
-            int2str[num_clusters]=AG[:3]+str(cluster["id"])
-            num_clusters +=1
-        file.close()
-
+        str2int[AG[:3]+str(cluster["id"])]=num_clusters
+        int2str[num_clusters]=AG[:3]+str(cluster["id"])
+        num_clusters +=1
+    file.close()
+    num_AG+=1
+    print(num_AG+" AGs done")
 
 
 
@@ -42,11 +44,13 @@ for duplicId in map_duplicId:
         for j in range(i):
             u.unite(str2int[L[i]],str2int[L[j]])
 
-
+print("union find data structure is built")
 # generate files
 
+num_equiv=0
 for equiv_set in u.groups() :
     if len(equiv_set) >1 :
+        num_equiv+=1
         # different clusters having the same duplicId
 
         # getting information
@@ -63,7 +67,7 @@ for equiv_set in u.groups() :
             file.close()
         idRefs = list(dict.fromkeys(idRefs))
         names = list(dict.fromkeys(names))
-
+        print("getting info from "+num_equiv+" AGs done")
         # building the merged info
 
         visitedAGs = {}
@@ -94,6 +98,7 @@ for equiv_set in u.groups() :
             file.seek(0)
             json.dump(copyOfAg,file,ensure_ascii=False, indent=4)
             file.truncate()
+        print("writing to "+num_equiv+"AGs done")
 
 # cleaning empty json objects
 
@@ -111,6 +116,7 @@ for AG in os.listdir(info_dir) :
     file.seek(0)
     json.dump(copyOfAg,file,ensure_ascii=False, indent=4)
     file.truncate()
+print("cleaning step done")
 
 
 
