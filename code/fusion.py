@@ -11,7 +11,7 @@ str2int = {}
 int2str = {}
 
 map_duplicId={}
-info_dir="/home/echarghaoui/github_Aymen/PSC/code/fusion/Info/"
+info_dir="C:/Users/franc/Desktop/Test IdRef_2/info/"
 
 num_clusters = 0
 num_AG = 0
@@ -31,7 +31,7 @@ for AG in os.listdir(info_dir) :
         num_clusters +=1
     file.close()
     num_AG+=1
-    print(num_AG+" AGs done")
+    print(str(num_AG) + "AGs done")
 
 
 
@@ -67,7 +67,7 @@ for equiv_set in u.groups() :
             file.close()
         idRefs = list(dict.fromkeys(idRefs))
         names = list(dict.fromkeys(names))
-        print("getting info from "+num_equiv+" AGs done")
+        print("getting info from "+ str(num_equiv) +" AGs done")
         # building the merged info
 
         visitedAGs = {}
@@ -82,8 +82,10 @@ for equiv_set in u.groups() :
                 if(cluster_id != int(int2str[equiv_set[i]][-1])):
                     dict={}
                     dict["id"] = AG[cluster_id]["id"]
-                    dict["name"] = AG[cluster_id]["name"]
-                    dict["idRefs"] = list(dict.fromkeys(AG[cluster_id]["idRefs"]))
+                    if("name" in AG[cluster_id]):
+                        dict["name"] = AG[cluster_id]["name"]
+                    if("idRefs" in AG[cluster_id]):
+                        dict["idRefs"] = list(dict.fromkeys(AG[cluster_id]["idRefs"]))
                     copyOfAg.append(dict)
                 elif(not((int2str[equiv_set[i]][:3]) in visitedAGs.keys())):
                     dict={}
@@ -94,11 +96,13 @@ for equiv_set in u.groups() :
                     copyOfAg.append(dict)
                     visitedAGs[int2str[equiv_set[i]][:3]]=0
                 else :
-                    copyOfAg.append({}) ## to ensure that AG[cluster_id] works later!
+                    dict={}
+                    dict["id"] = AG[cluster_id]["id"]
+                    copyOfAg.append(dict) ## to ensure that AG[cluster_id] works later!
             file.seek(0)
             json.dump(copyOfAg,file,ensure_ascii=False, indent=4)
             file.truncate()
-        print("writing to "+num_equiv+"AGs done")
+        print("writing to " + str(num_equiv) +"AGs done")
 
 # cleaning empty json objects
 
@@ -108,7 +112,7 @@ for AG in os.listdir(info_dir) :
     AG_info = json.load(file)
     copyOfAg = []
     for cluster in AG_info :
-        if(bool(cluster)) :
+        if(len(cluster.keys())>1) :
             dict={}
             dict["name"]=cluster["name"]
             dict["idRefs"]=cluster["idRefs"]
