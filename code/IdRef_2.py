@@ -67,8 +67,21 @@ class Database():
 
     def updateMerge(self, AG) :
     # to update the column 'mergeidref' if corresponding records have the same idref of another record
-        query = "UPDATE " + AG + '''SET mergeidref = True\
-            WHERE '''
+        query = "CREATE OR REPLACE FUNCTION nb_duplicated(TEXT[]) RETURNS integer AS $$\
+                    SELECT\
+                        SUM(CASE\
+                            WHEN idrefs <> ARRAY['''empty'''] AND $1 @> ARRAY[idrefs] THEN 1\
+                            ELSE 0\
+                        END)\
+                    FROM " + AG +", unnest(idrefs)\
+                $$ LANGUAGE sql;"
+        self.cursor.execute(query)      # we create a function in postgres who count the occurrences of idrefs
+        self.conn.commit()
+        query = "UPDATE " + AG + ''' SET mergeidref = True\
+            WHERE nb_duplicated(idrefs) >= 2;'''
+        self.cursor.execute(query)
+        query = "DROP FUNCTION nb_duplicated;"
+        self.cursor.execute(query)
 
     def query(self, query) :
         self.cursor.execute(query)
@@ -78,7 +91,7 @@ class Database():
         self.conn.close()
 
 db = Database()
-info_input = 'C:/Users/liu/Documents/GitHub/test/data/csv'
+info_input = 'C:/Users/liu/Documents/GitHub/test/data/dbInfo_csv'      # the directory 
 for AG in os.listdir(info_input):
     AG = AG.split('.')[0]
     db.create(AG)
@@ -87,4 +100,5 @@ for AG in os.listdir(info_input):
     db.updateNew(AG)
     db.updateMiss(AG)
     db.updateSplit(AG)
+    db.updateMerge(AG)
 db.close()

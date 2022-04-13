@@ -23,7 +23,7 @@ def jsonToCSV(address_json, address_csv):
     fileOutput.close()
 
 info_input = 'C:/Users/liu/Documents/GitHub/test/data/dbInfo'
-info_output ='C:/Users/liu/Documents/GitHub/test/data/csv'
+info_output ='C:/Users/liu/Documents/GitHub/test/data/dbInfo_csv'
 for AG in os.listdir(info_input):
     AG = AG.split('.')[0]
     jsonToCSV(info_input + '/' + AG + '.json', info_output +'/' + AG + '.csv')
