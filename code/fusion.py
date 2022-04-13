@@ -11,23 +11,24 @@ str2int = {}
 int2str = {}
 
 map_duplicId={}
-info_dir="/home/echarghaoui/github_Aymen/PSC/code/fusion/info/"
+info_dir="C:/Users/franc/Desktop/Test IdRef_2/info/"
 
 num_clusters = 0
 num_AG = 0
 for AG in os.listdir(info_dir) :
 
-    file = open(info_dir+AG,'r',encoding='utf-8')
+    file = open(info_dir+AG,'r')
     # example AG = 'dad.json'
     AG_info = json.load(file)
     for cluster in AG_info :
         for duplicId in cluster["duplicIds"] :
-            if not(duplicId in map_duplicId.keys()) :
-                map_duplicId[duplicId]=[]
-            map_duplicId[duplicId].append(AG[:3]+str(cluster["id"]))
+            if(int(duplicId)>0):
+                if (not(duplicId in map_duplicId.keys())) :
+                    map_duplicId[duplicId]=[]
+                map_duplicId[duplicId].append(AG[:3]+'*'+str(cluster["id"]))
 
-        str2int[AG[:3]+str(cluster["id"])]=num_clusters
-        int2str[num_clusters]=AG[:3]+str(cluster["id"])
+        str2int[AG[:3]+'*'+str(cluster["id"])]=num_clusters
+        int2str[num_clusters]=AG[:3]+'*'+str(cluster["id"])
         num_clusters +=1
     file.close()
     num_AG+=1
@@ -59,7 +60,7 @@ for equiv_set in u.groups() :
 
         for i in range(len(equiv_set)) :
             dir = info_dir+int2str[equiv_set[i]][:3]+".json"
-            file = open(dir,'r',encoding='utf-8')
+            file = open(dir,'r')
             AG = json.load(file)
             cluster = AG[int(int2str[equiv_set[i]][-1])]
             if("idRefs" in cluster):
@@ -67,37 +68,40 @@ for equiv_set in u.groups() :
             if("name" in cluster):
                 names.append(cluster["name"])
             file.close()
+
         idRefs = list(dict.fromkeys(idRefs))
         names = list(dict.fromkeys(names))
+
         print("getting info from "+ str(num_equiv) +" AGs done")
         # building the merged info
 
         visitedAGs = {}
 
         for i in range(len(equiv_set)):
-            dir = info_dir+int2str[equiv_set[i]][:3]+".json"
-            file = open(dir,'r+',encoding='utf-8')
+            dir = info_dir+int2str[equiv_set[i]].split('*')[0]+".json"
+            file = open(dir,'r+')
             AG = json.load(file)
             copyOfAg = []
             id_count = 0
             for cluster_id in range(len(AG)) :
-                if(cluster_id != int(int2str[equiv_set[i]][-1])):
+                if(cluster_id != int(int2str[equiv_set[i]].split('*')[-1])):
                     dict={}
-                    dict["id"] = AG[cluster_id]["id"]
+                    if("id" in AG[cluster_id]):
+                        dict["id"] = AG[cluster_id]["id"]
                     if("name" in AG[cluster_id]):
                         dict["name"] = AG[cluster_id]["name"]
                     if("idRefs" in AG[cluster_id]):
                         dict["idRefs"] = list(dict.fromkeys(AG[cluster_id]["idRefs"]))
                     copyOfAg.append(dict)
-                elif(not((int2str[equiv_set[i]][:3]) in visitedAGs.keys())):
+                elif(not((int2str[equiv_set[i]].split('*')[0]) in visitedAGs.keys())):
                     dict={}
                     if("id" in AG[cluster_id]):
                         dict["id"] = AG[cluster_id]["id"]
-
-                    dict["name"] = [names[j] for j in range(len(names)) if int2str[j][:-1]==int2str[equiv_set[i]][:3] ]
+                    dict["name"] = [names[j] for j in range(len(names))]
+                    # if int2str[j].split('*')[0]==int2str[equiv_set[i]].split('*')[0]
                     dict["idRefs"] = list(dict.fromkeys(idRefs))
                     copyOfAg.append(dict)
-                    visitedAGs[int2str[equiv_set[i]][:3]]=0
+                    visitedAGs[int2str[equiv_set[i]].split('*')[0]]=0
                 else :
 
                     copyOfAg.append({}) ## to ensure that AG[cluster_id] works later!
@@ -109,7 +113,7 @@ for equiv_set in u.groups() :
 # cleaning empty json objects
 
 for AG in os.listdir(info_dir) :
-    file = open(info_dir+AG,'r+',encoding='utf-8')
+    file = open(info_dir+AG,'r+')
     # example AG = 'dad.json'
     AG_info = json.load(file)
     copyOfAg = []
