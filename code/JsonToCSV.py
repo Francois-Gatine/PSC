@@ -7,7 +7,7 @@ def jsonToCSV(address_json, address_csv):
     output: convert the content to csv file
     """
     fileInput = open(address_json,'r',encoding='utf8')    #read the json file
-    fileOutput = open(address_csv,'w', newline='')  #load csv file
+    fileOutput = open(address_csv,'w', newline='', encoding='utf-8')  #load csv file
     writer = csv.writer(fileOutput,delimiter='|')
 
     data = json.load(fileInput)  #load json content
