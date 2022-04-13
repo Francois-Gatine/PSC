@@ -70,17 +70,18 @@ class Database():
         query = "CREATE OR REPLACE FUNCTION nb_duplicated(TEXT[]) RETURNS integer AS $$\
                     SELECT\
                         SUM(CASE\
-                            WHEN idrefs <> ARRAY['''empty'''] AND $1 @> ARRAY[idrefs] THEN 1\
+                            WHEN separated_idref <> '''empty''' AND $1 @> ARRAY[separated_idref] THEN 1\
                             ELSE 0\
                         END)\
-                    FROM " + AG +", unnest(idrefs)\
+                    FROM " + AG +", unnest(idrefs) as separated_idref\
                 $$ LANGUAGE sql;"
         self.cursor.execute(query)      # we create a function in postgres who count the occurrences of idrefs
         self.conn.commit()
-        query = "UPDATE " + AG + ''' SET mergeidref = True\
-            WHERE nb_duplicated(idrefs) >= 2;'''
-        self.cursor.execute(query)
-        query = "DROP FUNCTION nb_duplicated;"
+        query = "UPDATE " + AG + " SET mergeidref = True\
+            WHERE CASE\
+                WHEN missidref THEN nb_duplicated(idrefs) >= array_length(idrefs, 1)\
+                ELSE nb_duplicated(idrefs) > array_length(idrefs, 1)\
+                END;"
         self.cursor.execute(query)
 
     def query(self, query) :
@@ -91,7 +92,7 @@ class Database():
         self.conn.close()
 
 db = Database()
-info_input = 'C:/Users/liu/Documents/GitHub/test/data/dbInfo_csv'      # the directory 
+info_input = 'C:/Users/liu/Documents/GitHub/test/data/csv'      # the directory 
 for AG in os.listdir(info_input):
     AG = AG.split('.')[0]
     db.create(AG)
