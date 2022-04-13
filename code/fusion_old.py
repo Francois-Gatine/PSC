@@ -11,19 +11,19 @@ str2int = {}
 int2str = {}
 
 map_duplicId={}
-info_dir="/home/echarghaoui/github_Aymen/PSC/code/fusion/info/"
+info_dir="C:/Users/franc/Desktop/Test IdRef_2/info/"
 
 num_clusters = 0
 num_AG = 0
 for AG in os.listdir(info_dir) :
 
-    file = open(info_dir+AG,'r',encoding='utf-8')
+    file = open(info_dir+AG,'r')
     # example AG = 'dad.json'
     AG_info = json.load(file)
     for cluster in AG_info :
         for duplicId in cluster["duplicIds"] :
             if(duplicId!="0"):
-                if (not(duplicId in map_duplicId.keys())) :
+                if  not(duplicId in map_duplicId.keys()) :
                     map_duplicId[duplicId]=[]
                 map_duplicId[duplicId].append(AG[:3]+str(cluster["id"]))
 
@@ -33,7 +33,6 @@ for AG in os.listdir(info_dir) :
     file.close()
     num_AG+=1
     print(str(num_AG) + "AGs done")
-
 
 
 # build the unionfind data structure
@@ -48,9 +47,21 @@ for duplicId in map_duplicId:
 print("union find data structure is built")
 # generate files
 
+count =0
+for eq in u.groups():
+    if(len(eq)>1):
+        count += 1
+    '''
+        s=""
+        for x in eq:
+            s += (int2str[x] + " , ")
+        print(s)
+    '''
+print(count)
 num_equiv=0
 for equiv_set in u.groups() :
     if len(equiv_set) >1 :
+
         num_equiv+=1
         # different clusters having the same duplicId
 
@@ -60,24 +71,26 @@ for equiv_set in u.groups() :
 
         for i in range(len(equiv_set)) :
             dir = info_dir+int2str[equiv_set[i]][:3]+".json"
-            file = open(dir,'r',encoding='utf-8')
+            file = open(dir,'r')
             AG = json.load(file)
             cluster = AG[int(int2str[equiv_set[i]][-1])]
             if("idRefs" in cluster):
                 idRefs.extend(cluster["idRefs"])
-            if("name" in cluster):
+            if("names" in cluster):
                 names.append(cluster["name"])
             file.close()
         idRefs = list(dict.fromkeys(idRefs))
         names = list(dict.fromkeys(names))
+
         print("getting info from "+ str(num_equiv) +" AGs done")
+
         # building the merged info
 
         visitedAGs = {}
 
         for i in range(len(equiv_set)):
             dir = info_dir+int2str[equiv_set[i]][:3]+".json"
-            file = open(dir,'r+',encoding='utf-8')
+            file = open(dir,'r+')
             AG = json.load(file)
             copyOfAg = []
             id_count = 0
@@ -92,16 +105,16 @@ for equiv_set in u.groups() :
                     copyOfAg.append(dict)
                 elif(not((int2str[equiv_set[i]][:3]) in visitedAGs.keys())):
                     dict={}
-                    if("id" in AG[cluster_id]):
-                        dict["id"] = AG[cluster_id]["id"]
+                    dict["id"] = AG[cluster_id]["id"]
 
                     dict["name"] = [names[j] for j in range(len(names)) if int2str[j][:-1]==int2str[equiv_set[i]][:3] ]
                     dict["idRefs"] = list(dict.fromkeys(idRefs))
                     copyOfAg.append(dict)
                     visitedAGs[int2str[equiv_set[i]][:3]]=0
                 else :
-
-                    copyOfAg.append({}) ## to ensure that AG[cluster_id] works later!
+                    dict={}
+                    dict["id"] = AG[cluster_id]["id"]
+                    copyOfAg.append(dict) ## to ensure that AG[cluster_id] works later!
             file.seek(0)
             json.dump(copyOfAg,file,ensure_ascii=False, indent=4)
             file.truncate()
@@ -110,7 +123,7 @@ for equiv_set in u.groups() :
 # cleaning empty json objects
 
 for AG in os.listdir(info_dir) :
-    file = open(info_dir+AG,'r+',encoding='utf-8')
+    file = open(info_dir+AG,'r+')
     # example AG = 'dad.json'
     AG_info = json.load(file)
     copyOfAg = []
@@ -124,6 +137,4 @@ for AG in os.listdir(info_dir) :
     json.dump(copyOfAg,file,ensure_ascii=False, indent=4)
     file.truncate()
 print("cleaning step done")
-
-
 
