@@ -553,6 +553,7 @@ def HHC(AGsAddress,resultAddress):
     #make a new folder if resultAddress doesn't exist
     FirstStep.mkdir(resultAddress)
 
+<<<<<<< HEAD
     #the following two lines should be done once !
     #load model and tokenizer
     tokenizer = AutoTokenizer.from_pretrained('allenai/specter')
@@ -572,19 +573,35 @@ def HHC(AGsAddress,resultAddress):
             print("Second Step of HHC for", name, "execute successfully")
             print("runtime of second step is",end - start,"s")
             print("total runtime is",end - start_HHC,"s")
+=======
+    for root,dirs,files in os.walk(AGsAddress):
+        for name in files:
+            (Ci,folderAddress) = FirstStep.firstStep(os.path.join(root, name), os.path.join(resultAddress, name.rstrip(".json")))
+            Co = secondStep(Ci, folderAddress)
+>>>>>>> 2f9652273bc43802ea61bd473b4b94dd9aa9a9d8
 
 
 #test
 if __name__ == '__main__':
+<<<<<<< HEAD
     
     start = time.time()
     # # List Ci of clusters of authorship records
     # (Ci,folderAddress) = FirstStep.firstStep("../AGs/dob.json", "../AGs_result/dob")
     # # print(Ci)
+=======
+    # import time
+    
+    # start = time.time()
+    # List Ci of clusters of authorship records
+    # (Ci,folderAddress) = FirstStep.firstStep("./dob.json", "./dob")
+    # print(Ci)
+>>>>>>> 2f9652273bc43802ea61bd473b4b94dd9aa9a9d8
     
     # end = time.time()
     # print("runtime of first step is",end - start,"s")
     
+<<<<<<< HEAD
     # folderAddress_save(folderAddress, ".")
     # Ci_save(Ci, ".")
     
@@ -602,3 +619,18 @@ if __name__ == '__main__':
     
     print("start")
     HHC("./AGs","./AGs_result")
+=======
+    # # Co = secondStepFre(Ci, folderAddress)
+    # # print(Co)
+    
+    # # Ci = Ci_read(".")
+    # # folderAddress = folderAddress_read(".")
+    
+    # Co = secondStep(Ci, folderAddress)
+    # print(Co)
+    
+    # end = time.time()
+    # print("runtime of second step is",end - start,"s")
+
+    HHC("./AGs_test","./AGs_test_result")
+>>>>>>> 2f9652273bc43802ea61bd473b4b94dd9aa9a9d8

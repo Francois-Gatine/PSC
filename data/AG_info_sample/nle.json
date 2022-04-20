@@ -1,0 +1,8558 @@
+[
+    {
+        "id": 0,
+        "name": "0authorshipRecordCluster.json",
+        "idRefs": [
+            "idref103682457",
+            ""
+        ],
+        "duplicIds": {
+            "9": [
+                "nle"
+            ],
+            "1714": [
+                "nle"
+            ],
+            "1715": [
+                "nle"
+            ],
+            "37934": [
+                "nle"
+            ],
+            "71772": [
+                "nle"
+            ],
+            "80944": [
+                "nle"
+            ],
+            "88324": [
+                "nsm",
+                "nle"
+            ],
+            "119906": [
+                "nsm",
+                "nle"
+            ],
+            "136203": [
+                "nsm",
+                "nle"
+            ],
+            "164230": [
+                "nle"
+            ],
+            "0": [
+                "nle"
+            ],
+            "214193": [
+                "nle"
+            ],
+            "229468": [
+                "nle"
+            ],
+            "232947": [
+                "nle"
+            ],
+            "252618": [
+                "nle"
+            ],
+            "300997": [
+                "nsm",
+                "nle"
+            ],
+            "320430": [
+                "nle"
+            ],
+            "341293": [
+                "nle"
+            ],
+            "342449": [
+                "nle"
+            ],
+            "346379": [
+                "nle"
+            ],
+            "351849": [
+                "nle"
+            ],
+            "354184": [
+                "nle"
+            ],
+            "361841": [
+                "nle"
+            ],
+            "378386": [
+                "nle"
+            ],
+            "392040": [
+                "nsm",
+                "nle"
+            ],
+            "458149": [
+                "nle"
+            ],
+            "474839": [
+                "nle"
+            ],
+            "507779": [
+                "nle"
+            ],
+            "511792": [
+                "nle"
+            ],
+            "613516": [
+                "nle"
+            ],
+            "958715": [
+                "nle"
+            ],
+            "24912": [
+                "nsm",
+                "nle"
+            ],
+            "39798": [
+                "nle"
+            ],
+            "65453": [
+                "nsm",
+                "nle"
+            ],
+            "81468": [
+                "nsm",
+                "nle"
+            ],
+            "93143": [
+                "nle"
+            ],
+            "103911": [
+                "nle"
+            ],
+            "112794": [
+                "nle"
+            ],
+            "119259": [
+                "nsm",
+                "nle"
+            ],
+            "146477": [
+                "nsm",
+                "nle"
+            ],
+            "151516": [
+                "nsm",
+                "nle"
+            ],
+            "154921": [
+                "nle"
+            ],
+            "188172": [
+                "nle"
+            ],
+            "249974": [
+                "nsm",
+                "nle"
+            ],
+            "277715": [
+                "nle"
+            ],
+            "278032": [
+                "nle"
+            ],
+            "285109": [
+                "nsm",
+                "nle"
+            ],
+            "292284": [
+                "nle"
+            ],
+            "309237": [
+                "nsm",
+                "nle"
+            ],
+            "319172": [
+                "nsm",
+                "nle"
+            ],
+            "324390": [
+                "nsm",
+                "nle"
+            ],
+            "345485": [
+                "nsm",
+                "nle"
+            ],
+            "363689": [
+                "nsm",
+                "nle"
+            ],
+            "393325": [
+                "nle"
+            ],
+            "403054": [
+                "nsm",
+                "nle"
+            ],
+            "433457": [
+                "nsm",
+                "nle"
+            ],
+            "436928": [
+                "nsm",
+                "nle"
+            ],
+            "493690": [
+                "nsm",
+                "nle"
+            ],
+            "503606": [
+                "nle"
+            ],
+            "28100": [
+                "nle"
+            ],
+            "48945": [
+                "nsm",
+                "nle"
+            ],
+            "49060": [
+                "nle"
+            ],
+            "49233": [
+                "nsm",
+                "nle"
+            ],
+            "56800": [
+                "nsm",
+                "nle"
+            ],
+            "179766": [
+                "nle"
+            ],
+            "1007850": [
+                "nle"
+            ],
+            "29910": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 1,
+        "name": "1001authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "1003authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "914549": [
+                "nle",
+                "nme"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "1004authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "1006authorshipRecordCluster.json",
+        "idRefs": [
+            "idref122609530",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "1007authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "919013": [
+                "nva",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "name": "1008authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 7,
+        "name": "1009authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 8,
+        "name": "1010authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 9,
+        "name": "1011authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 10,
+        "name": "1013authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 11,
+        "name": "1014authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 12,
+        "name": "1015authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 13,
+        "name": "1016authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 14,
+        "name": "1017authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 15,
+        "name": "1018authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 16,
+        "name": "1019authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 17,
+        "name": "1021authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 18,
+        "name": "1022authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 19,
+        "name": "1023authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 20,
+        "name": "1024authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 21,
+        "name": "1025authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 22,
+        "name": "1026authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 23,
+        "name": "1027authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 24,
+        "name": "1028authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 25,
+        "name": "1029authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 26,
+        "name": "102authorshipRecordCluster.json",
+        "idRefs": [
+            "idref192720090"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 27,
+        "name": "1030authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 28,
+        "name": "1031authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 29,
+        "name": "1032authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 30,
+        "name": "1033authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 31,
+        "name": "1034authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 32,
+        "name": "1035authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 33,
+        "name": "1036authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 34,
+        "name": "1037authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 35,
+        "name": "1038authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 36,
+        "name": "1039authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 37,
+        "name": "1040authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 38,
+        "name": "1041authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 39,
+        "name": "1042authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 40,
+        "name": "1044authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "1009715": [
+                "nle",
+                "npo"
+            ]
+        }
+    },
+    {
+        "id": 41,
+        "name": "105authorshipRecordCluster.json",
+        "idRefs": [
+            "idref066823692",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 42,
+        "name": "107authorshipRecordCluster.json",
+        "idRefs": [
+            "idref198713924"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 43,
+        "name": "109authorshipRecordCluster.json",
+        "idRefs": [
+            "idref203607554",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 44,
+        "name": "10authorshipRecordCluster.json",
+        "idRefs": [
+            "idref22450584X"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 45,
+        "name": "110authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "97721": [
+                "nle",
+                "nch"
+            ],
+            "448436": [
+                "nle",
+                "nch"
+            ],
+            "576775": [
+                "nle",
+                "nch"
+            ]
+        }
+    },
+    {
+        "id": 46,
+        "name": "112authorshipRecordCluster.json",
+        "idRefs": [
+            "idref119942143"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 47,
+        "name": "113authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref24172239X"
+        ],
+        "duplicIds": {
+            "103904": [
+                "nle"
+            ],
+            "274545": [
+                "nle"
+            ],
+            "879563": [
+                "nle"
+            ],
+            "881532": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 48,
+        "name": "114authorshipRecordCluster.json",
+        "idRefs": [
+            "idref084437642"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 49,
+        "name": "117authorshipRecordCluster.json",
+        "idRefs": [
+            "idref11987024X",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 50,
+        "name": "118authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 51,
+        "name": "11authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref175749027",
+            "idref081547862"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "866261": [
+                "nle"
+            ],
+            "935547": [
+                "nlé"
+            ]
+        }
+    },
+    {
+        "id": 52,
+        "name": "120authorshipRecordCluster.json",
+        "idRefs": [
+            "idref158971914",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 53,
+        "name": "122authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 54,
+        "name": "124authorshipRecordCluster.json",
+        "idRefs": [
+            "idref082771634",
+            ""
+        ],
+        "duplicIds": {
+            "122896": [
+                "nle"
+            ],
+            "559125": [
+                "nle"
+            ],
+            "679535": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 55,
+        "name": "126authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 56,
+        "name": "12authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 57,
+        "name": "131authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "129950": [
+                "npr",
+                "nle"
+            ],
+            "149487": [
+                "npr",
+                "nle"
+            ],
+            "221159": [
+                "npr",
+                "nle"
+            ],
+            "304637": [
+                "npr",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 58,
+        "name": "134authorshipRecordCluster.json",
+        "idRefs": [
+            "idref14349564X",
+            "",
+            "idref224242520"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 59,
+        "name": "137authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 60,
+        "name": "13authorshipRecordCluster.json",
+        "idRefs": [
+            "idref148445837",
+            "idref085026921",
+            "",
+            "idref107956691"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "199074": [
+                "nri",
+                "nle"
+            ],
+            "201332": [
+                "nri",
+                "nle"
+            ],
+            "234191": [
+                "nri",
+                "nle"
+            ],
+            "241973": [
+                "nri",
+                "nle"
+            ],
+            "245448": [
+                "nri",
+                "nle"
+            ],
+            "250908": [
+                "nri",
+                "nle"
+            ],
+            "263636": [
+                "nri",
+                "nle"
+            ],
+            "276448": [
+                "nri",
+                "nle"
+            ],
+            "277262": [
+                "nri",
+                "nle"
+            ],
+            "282047": [
+                "nri",
+                "nle"
+            ],
+            "289440": [
+                "nri",
+                "nle"
+            ],
+            "332149": [
+                "nri",
+                "nle"
+            ],
+            "335513": [
+                "nri",
+                "nle"
+            ],
+            "336259": [
+                "nri",
+                "nle"
+            ],
+            "341442": [
+                "nri",
+                "nle"
+            ],
+            "342089": [
+                "nri",
+                "nle"
+            ],
+            "343347": [
+                "nri",
+                "nle"
+            ],
+            "347409": [
+                "nri",
+                "nle"
+            ],
+            "350447": [
+                "nri",
+                "nle"
+            ],
+            "351936": [
+                "nri",
+                "nle"
+            ],
+            "352643": [
+                "nri",
+                "nle"
+            ],
+            "353252": [
+                "nri",
+                "nle"
+            ],
+            "358881": [
+                "nri",
+                "nle"
+            ],
+            "374986": [
+                "nri",
+                "nle"
+            ],
+            "396847": [
+                "nri",
+                "nle"
+            ],
+            "426701": [
+                "nri",
+                "nle"
+            ],
+            "428986": [
+                "nri",
+                "nle"
+            ],
+            "433941": [
+                "nri",
+                "nle"
+            ],
+            "439427": [
+                "nri",
+                "nle"
+            ],
+            "457071": [
+                "nri",
+                "nle"
+            ],
+            "458903": [
+                "nri",
+                "nle"
+            ],
+            "465545": [
+                "nri",
+                "nle"
+            ],
+            "469653": [
+                "nri",
+                "nle"
+            ],
+            "472004": [
+                "nri",
+                "nle"
+            ],
+            "501568": [
+                "nri",
+                "nle"
+            ],
+            "511470": [
+                "nri",
+                "nle"
+            ],
+            "549097": [
+                "nri",
+                "nle"
+            ],
+            "549124": [
+                "nri",
+                "nle"
+            ],
+            "867842": [
+                "nri",
+                "nle"
+            ],
+            "896566": [
+                "nri",
+                "nle"
+            ],
+            "34077": [
+                "nri",
+                "nle"
+            ],
+            "39933": [
+                "nri",
+                "nle"
+            ],
+            "62639": [
+                "nri",
+                "nle"
+            ],
+            "63555": [
+                "nri",
+                "nle"
+            ],
+            "66999": [
+                "nri",
+                "nle"
+            ],
+            "105503": [
+                "nri",
+                "nle"
+            ],
+            "116066": [
+                "nri",
+                "nle"
+            ],
+            "187830": [
+                "nri",
+                "nle"
+            ],
+            "193103": [
+                "nri",
+                "nle"
+            ],
+            "250485": [
+                "nri",
+                "nle"
+            ],
+            "266726": [
+                "nri",
+                "nle"
+            ],
+            "325420": [
+                "nri",
+                "nle"
+            ],
+            "864788": [
+                "nri",
+                "nle"
+            ],
+            "866135": [
+                "nri",
+                "nle"
+            ],
+            "868181": [
+                "nri",
+                "nle"
+            ],
+            "871420": [
+                "nri",
+                "nle"
+            ],
+            "16710": [
+                "nri",
+                "nle"
+            ],
+            "19165": [
+                "nri",
+                "nle"
+            ],
+            "19166": [
+                "nri",
+                "nle"
+            ],
+            "67302": [
+                "nri",
+                "nle"
+            ],
+            "77415": [
+                "nri",
+                "nle"
+            ],
+            "86110": [
+                "nri",
+                "nle"
+            ],
+            "87268": [
+                "nri",
+                "nle"
+            ],
+            "90278": [
+                "nri",
+                "nle"
+            ],
+            "90279": [
+                "nri",
+                "nle"
+            ],
+            "98254": [
+                "nri",
+                "nle"
+            ],
+            "100806": [
+                "nri",
+                "nle"
+            ],
+            "101019": [
+                "nri",
+                "nle"
+            ],
+            "112418": [
+                "nri",
+                "nle"
+            ],
+            "127293": [
+                "nri",
+                "nle"
+            ],
+            "135001": [
+                "nri",
+                "nle"
+            ],
+            "157615": [
+                "nri",
+                "nle"
+            ],
+            "170956": [
+                "nri",
+                "nle"
+            ],
+            "187662": [
+                "nri",
+                "nle"
+            ],
+            "194775": [
+                "nri",
+                "nle"
+            ],
+            "195703": [
+                "nri",
+                "nle"
+            ],
+            "27045": [
+                "nri",
+                "nle"
+            ],
+            "59925": [
+                "nri",
+                "nle"
+            ],
+            "71129": [
+                "nri",
+                "nle"
+            ],
+            "84299": [
+                "nri",
+                "nle"
+            ],
+            "128903": [
+                "nri",
+                "nle"
+            ],
+            "129757": [
+                "nri",
+                "nle"
+            ],
+            "195499": [
+                "nri",
+                "nle"
+            ],
+            "343551": [
+                "nri",
+                "nle"
+            ],
+            "420031": [
+                "nri",
+                "nle"
+            ],
+            "341382": [
+                "nri",
+                "nle"
+            ],
+            "867289": [
+                "nri",
+                "nle"
+            ],
+            "867381": [
+                "nri",
+                "nle"
+            ],
+            "867401": [
+                "nri",
+                "nle"
+            ],
+            "867449": [
+                "nri",
+                "nle"
+            ],
+            "867974": [
+                "nri",
+                "nle"
+            ],
+            "867983": [
+                "nri",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 61,
+        "name": "140authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "272885": [
+                "npa",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 62,
+        "name": "141authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "150255": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 63,
+        "name": "142authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 64,
+        "name": "144authorshipRecordCluster.json",
+        "idRefs": [
+            "idref156979195",
+            ""
+        ],
+        "duplicIds": {
+            "152785": [
+                "nle",
+                "nfo"
+            ],
+            "185358": [
+                "nle",
+                "nfo"
+            ],
+            "304990": [
+                "nle",
+                "nfo"
+            ],
+            "306474": [
+                "nle",
+                "nfo"
+            ],
+            "375048": [
+                "nle",
+                "nfo"
+            ],
+            "421910": [
+                "nle",
+                "nfo"
+            ],
+            "450274": [
+                "nle",
+                "nfo"
+            ],
+            "811938": [
+                "nle",
+                "nfo"
+            ],
+            "813431": [
+                "nle",
+                "nfo"
+            ],
+            "813436": [
+                "nle",
+                "nfo"
+            ],
+            "814082": [
+                "nle",
+                "nfo"
+            ],
+            "814089": [
+                "nle",
+                "nfo"
+            ],
+            "814215": [
+                "nle",
+                "nfo"
+            ],
+            "814304": [
+                "nle",
+                "nfo"
+            ],
+            "814349": [
+                "nle",
+                "nfo"
+            ],
+            "814355": [
+                "nle",
+                "nfo"
+            ],
+            "814469": [
+                "nle",
+                "nfo"
+            ],
+            "816023": [
+                "nle",
+                "nfo"
+            ],
+            "816095": [
+                "nle",
+                "nfo"
+            ],
+            "816538": [
+                "nle",
+                "nfo"
+            ],
+            "816676": [
+                "nle",
+                "nfo"
+            ],
+            "816720": [
+                "nle",
+                "nfo"
+            ],
+            "816808": [
+                "nle",
+                "nfo"
+            ],
+            "824649": [
+                "nle",
+                "nfo"
+            ],
+            "825012": [
+                "nle",
+                "nfo"
+            ],
+            "825188": [
+                "nle",
+                "nfo"
+            ],
+            "865074": [
+                "nle",
+                "nfo"
+            ],
+            "914058": [
+                "nle",
+                "nfo"
+            ],
+            "915446": [
+                "nle",
+                "nfo"
+            ],
+            "816549": [
+                "nle",
+                "nfo"
+            ],
+            "933431": [
+                "nle",
+                "nfo"
+            ]
+        }
+    },
+    {
+        "id": 65,
+        "name": "145authorshipRecordCluster.json",
+        "idRefs": [
+            "idref188470816",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 66,
+        "name": "146authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 67,
+        "name": "147authorshipRecordCluster.json",
+        "idRefs": [
+            "idref219561435",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 68,
+        "name": "148authorshipRecordCluster.json",
+        "idRefs": [
+            "idref197680976"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 69,
+        "name": "14authorshipRecordCluster.json",
+        "idRefs": [
+            "idref164520449"
+        ],
+        "duplicIds": {
+            "7544": [
+                "nle"
+            ],
+            "676166": [
+                "nle"
+            ],
+            "378475": [
+                "nle"
+            ],
+            "779743": [
+                "nle"
+            ],
+            "829347": [
+                "nle"
+            ],
+            "140821": [
+                "nle"
+            ],
+            "152250": [
+                "nle"
+            ],
+            "303727": [
+                "nle"
+            ],
+            "782867": [
+                "nle"
+            ],
+            "895176": [
+                "nle"
+            ],
+            "373995": [
+                "nle"
+            ],
+            "949995": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 70,
+        "name": "150authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 71,
+        "name": "151authorshipRecordCluster.json",
+        "idRefs": [
+            "idref135351472"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 72,
+        "name": "153authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 73,
+        "name": "154authorshipRecordCluster.json",
+        "idRefs": [
+            "idref11937840X",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 74,
+        "name": "155authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 75,
+        "name": "156authorshipRecordCluster.json",
+        "idRefs": [
+            "idref069455899",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 76,
+        "name": "158authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "171012": [
+                "nle",
+                "nla"
+            ],
+            "284876": [
+                "nle",
+                "nla"
+            ],
+            "324326": [
+                "nle",
+                "nla"
+            ],
+            "392073": [
+                "nle",
+                "nla"
+            ]
+        }
+    },
+    {
+        "id": 77,
+        "name": "159authorshipRecordCluster.json",
+        "idRefs": [
+            "idref170505073",
+            ""
+        ],
+        "duplicIds": {
+            "175786": [
+                "nle"
+            ],
+            "306205": [
+                "nle"
+            ],
+            "694987": [
+                "nle"
+            ],
+            "695021": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 78,
+        "name": "15authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref130683795"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 79,
+        "name": "160authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 80,
+        "name": "161authorshipRecordCluster.json",
+        "idRefs": [
+            "idref168884089"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 81,
+        "name": "162authorshipRecordCluster.json",
+        "idRefs": [
+            "idref157166791",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 82,
+        "name": "165authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 83,
+        "name": "166authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "181917": [
+                "nle",
+                "nho"
+            ],
+            "310741": [
+                "nle",
+                "nho"
+            ],
+            "324815": [
+                "nle",
+                "nho"
+            ],
+            "389695": [
+                "nle",
+                "nho"
+            ],
+            "181920": [
+                "nle",
+                "nho"
+            ],
+            "304352": [
+                "nle",
+                "nho"
+            ],
+            "310744": [
+                "nle",
+                "nho"
+            ],
+            "324816": [
+                "nle",
+                "nho"
+            ]
+        }
+    },
+    {
+        "id": 84,
+        "name": "167authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 85,
+        "name": "16authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 86,
+        "name": "170authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 87,
+        "name": "171authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 88,
+        "name": "173authorshipRecordCluster.json",
+        "idRefs": [
+            "idref11611438X",
+            "",
+            "idref146974549",
+            "idref069031215"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 89,
+        "name": "175authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "199919": [
+                "nle"
+            ],
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 90,
+        "name": "176authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 91,
+        "name": "178authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref143150812"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "496632": [
+                "npe",
+                "nlé"
+            ]
+        }
+    },
+    {
+        "id": 92,
+        "name": "17authorshipRecordCluster.json",
+        "idRefs": [
+            "idref055793002"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 93,
+        "name": "180authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 94,
+        "name": "183authorshipRecordCluster.json",
+        "idRefs": [
+            "idref137154720",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 95,
+        "name": "186authorshipRecordCluster.json",
+        "idRefs": [
+            "idref183969588"
+        ],
+        "duplicIds": {
+            "221485": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 96,
+        "name": "188authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 97,
+        "name": "189authorshipRecordCluster.json",
+        "idRefs": [
+            "idref18176914X",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 98,
+        "name": "191authorshipRecordCluster.json",
+        "idRefs": [
+            "idref075154625"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 99,
+        "name": "193authorshipRecordCluster.json",
+        "idRefs": [
+            "idref158971914",
+            ""
+        ],
+        "duplicIds": {
+            "230417": [
+                "nle"
+            ],
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 100,
+        "name": "194authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 101,
+        "name": "195authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 102,
+        "name": "197authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref193551039"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 103,
+        "name": "199authorshipRecordCluster.json",
+        "idRefs": [
+            "idref202696405",
+            ""
+        ],
+        "duplicIds": {
+            "237384": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 104,
+        "name": "19authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 105,
+        "name": "1authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref158971914",
+            "idref113501137"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "51526": [
+                "nlé"
+            ]
+        }
+    },
+    {
+        "id": 106,
+        "name": "200authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 107,
+        "name": "201authorshipRecordCluster.json",
+        "idRefs": [
+            "idref080008240",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "406436": [
+                "nlé"
+            ],
+            "579103": [
+                "nlé"
+            ]
+        }
+    },
+    {
+        "id": 108,
+        "name": "202authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 109,
+        "name": "203authorshipRecordCluster.json",
+        "idRefs": [
+            "idref125984561"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 110,
+        "name": "205authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref234431377"
+        ],
+        "duplicIds": {
+            "247972": [
+                "nle"
+            ],
+            "597643": [
+                "nle"
+            ],
+            "597644": [
+                "nle"
+            ],
+            "673136": [
+                "nle"
+            ],
+            "673144": [
+                "nle"
+            ],
+            "673154": [
+                "nle"
+            ],
+            "673158": [
+                "nle"
+            ],
+            "902246": [
+                "nle"
+            ],
+            "658783": [
+                "nle"
+            ],
+            "724839": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 111,
+        "name": "206authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 112,
+        "name": "209authorshipRecordCluster.json",
+        "idRefs": [
+            "idref136910645"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 113,
+        "name": "213authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 114,
+        "name": "215authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 115,
+        "name": "216authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 116,
+        "name": "217authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 117,
+        "name": "21authorshipRecordCluster.json",
+        "idRefs": [
+            "idref059811862",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 118,
+        "name": "222authorshipRecordCluster.json",
+        "idRefs": [
+            "idref196947715",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 119,
+        "name": "224authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 120,
+        "name": "226authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "291021": [
+                "nca",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 121,
+        "name": "228authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 122,
+        "name": "229authorshipRecordCluster.json",
+        "idRefs": [
+            "idref085967432"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 123,
+        "name": "22authorshipRecordCluster.json",
+        "idRefs": [
+            "idref159070112"
+        ],
+        "duplicIds": {
+            "13150": [
+                "nle",
+                "nbo"
+            ],
+            "75265": [
+                "nle",
+                "nbo"
+            ],
+            "91153": [
+                "nle",
+                "nbo"
+            ],
+            "101027": [
+                "nle",
+                "nbo"
+            ],
+            "330706": [
+                "nle",
+                "nbo"
+            ],
+            "379714": [
+                "nle",
+                "nbo"
+            ],
+            "405207": [
+                "nle",
+                "nbo"
+            ],
+            "471560": [
+                "nle",
+                "nbo"
+            ],
+            "507142": [
+                "nle",
+                "nbo"
+            ],
+            "655140": [
+                "nle",
+                "nbo"
+            ],
+            "691083": [
+                "nle",
+                "nbo"
+            ],
+            "704557": [
+                "nle",
+                "nbo"
+            ],
+            "705107": [
+                "nle",
+                "nbo"
+            ],
+            "739454": [
+                "nle",
+                "nbo"
+            ],
+            "963518": [
+                "nle",
+                "nbo"
+            ],
+            "963538": [
+                "nle",
+                "nbo"
+            ],
+            "963540": [
+                "nle",
+                "nbo"
+            ],
+            "966865": [
+                "nle",
+                "nbo"
+            ],
+            "966869": [
+                "nle",
+                "nbo"
+            ],
+            "966872": [
+                "nle",
+                "nbo"
+            ],
+            "966876": [
+                "nle",
+                "nbo"
+            ],
+            "966878": [
+                "nle",
+                "nbo"
+            ],
+            "62276": [
+                "nle",
+                "nbo"
+            ],
+            "672553": [
+                "nle",
+                "nbo"
+            ]
+        }
+    },
+    {
+        "id": 124,
+        "name": "230authorshipRecordCluster.json",
+        "idRefs": [
+            "idref156821346",
+            ""
+        ],
+        "duplicIds": {
+            "312483": [
+                "nle"
+            ],
+            "332913": [
+                "nle"
+            ],
+            "664023": [
+                "nle"
+            ],
+            "664608": [
+                "nle"
+            ],
+            "801252": [
+                "nle"
+            ],
+            "0": [
+                "nle"
+            ],
+            "876566": [
+                "nle"
+            ],
+            "605772": [
+                "nle"
+            ],
+            "664567": [
+                "nle"
+            ],
+            "605773": [
+                "nle"
+            ],
+            "892815": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 125,
+        "name": "231authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref052557499"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 126,
+        "name": "232authorshipRecordCluster.json",
+        "idRefs": [
+            "idref084437642"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 127,
+        "name": "233authorshipRecordCluster.json",
+        "idRefs": [
+            "idref111393183",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 128,
+        "name": "236authorshipRecordCluster.json",
+        "idRefs": [
+            "idref224425250"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 129,
+        "name": "237authorshipRecordCluster.json",
+        "idRefs": [
+            "idref082097208",
+            ""
+        ],
+        "duplicIds": {
+            "332422": [
+                "nle"
+            ],
+            "0": [
+                "nle"
+            ],
+            "416397": [
+                "nle"
+            ],
+            "466470": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 130,
+        "name": "238authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 131,
+        "name": "23authorshipRecordCluster.json",
+        "idRefs": [
+            "idref150081405",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 132,
+        "name": "244authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 133,
+        "name": "245authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "358790": [
+                "nle",
+                "nsa"
+            ]
+        }
+    },
+    {
+        "id": 134,
+        "name": "246authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "359602": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 135,
+        "name": "24authorshipRecordCluster.json",
+        "idRefs": [
+            "idref144554313"
+        ],
+        "duplicIds": {
+            "13942": [
+                "nle",
+                "ngu"
+            ]
+        }
+    },
+    {
+        "id": 136,
+        "name": "251authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 137,
+        "name": "256authorshipRecordCluster.json",
+        "idRefs": [
+            "idref079108326"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 138,
+        "name": "259authorshipRecordCluster.json",
+        "idRefs": [
+            "idref175641048",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 139,
+        "name": "25authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 140,
+        "name": "264authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 141,
+        "name": "267authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 142,
+        "name": "268authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 143,
+        "name": "26authorshipRecordCluster.json",
+        "idRefs": [
+            "idref117475165",
+            "idref156821346",
+            "",
+            "idref061411043",
+            "idref226834158"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 144,
+        "name": "270authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 145,
+        "name": "273authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "426221": [
+                "nle",
+                "nad"
+            ]
+        }
+    },
+    {
+        "id": 146,
+        "name": "274authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 147,
+        "name": "275authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 148,
+        "name": "276authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "443965": [
+                "nsa",
+                "nle"
+            ],
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 149,
+        "name": "277authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 150,
+        "name": "278authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 151,
+        "name": "280authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 152,
+        "name": "281authorshipRecordCluster.json",
+        "idRefs": [
+            "idref230948782"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 153,
+        "name": "283authorshipRecordCluster.json",
+        "idRefs": [
+            "idref150808151"
+        ],
+        "duplicIds": {
+            "479709": [
+                "nle"
+            ],
+            "645605": [
+                "nle"
+            ],
+            "662658": [
+                "nle"
+            ],
+            "604380": [
+                "nle"
+            ],
+            "631898": [
+                "nle"
+            ],
+            "638413": [
+                "nle"
+            ],
+            "657585": [
+                "nle"
+            ],
+            "785401": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 154,
+        "name": "284authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 155,
+        "name": "286authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 156,
+        "name": "289authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "498468": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 157,
+        "name": "28authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 158,
+        "name": "293authorshipRecordCluster.json",
+        "idRefs": [
+            "idref142615161",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 159,
+        "name": "295authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 160,
+        "name": "296authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 161,
+        "name": "299authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 162,
+        "name": "29authorshipRecordCluster.json",
+        "idRefs": [
+            "idref070193355",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 163,
+        "name": "2authorshipRecordCluster.json",
+        "idRefs": [
+            "idref111958695",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 164,
+        "name": "301authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 165,
+        "name": "302authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 166,
+        "name": "308authorshipRecordCluster.json",
+        "idRefs": [
+            "idref083611886"
+        ],
+        "duplicIds": {
+            "555524": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 167,
+        "name": "309authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 168,
+        "name": "30authorshipRecordCluster.json",
+        "idRefs": [
+            "idref073522902",
+            ""
+        ],
+        "duplicIds": {
+            "20284": [
+                "nka",
+                "nve",
+                "nle"
+            ],
+            "142129": [
+                "nka",
+                "nve",
+                "nle"
+            ],
+            "0": [
+                "nle"
+            ],
+            "993779": [
+                "nka",
+                "nve",
+                "nle"
+            ],
+            "159816": [
+                "nka",
+                "nve",
+                "nle"
+            ],
+            "333021": [
+                "nve",
+                "nle"
+            ],
+            "472032": [
+                "nka",
+                "nve",
+                "nle"
+            ],
+            "492106": [
+                "nka",
+                "nve",
+                "nle"
+            ],
+            "996937": [
+                "nka",
+                "nve",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 169,
+        "name": "310authorshipRecordCluster.json",
+        "idRefs": [
+            "idref035364580",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 170,
+        "name": "311authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 171,
+        "name": "312authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 172,
+        "name": "313authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 173,
+        "name": "314authorshipRecordCluster.json",
+        "idRefs": [
+            "idref235653586"
+        ],
+        "duplicIds": {
+            "562585": [
+                "nlé"
+            ],
+            "728876": [
+                "nlé"
+            ],
+            "767333": [
+                "nlé"
+            ]
+        }
+    },
+    {
+        "id": 174,
+        "name": "317authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 175,
+        "name": "318authorshipRecordCluster.json",
+        "idRefs": [
+            "idref203324919"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 176,
+        "name": "31authorshipRecordCluster.json",
+        "idRefs": [
+            "idref177509538",
+            "",
+            "idref168835460"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "251793": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 177,
+        "name": "320authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 178,
+        "name": "321authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 179,
+        "name": "322authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 180,
+        "name": "323authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 181,
+        "name": "325authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "583415": [
+                "nle",
+                "nla"
+            ]
+        }
+    },
+    {
+        "id": 182,
+        "name": "327authorshipRecordCluster.json",
+        "idRefs": [
+            "idref224425250"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 183,
+        "name": "32authorshipRecordCluster.json",
+        "idRefs": [
+            "idref232638772"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 184,
+        "name": "330authorshipRecordCluster.json",
+        "idRefs": [
+            "idref150305869",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 185,
+        "name": "332authorshipRecordCluster.json",
+        "idRefs": [
+            "idref060969830"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 186,
+        "name": "33authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "22482": [
+                "nle",
+                "ngu"
+            ]
+        }
+    },
+    {
+        "id": 187,
+        "name": "346authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 188,
+        "name": "347authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 189,
+        "name": "348authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 190,
+        "name": "349authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 191,
+        "name": "34authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 192,
+        "name": "353authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "607646": [
+                "nva",
+                "nle"
+            ],
+            "656044": [
+                "nva",
+                "nle"
+            ],
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 193,
+        "name": "354authorshipRecordCluster.json",
+        "idRefs": [
+            "idref10807157X"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 194,
+        "name": "355authorshipRecordCluster.json",
+        "idRefs": [
+            "idref026978342"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 195,
+        "name": "356authorshipRecordCluster.json",
+        "idRefs": [
+            "idref176528938"
+        ],
+        "duplicIds": {
+            "616247": [
+                "nle",
+                "nsa"
+            ]
+        }
+    },
+    {
+        "id": 196,
+        "name": "35authorshipRecordCluster.json",
+        "idRefs": [
+            "idref110501004",
+            "",
+            "idref092156878",
+            "idref073357324"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 197,
+        "name": "360authorshipRecordCluster.json",
+        "idRefs": [
+            "idref186386842"
+        ],
+        "duplicIds": {
+            "619968": [
+                "nle",
+                "ndu"
+            ],
+            "685677": [
+                "nle",
+                "ndu"
+            ],
+            "734346": [
+                "nle",
+                "ndu"
+            ],
+            "757252": [
+                "nle",
+                "ndu"
+            ],
+            "793828": [
+                "nle",
+                "ndu"
+            ],
+            "794081": [
+                "nle",
+                "ndu"
+            ],
+            "869809": [
+                "nle",
+                "ndu"
+            ],
+            "869818": [
+                "nle",
+                "ndu"
+            ],
+            "620416": [
+                "nle",
+                "ndu"
+            ],
+            "692970": [
+                "nle",
+                "ndu"
+            ],
+            "693884": [
+                "nle",
+                "ndu"
+            ],
+            "734031": [
+                "nle",
+                "ndu"
+            ]
+        }
+    },
+    {
+        "id": 198,
+        "name": "371authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 199,
+        "name": "374authorshipRecordCluster.json",
+        "idRefs": [
+            "idref059078839"
+        ],
+        "duplicIds": {
+            "628328": [
+                "nde",
+                "nle"
+            ],
+            "628393": [
+                "nde",
+                "nle"
+            ],
+            "701550": [
+                "nde",
+                "nle"
+            ],
+            "705058": [
+                "nde",
+                "nle"
+            ],
+            "705324": [
+                "nde",
+                "nle"
+            ],
+            "705663": [
+                "nde",
+                "nle"
+            ],
+            "873947": [
+                "nde",
+                "nle"
+            ],
+            "873952": [
+                "nde",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 200,
+        "name": "37authorshipRecordCluster.json",
+        "idRefs": [
+            "idref190209720"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 201,
+        "name": "381authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 202,
+        "name": "385authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 203,
+        "name": "38authorshipRecordCluster.json",
+        "idRefs": [
+            "idref14070941X",
+            ""
+        ],
+        "duplicIds": {
+            "27668": [
+                "nlé"
+            ],
+            "645127": [
+                "nlé"
+            ],
+            "861766": [
+                "nlé"
+            ],
+            "887031": [
+                "nlé"
+            ],
+            "995065": [
+                "nlé"
+            ],
+            "995068": [
+                "nlé"
+            ],
+            "828852": [
+                "nlé"
+            ],
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 204,
+        "name": "392authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 205,
+        "name": "3authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 206,
+        "name": "401authorshipRecordCluster.json",
+        "idRefs": [
+            "idref135209862",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 207,
+        "name": "404authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 208,
+        "name": "405authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 209,
+        "name": "406authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 210,
+        "name": "418authorshipRecordCluster.json",
+        "idRefs": [
+            "idref112917909"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 211,
+        "name": "41authorshipRecordCluster.json",
+        "idRefs": [
+            "idref132397005"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 212,
+        "name": "423authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "654705": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 213,
+        "name": "429authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "659862": [
+                "nvi",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 214,
+        "name": "42authorshipRecordCluster.json",
+        "idRefs": [
+            "idref135209862",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 215,
+        "name": "431authorshipRecordCluster.json",
+        "idRefs": [
+            "idref189046546",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 216,
+        "name": "434authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "664867": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 217,
+        "name": "438authorshipRecordCluster.json",
+        "idRefs": [
+            "idref142966975",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 218,
+        "name": "43authorshipRecordCluster.json",
+        "idRefs": [
+            "idref12204536X",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 219,
+        "name": "440authorshipRecordCluster.json",
+        "idRefs": [
+            "idref166371548",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 220,
+        "name": "443authorshipRecordCluster.json",
+        "idRefs": [
+            "idref230948782",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 221,
+        "name": "449authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 222,
+        "name": "451authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 223,
+        "name": "452authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 224,
+        "name": "453authorshipRecordCluster.json",
+        "idRefs": [
+            "idref11937840X",
+            ""
+        ],
+        "duplicIds": {
+            "689414": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 225,
+        "name": "454authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 226,
+        "name": "455authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 227,
+        "name": "456authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 228,
+        "name": "457authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 229,
+        "name": "458authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 230,
+        "name": "45authorshipRecordCluster.json",
+        "idRefs": [
+            "idref073357324"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 231,
+        "name": "460authorshipRecordCluster.json",
+        "idRefs": [
+            "idref122047230"
+        ],
+        "duplicIds": {
+            "692420": [
+                "nle"
+            ],
+            "734252": [
+                "nle"
+            ],
+            "956897": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 232,
+        "name": "467authorshipRecordCluster.json",
+        "idRefs": [
+            "idref069031215",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 233,
+        "name": "46authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref236424386"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 234,
+        "name": "47authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 235,
+        "name": "481authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 236,
+        "name": "482authorshipRecordCluster.json",
+        "idRefs": [
+            "idref112842550"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 237,
+        "name": "483authorshipRecordCluster.json",
+        "idRefs": [
+            "idref136088821"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 238,
+        "name": "487authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 239,
+        "name": "492authorshipRecordCluster.json",
+        "idRefs": [
+            "idref12300621X"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 240,
+        "name": "493authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 241,
+        "name": "494authorshipRecordCluster.json",
+        "idRefs": [
+            "idref193061686",
+            ""
+        ],
+        "duplicIds": {
+            "724429": [
+                "nle"
+            ],
+            "754803": [
+                "nle"
+            ],
+            "754825": [
+                "nle"
+            ],
+            "754838": [
+                "nle"
+            ],
+            "796248": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 242,
+        "name": "496authorshipRecordCluster.json",
+        "idRefs": [
+            "idref155965565"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 243,
+        "name": "498authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 244,
+        "name": "499authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 245,
+        "name": "4authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 246,
+        "name": "500authorshipRecordCluster.json",
+        "idRefs": [
+            "idref083282106"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 247,
+        "name": "501authorshipRecordCluster.json",
+        "idRefs": [
+            "idref15589952X"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 248,
+        "name": "502authorshipRecordCluster.json",
+        "idRefs": [
+            "idref224272616",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 249,
+        "name": "503authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 250,
+        "name": "504authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 251,
+        "name": "505authorshipRecordCluster.json",
+        "idRefs": [
+            "idref124603149"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 252,
+        "name": "51authorshipRecordCluster.json",
+        "idRefs": [
+            "idref122609530",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 253,
+        "name": "521authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 254,
+        "name": "524authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "740580": [
+                "nch",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 255,
+        "name": "526authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "746144": [
+                "nle"
+            ],
+            "1013332": [
+                "nle"
+            ],
+            "772602": [
+                "nle"
+            ],
+            "881386": [
+                "nle"
+            ],
+            "974787": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 256,
+        "name": "527authorshipRecordCluster.json",
+        "idRefs": [
+            "idref156979195",
+            ""
+        ],
+        "duplicIds": {
+            "746260": [
+                "nfo",
+                "nle"
+            ],
+            "813939": [
+                "nfo",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 257,
+        "name": "535authorshipRecordCluster.json",
+        "idRefs": [
+            "idref231804296",
+            ""
+        ],
+        "duplicIds": {
+            "754131": [
+                "nmi",
+                "nle"
+            ],
+            "580118": [
+                "nmi",
+                "nle"
+            ],
+            "906530": [
+                "nmi",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 258,
+        "name": "537authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 259,
+        "name": "53authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref080537049"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 260,
+        "name": "540authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 261,
+        "name": "542authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "762996": [
+                "npa",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 262,
+        "name": "545authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 263,
+        "name": "546authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 264,
+        "name": "547authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 265,
+        "name": "548authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 266,
+        "name": "549authorshipRecordCluster.json",
+        "idRefs": [
+            "idref177131926"
+        ],
+        "duplicIds": {
+            "771923": [
+                "nco",
+                "nle"
+            ],
+            "912433": [
+                "nco",
+                "nle"
+            ],
+            "912531": [
+                "nco",
+                "nle"
+            ],
+            "912535": [
+                "nco",
+                "nle"
+            ],
+            "912860": [
+                "nco",
+                "nle"
+            ],
+            "915005": [
+                "nco",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 267,
+        "name": "54authorshipRecordCluster.json",
+        "idRefs": [
+            "idref144266873"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 268,
+        "name": "550authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 269,
+        "name": "553authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 270,
+        "name": "554authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 271,
+        "name": "556authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 272,
+        "name": "557authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "778974": [
+                "nle",
+                "nbä"
+            ]
+        }
+    },
+    {
+        "id": 273,
+        "name": "558authorshipRecordCluster.json",
+        "idRefs": [
+            "idref118683888"
+        ],
+        "duplicIds": {
+            "779203": [
+                "nvi",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 274,
+        "name": "559authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 275,
+        "name": "55authorshipRecordCluster.json",
+        "idRefs": [
+            "idref196871719"
+        ],
+        "duplicIds": {
+            "43722": [
+                "nle"
+            ],
+            "105425": [
+                "nle"
+            ],
+            "603855": [
+                "nle"
+            ],
+            "676234": [
+                "nle"
+            ],
+            "765110": [
+                "nle"
+            ],
+            "554379": [
+                "nle"
+            ],
+            "554402": [
+                "nle"
+            ],
+            "676238": [
+                "nle"
+            ],
+            "853164": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 276,
+        "name": "560authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 277,
+        "name": "563authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "788034": [
+                "nlé"
+            ]
+        }
+    },
+    {
+        "id": 278,
+        "name": "564authorshipRecordCluster.json",
+        "idRefs": [
+            "idref083795790"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 279,
+        "name": "565authorshipRecordCluster.json",
+        "idRefs": [
+            "idref190075775",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 280,
+        "name": "570authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "797094": [
+                "nva",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 281,
+        "name": "572authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 282,
+        "name": "573authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 283,
+        "name": "577authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 284,
+        "name": "578authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 285,
+        "name": "579authorshipRecordCluster.json",
+        "idRefs": [
+            "idref075071746",
+            ""
+        ],
+        "duplicIds": {
+            "814582": [
+                "nle",
+                "nca"
+            ],
+            "815207": [
+                "nle",
+                "nca"
+            ],
+            "815467": [
+                "nle",
+                "nca"
+            ],
+            "815764": [
+                "nle",
+                "nca"
+            ],
+            "816090": [
+                "nle",
+                "nca"
+            ],
+            "911123": [
+                "nle",
+                "nca"
+            ],
+            "914631": [
+                "nle",
+                "nca"
+            ],
+            "915035": [
+                "nle",
+                "nca"
+            ],
+            "915146": [
+                "nle",
+                "nca"
+            ],
+            "915151": [
+                "nle",
+                "nca"
+            ],
+            "926052": [
+                "nle",
+                "nca"
+            ],
+            "928396": [
+                "nle",
+                "nca"
+            ],
+            "929756": [
+                "nle",
+                "nca"
+            ],
+            "932868": [
+                "nle",
+                "nca"
+            ],
+            "934632": [
+                "nle",
+                "nca"
+            ],
+            "929220": [
+                "nle",
+                "nca"
+            ],
+            "934153": [
+                "nle",
+                "nca"
+            ]
+        }
+    },
+    {
+        "id": 286,
+        "name": "57authorshipRecordCluster.json",
+        "idRefs": [
+            "idref137726929",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 287,
+        "name": "580authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 288,
+        "name": "581authorshipRecordCluster.json",
+        "idRefs": [
+            "idref071501924",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 289,
+        "name": "583authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 290,
+        "name": "584authorshipRecordCluster.json",
+        "idRefs": [
+            "idref073956856"
+        ],
+        "duplicIds": {
+            "821557": [
+                "nle"
+            ],
+            "914235": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 291,
+        "name": "586authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 292,
+        "name": "587authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 293,
+        "name": "588authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "827524": [
+                "ndu",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 294,
+        "name": "589authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 295,
+        "name": "58authorshipRecordCluster.json",
+        "idRefs": [
+            "idref176674675"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 296,
+        "name": "590authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 297,
+        "name": "592authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 298,
+        "name": "593authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref189046546",
+            "idref224272616",
+            "idref121653609",
+            "idref236646990"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "501353": [
+                "ndo",
+                "nle"
+            ],
+            "54816": [
+                "ndo",
+                "nle"
+            ],
+            "505107": [
+                "ndo",
+                "nle"
+            ],
+            "778551": [
+                "ndo",
+                "nle"
+            ],
+            "793413": [
+                "ndo",
+                "nle"
+            ],
+            "1000071": [
+                "ndo",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 299,
+        "name": "594authorshipRecordCluster.json",
+        "idRefs": [
+            "idref133749312"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 300,
+        "name": "595authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 301,
+        "name": "596authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "843515": [
+                "nzu",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 302,
+        "name": "598authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 303,
+        "name": "599authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 304,
+        "name": "5authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 305,
+        "name": "600authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 306,
+        "name": "606authorshipRecordCluster.json",
+        "idRefs": [
+            "idref078535727"
+        ],
+        "duplicIds": {
+            "856829": [
+                "nlé"
+            ]
+        }
+    },
+    {
+        "id": 307,
+        "name": "607authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 308,
+        "name": "608authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 309,
+        "name": "609authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 310,
+        "name": "60authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 311,
+        "name": "610authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 312,
+        "name": "611authorshipRecordCluster.json",
+        "idRefs": [
+            "idref165577266"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 313,
+        "name": "612authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "859010": [
+                "nle",
+                "nha"
+            ]
+        }
+    },
+    {
+        "id": 314,
+        "name": "613authorshipRecordCluster.json",
+        "idRefs": [
+            "idref101512821"
+        ],
+        "duplicIds": {
+            "859012": [
+                "nle",
+                "nha"
+            ]
+        }
+    },
+    {
+        "id": 315,
+        "name": "616authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 316,
+        "name": "619authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 317,
+        "name": "620authorshipRecordCluster.json",
+        "idRefs": [
+            "idref111392853"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 318,
+        "name": "621authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 319,
+        "name": "627authorshipRecordCluster.json",
+        "idRefs": [
+            "idref138494460"
+        ],
+        "duplicIds": {
+            "867457": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 320,
+        "name": "62authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "50385": [
+                "nli",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 321,
+        "name": "630authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "867984": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 322,
+        "name": "641authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 323,
+        "name": "644authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 324,
+        "name": "645authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "890122": [
+                "nva",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 325,
+        "name": "648authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 326,
+        "name": "649authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 327,
+        "name": "650authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 328,
+        "name": "651authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 329,
+        "name": "652authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 330,
+        "name": "653authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 331,
+        "name": "655authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 332,
+        "name": "656authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 333,
+        "name": "657authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "909312": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 334,
+        "name": "658authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 335,
+        "name": "65authorshipRecordCluster.json",
+        "idRefs": [
+            "idref076378489",
+            ""
+        ],
+        "duplicIds": {
+            "55921": [
+                "nle"
+            ],
+            "148192": [
+                "nle"
+            ],
+            "241781": [
+                "nle"
+            ],
+            "437833": [
+                "nle"
+            ],
+            "440022": [
+                "nle"
+            ],
+            "950452": [
+                "nle"
+            ],
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 336,
+        "name": "660authorshipRecordCluster.json",
+        "idRefs": [
+            "idref176345981",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 337,
+        "name": "661authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 338,
+        "name": "663authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "914564": [
+                "nle",
+                "nme"
+            ]
+        }
+    },
+    {
+        "id": 339,
+        "name": "665authorshipRecordCluster.json",
+        "idRefs": [
+            "idref126740062"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "928731": [
+                "nfl",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 340,
+        "name": "666authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "919427": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 341,
+        "name": "667authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "922319": [
+                "nfl",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 342,
+        "name": "668authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "923114": [
+                "nle",
+                "nno"
+            ]
+        }
+    },
+    {
+        "id": 343,
+        "name": "670authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "929280": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 344,
+        "name": "672authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "929641": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 345,
+        "name": "673authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 346,
+        "name": "674authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "929660": [
+                "nba",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 347,
+        "name": "675authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 348,
+        "name": "676authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 349,
+        "name": "678authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "933516": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 350,
+        "name": "67authorshipRecordCluster.json",
+        "idRefs": [
+            "idref075891964",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 351,
+        "name": "682authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 352,
+        "name": "683authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 353,
+        "name": "684authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 354,
+        "name": "685authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 355,
+        "name": "687authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 356,
+        "name": "697authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 357,
+        "name": "69authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 358,
+        "name": "6authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref156821346",
+            "idref196788862",
+            "idref02901056X"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "175440": [
+                "nle"
+            ],
+            "253971": [
+                "nle"
+            ],
+            "324882": [
+                "nle"
+            ],
+            "413832": [
+                "nle"
+            ],
+            "479630": [
+                "nle"
+            ],
+            "612471": [
+                "nle"
+            ],
+            "674055": [
+                "nle"
+            ],
+            "794885": [
+                "nle"
+            ],
+            "796434": [
+                "nle"
+            ],
+            "892819": [
+                "nle"
+            ],
+            "1000853": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 359,
+        "name": "700authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 360,
+        "name": "702authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 361,
+        "name": "703authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 362,
+        "name": "705authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 363,
+        "name": "706authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 364,
+        "name": "707authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 365,
+        "name": "708authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 366,
+        "name": "709authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 367,
+        "name": "70authorshipRecordCluster.json",
+        "idRefs": [
+            "idref179286838"
+        ],
+        "duplicIds": {
+            "59122": [
+                "nle"
+            ],
+            "64520": [
+                "nle"
+            ],
+            "460007": [
+                "nle"
+            ],
+            "720245": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 368,
+        "name": "711authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "953421": [
+                "nmo",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 369,
+        "name": "712authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 370,
+        "name": "713authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 371,
+        "name": "717authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 372,
+        "name": "718authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 373,
+        "name": "719authorshipRecordCluster.json",
+        "idRefs": [
+            "idref204063396",
+            ""
+        ],
+        "duplicIds": {
+            "959941": [
+                "nle",
+                "nbe"
+            ]
+        }
+    },
+    {
+        "id": 374,
+        "name": "720authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 375,
+        "name": "721authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "966189": [
+                "npo",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 376,
+        "name": "722authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "966196": [
+                "npo",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 377,
+        "name": "724authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 378,
+        "name": "73authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "62037": [
+                "nle"
+            ],
+            "294154": [
+                "nle"
+            ],
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 379,
+        "name": "74authorshipRecordCluster.json",
+        "idRefs": [
+            "idref159070112",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 380,
+        "name": "761authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 381,
+        "name": "763authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "978184": [
+                "nle",
+                "nth"
+            ]
+        }
+    },
+    {
+        "id": 382,
+        "name": "765authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 383,
+        "name": "767authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "980447": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 384,
+        "name": "769authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 385,
+        "name": "76authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 386,
+        "name": "770authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 387,
+        "name": "773authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 388,
+        "name": "774authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 389,
+        "name": "775authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 390,
+        "name": "777authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 391,
+        "name": "778authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 392,
+        "name": "779authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 393,
+        "name": "77authorshipRecordCluster.json",
+        "idRefs": [
+            "idref121988902"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 394,
+        "name": "781authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 395,
+        "name": "782authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 396,
+        "name": "78authorshipRecordCluster.json",
+        "idRefs": [
+            "idref05034711X",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 397,
+        "name": "795authorshipRecordCluster.json",
+        "idRefs": [
+            "idref156979195",
+            ""
+        ],
+        "duplicIds": {
+            "1006392": [
+                "nle",
+                "nfo"
+            ]
+        }
+    },
+    {
+        "id": 398,
+        "name": "799authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 399,
+        "name": "79authorshipRecordCluster.json",
+        "idRefs": [
+            "idref035038004",
+            "",
+            "idref087816873"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 400,
+        "name": "7authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 401,
+        "name": "802authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 402,
+        "name": "812authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "1013757": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 403,
+        "name": "813authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 404,
+        "name": "814authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 405,
+        "name": "816authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 406,
+        "name": "817authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 407,
+        "name": "818authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "1017861": [
+                "nle",
+                "nca"
+            ]
+        }
+    },
+    {
+        "id": 408,
+        "name": "819authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "1018709": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 409,
+        "name": "821authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 410,
+        "name": "822authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 411,
+        "name": "824authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 412,
+        "name": "828authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 413,
+        "name": "82authorshipRecordCluster.json",
+        "idRefs": [
+            "idref17517718X",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 414,
+        "name": "830authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 415,
+        "name": "832authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 416,
+        "name": "834authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 417,
+        "name": "835authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "84434": [
+                "nle",
+                "noc"
+            ]
+        }
+    },
+    {
+        "id": 418,
+        "name": "836authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "84778": [
+                "nga",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 419,
+        "name": "837authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "595337": [
+                "ngu",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 420,
+        "name": "838authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 421,
+        "name": "839authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 422,
+        "name": "840authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "103026": [
+                "nsi",
+                "nor",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 423,
+        "name": "841authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 424,
+        "name": "842authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 425,
+        "name": "843authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 426,
+        "name": "846authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 427,
+        "name": "847authorshipRecordCluster.json",
+        "idRefs": [
+            "idref076704459"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 428,
+        "name": "849authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 429,
+        "name": "855authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 430,
+        "name": "857authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 431,
+        "name": "858authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "201351": [
+                "nri",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 432,
+        "name": "85authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref07491443X"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "595279": [
+                "ngu",
+                "nle"
+            ],
+            "751376": [
+                "nle"
+            ],
+            "751377": [
+                "nle"
+            ],
+            "751385": [
+                "nle"
+            ],
+            "751395": [
+                "nle"
+            ],
+            "792843": [
+                "nle"
+            ],
+            "851845": [
+                "nle"
+            ],
+            "852813": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 433,
+        "name": "861authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 434,
+        "name": "862authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "229965": [
+                "nle",
+                "nfi"
+            ]
+        }
+    },
+    {
+        "id": 435,
+        "name": "864authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 436,
+        "name": "865authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "239181": [
+                "nlé",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 437,
+        "name": "866authorshipRecordCluster.json",
+        "idRefs": [
+            "idref084437642",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 438,
+        "name": "867authorshipRecordCluster.json",
+        "idRefs": [
+            "idref184617995",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 439,
+        "name": "868authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 440,
+        "name": "869authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 441,
+        "name": "86authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "137571": [
+                "nlé"
+            ],
+            "371563": [
+                "nlé"
+            ],
+            "479183": [
+                "nlé"
+            ],
+            "497422": [
+                "nlé"
+            ],
+            "503638": [
+                "nlé"
+            ],
+            "362619": [
+                "nlé"
+            ]
+        }
+    },
+    {
+        "id": 442,
+        "name": "871authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 443,
+        "name": "872authorshipRecordCluster.json",
+        "idRefs": [
+            "idref229967701"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 444,
+        "name": "873authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 445,
+        "name": "874authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 446,
+        "name": "876authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 447,
+        "name": "877authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 448,
+        "name": "878authorshipRecordCluster.json",
+        "idRefs": [
+            "idref178165204",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 449,
+        "name": "879authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 450,
+        "name": "881authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 451,
+        "name": "882authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 452,
+        "name": "883authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 453,
+        "name": "884authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 454,
+        "name": "886authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 455,
+        "name": "889authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 456,
+        "name": "88authorshipRecordCluster.json",
+        "idRefs": [
+            "idref101474601",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 457,
+        "name": "890authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "453060": [
+                "nle",
+                "nbr"
+            ]
+        }
+    },
+    {
+        "id": 458,
+        "name": "892authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 459,
+        "name": "893authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 460,
+        "name": "894authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 461,
+        "name": "895authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 462,
+        "name": "896authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "485576": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 463,
+        "name": "897authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 464,
+        "name": "898authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 465,
+        "name": "899authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 466,
+        "name": "8authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref085026921",
+            "idref13698763X",
+            "idref089078144",
+            "idref221296263"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "102973": [
+                "nri",
+                "nle"
+            ],
+            "195498": [
+                "nri",
+                "nle"
+            ],
+            "309014": [
+                "nri",
+                "nle"
+            ],
+            "311192": [
+                "nri",
+                "nle"
+            ],
+            "329121": [
+                "nri",
+                "nle"
+            ],
+            "364535": [
+                "nri",
+                "nle"
+            ],
+            "380259": [
+                "nri",
+                "nle"
+            ],
+            "382678": [
+                "nri",
+                "nle"
+            ],
+            "386440": [
+                "nri",
+                "nle"
+            ],
+            "387982": [
+                "nri",
+                "nle"
+            ],
+            "391452": [
+                "nri",
+                "nle"
+            ],
+            "399245": [
+                "nri",
+                "nle"
+            ],
+            "407376": [
+                "nri",
+                "nle"
+            ],
+            "421386": [
+                "nri",
+                "nle"
+            ],
+            "479424": [
+                "nri",
+                "nle"
+            ],
+            "495929": [
+                "nri",
+                "nle"
+            ],
+            "506713": [
+                "nri",
+                "nle"
+            ],
+            "507838": [
+                "nri",
+                "nle"
+            ],
+            "555863": [
+                "nri",
+                "nle"
+            ],
+            "560609": [
+                "nri",
+                "nle"
+            ],
+            "576823": [
+                "nri",
+                "nle"
+            ],
+            "639702": [
+                "nri",
+                "nle"
+            ],
+            "834093": [
+                "nri",
+                "nle"
+            ],
+            "868009": [
+                "nri",
+                "nle"
+            ],
+            "868068": [
+                "nri",
+                "nle"
+            ],
+            "868124": [
+                "nri",
+                "nle"
+            ],
+            "868144": [
+                "nri",
+                "nle"
+            ],
+            "868285": [
+                "nri",
+                "nle"
+            ],
+            "869240": [
+                "nri",
+                "nle"
+            ],
+            "869244": [
+                "nri",
+                "nle"
+            ],
+            "869245": [
+                "nri",
+                "nle"
+            ],
+            "869264": [
+                "nri",
+                "nle"
+            ],
+            "869272": [
+                "nri",
+                "nle"
+            ],
+            "869277": [
+                "nri",
+                "nle"
+            ],
+            "869287": [
+                "nri",
+                "nle"
+            ],
+            "869290": [
+                "nri",
+                "nle"
+            ],
+            "869293": [
+                "nri",
+                "nle"
+            ],
+            "869294": [
+                "nri",
+                "nle"
+            ],
+            "869296": [
+                "nri",
+                "nle"
+            ],
+            "869297": [
+                "nri",
+                "nle"
+            ],
+            "869387": [
+                "nri",
+                "nle"
+            ],
+            "869398": [
+                "nri",
+                "nle"
+            ],
+            "869402": [
+                "nri",
+                "nle"
+            ],
+            "869404": [
+                "nri",
+                "nle"
+            ],
+            "869428": [
+                "nri",
+                "nle"
+            ],
+            "872557": [
+                "nri",
+                "nle"
+            ],
+            "872563": [
+                "nri",
+                "nle"
+            ],
+            "939303": [
+                "nri",
+                "nle"
+            ],
+            "863366": [
+                "nri",
+                "nle"
+            ],
+            "863371": [
+                "nri",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 467,
+        "name": "901authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "507839": [
+                "nri",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 468,
+        "name": "902authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 469,
+        "name": "903authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 470,
+        "name": "904authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 471,
+        "name": "905authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 472,
+        "name": "906authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 473,
+        "name": "907authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 474,
+        "name": "908authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 475,
+        "name": "909authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 476,
+        "name": "910authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 477,
+        "name": "911authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 478,
+        "name": "912authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 479,
+        "name": "913authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "554982": [
+                "nlé"
+            ]
+        }
+    },
+    {
+        "id": 480,
+        "name": "914authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 481,
+        "name": "915authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 482,
+        "name": "916authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 483,
+        "name": "917authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 484,
+        "name": "918authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "580720": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 485,
+        "name": "919authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 486,
+        "name": "91authorshipRecordCluster.json",
+        "idRefs": [
+            "idref122252306",
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 487,
+        "name": "920authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "583372": [
+                "nro",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 488,
+        "name": "921authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "595322": [
+                "ngu",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 489,
+        "name": "922authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "595344": [
+                "ngu",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 490,
+        "name": "923authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "595353": [
+                "ngu",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 491,
+        "name": "924authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 492,
+        "name": "928authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 493,
+        "name": "92authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref176567925"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 494,
+        "name": "931authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 495,
+        "name": "933authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 496,
+        "name": "934authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 497,
+        "name": "935authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 498,
+        "name": "936authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 499,
+        "name": "937authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 500,
+        "name": "939authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 501,
+        "name": "93authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 502,
+        "name": "940authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 503,
+        "name": "944authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 504,
+        "name": "945authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 505,
+        "name": "946authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 506,
+        "name": "947authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 507,
+        "name": "948authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 508,
+        "name": "949authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "711050": [
+                "ndu",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 509,
+        "name": "950authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "711055": [
+                "ndu",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 510,
+        "name": "951authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 511,
+        "name": "952authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 512,
+        "name": "954authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "722421": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 513,
+        "name": "956authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 514,
+        "name": "957authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 515,
+        "name": "958authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 516,
+        "name": "960authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "735382": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 517,
+        "name": "961authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 518,
+        "name": "962authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 519,
+        "name": "963authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "798339": [
+                "nha",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 520,
+        "name": "964authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 521,
+        "name": "966authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 522,
+        "name": "967authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "833788": [
+                "nle",
+                "npa"
+            ]
+        }
+    },
+    {
+        "id": 523,
+        "name": "968authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 524,
+        "name": "970authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 525,
+        "name": "971authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "836846": [
+                "nca",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 526,
+        "name": "972authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 527,
+        "name": "973authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 528,
+        "name": "974authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "848408": [
+                "nfl",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 529,
+        "name": "976authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 530,
+        "name": "977authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 531,
+        "name": "978authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "856284": [
+                "nle",
+                "nco"
+            ]
+        }
+    },
+    {
+        "id": 532,
+        "name": "979authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "856286": [
+                "nle",
+                "nco"
+            ]
+        }
+    },
+    {
+        "id": 533,
+        "name": "97authorshipRecordCluster.json",
+        "idRefs": [
+            "idref17594542X"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 534,
+        "name": "981authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 535,
+        "name": "982authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "869417": [
+                "nri",
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 536,
+        "name": "983authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 537,
+        "name": "984authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 538,
+        "name": "985authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 539,
+        "name": "986authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 540,
+        "name": "989authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 541,
+        "name": "98authorshipRecordCluster.json",
+        "idRefs": [
+            "idref135383129"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 542,
+        "name": "991authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 543,
+        "name": "992authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 544,
+        "name": "993authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ]
+        }
+    },
+    {
+        "id": 545,
+        "name": "995authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "904084": [
+                "nle",
+                "nbo"
+            ]
+        }
+    },
+    {
+        "id": 546,
+        "name": "9authorshipRecordCluster.json",
+        "idRefs": [
+            "idref176345981",
+            "idref070193355",
+            "",
+            "idref193061686",
+            "idref201793628",
+            "idref098826107",
+            "idref16477694X"
+        ],
+        "duplicIds": {
+            "0": [
+                "nle"
+            ],
+            "349747": [
+                "nlé"
+            ],
+            "399259": [
+                "nlé"
+            ],
+            "452994": [
+                "nlé"
+            ],
+            "456618": [
+                "nlé"
+            ],
+            "491396": [
+                "nlé"
+            ],
+            "498721": [
+                "nlé"
+            ],
+            "504284": [
+                "nlé"
+            ],
+            "510698": [
+                "nlé"
+            ],
+            "596696": [
+                "nlé"
+            ],
+            "900148": [
+                "nlé"
+            ],
+            "958273": [
+                "nlé"
+            ],
+            "238329": [
+                "nlé"
+            ],
+            "9614": [
+                "nlé"
+            ],
+            "30191": [
+                "nlé"
+            ],
+            "48450": [
+                "nlé"
+            ],
+            "62693": [
+                "nlé"
+            ],
+            "118395": [
+                "nlé"
+            ],
+            "126670": [
+                "nlé"
+            ],
+            "135810": [
+                "nlé"
+            ],
+            "226164": [
+                "nlé"
+            ],
+            "237402": [
+                "nlé"
+            ],
+            "251680": [
+                "nlé"
+            ],
+            "267267": [
+                "nlé"
+            ],
+            "287131": [
+                "nlé"
+            ],
+            "301242": [
+                "nlé"
+            ],
+            "311571": [
+                "nlé"
+            ],
+            "324337": [
+                "nlé"
+            ],
+            "329979": [
+                "nlé"
+            ],
+            "346412": [
+                "nlé"
+            ],
+            "358278": [
+                "nlé"
+            ],
+            "402018": [
+                "nlé"
+            ],
+            "410040": [
+                "nlé"
+            ],
+            "470978": [
+                "nlé"
+            ],
+            "481327": [
+                "nlé"
+            ],
+            "483340": [
+                "nlé"
+            ],
+            "487163": [
+                "nlé"
+            ],
+            "34054": [
+                "nlé"
+            ],
+            "84361": [
+                "nlé"
+            ],
+            "90779": [
+                "nlé"
+            ],
+            "96121": [
+                "nlé"
+            ],
+            "583404": [
+                "nle",
+                "nla"
+            ],
+            "874659": [
+                "nlé"
+            ]
+        }
+    }
+]

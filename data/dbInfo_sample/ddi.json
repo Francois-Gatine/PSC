@@ -1,0 +1,1282 @@
+[
+    {
+        "Name": "0authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref250404087'}"
+    },
+    {
+        "Name": "100authorshipRecordCluster.json",
+        "IdRefs": "{'idref219555974'}"
+    },
+    {
+        "Name": "101authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "102authorshipRecordCluster.json",
+        "IdRefs": "{'idref18124179X', 'empty'}"
+    },
+    {
+        "Name": "103authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "104authorshipRecordCluster.json",
+        "IdRefs": "{'idref081393229', 'empty'}"
+    },
+    {
+        "Name": "105authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "106authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "107authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref156017776'}"
+    },
+    {
+        "Name": "108authorshipRecordCluster.json",
+        "IdRefs": "{'idref168649306', 'empty', 'idref142459771'}"
+    },
+    {
+        "Name": "111authorshipRecordCluster.json",
+        "IdRefs": "{'idref088576191', 'empty', 'idref108963365', 'idref166661856'}"
+    },
+    {
+        "Name": "112authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "113authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref157617564'}"
+    },
+    {
+        "Name": "114authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "115authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "116authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "117authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref23725610X'}"
+    },
+    {
+        "Name": "119authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "11authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "120authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "121authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "122authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "123authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "124authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "125authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "12authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref235983608'}"
+    },
+    {
+        "Name": "130authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "133authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref203607457'}"
+    },
+    {
+        "Name": "134authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "['108authorshipRecordCluster.json', '0authorshipRecordCluster.json']",
+        "IdRefs": "{'idref168649306', 'empty', 'idref250404087', 'idref142459771'}"
+    },
+    {
+        "Name": "137authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "138authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "13authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "140authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref167630490'}"
+    },
+    {
+        "Name": "141authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref076920941'}"
+    },
+    {
+        "Name": "143authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "144authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "145authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "146authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "149authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref070737347'}"
+    },
+    {
+        "Name": "14authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "150authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref070737347'}"
+    },
+    {
+        "Name": "151authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "152authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "153authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "154authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "155authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "156authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "157authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "158authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "159authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "15authorshipRecordCluster.json",
+        "IdRefs": "{'idref162548737', 'empty'}"
+    },
+    {
+        "Name": "161authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref032330820'}"
+    },
+    {
+        "Name": "163authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "165authorshipRecordCluster.json",
+        "IdRefs": "{'idref157825809'}"
+    },
+    {
+        "Name": "166authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "167authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "168authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "171authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "172authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "173authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "174authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "175authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref199796122'}"
+    },
+    {
+        "Name": "186authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "18authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref070737347'}"
+    },
+    {
+        "Name": "192authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "193authorshipRecordCluster.json",
+        "IdRefs": "{'idref086178822'}"
+    },
+    {
+        "Name": "194authorshipRecordCluster.json",
+        "IdRefs": "{'idref228238455', 'empty'}"
+    },
+    {
+        "Name": "195authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref168031159'}"
+    },
+    {
+        "Name": "199authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref15603140X'}"
+    },
+    {
+        "Name": "19authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "1authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref10930120X', 'idref081393229', 'idref069722358', 'idref159513898'}"
+    },
+    {
+        "Name": "205authorshipRecordCluster.json",
+        "IdRefs": "{'idref111856809'}"
+    },
+    {
+        "Name": "20authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref068628226'}"
+    },
+    {
+        "Name": "212authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "213authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "214authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "215authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "218authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "219authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "21authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "221authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "222authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "223authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "224authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "230authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "233authorshipRecordCluster.json",
+        "IdRefs": "{'idref156002094'}"
+    },
+    {
+        "Name": "235authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "236authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "238authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "239authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "23authorshipRecordCluster.json",
+        "IdRefs": "{'idref122861566'}"
+    },
+    {
+        "Name": "240authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "241authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "244authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "247authorshipRecordCluster.json",
+        "IdRefs": "{'idref030967570'}"
+    },
+    {
+        "Name": "248authorshipRecordCluster.json",
+        "IdRefs": "{'idref084063599'}"
+    },
+    {
+        "Name": "24authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "252authorshipRecordCluster.json",
+        "IdRefs": "{'idref142459771'}"
+    },
+    {
+        "Name": "25authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "262authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref223359173'}"
+    },
+    {
+        "Name": "263authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "266authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "267authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "268authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "269authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "271authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "272authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "274authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "275authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "276authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "278authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "279authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "27authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "281authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "283authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "284authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "285authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "286authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "287authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "28authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref171283090'}"
+    },
+    {
+        "Name": "294authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "295authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "296authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "29authorshipRecordCluster.json",
+        "IdRefs": "{'idref234478446', 'empty'}"
+    },
+    {
+        "Name": "2authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "304authorshipRecordCluster.json",
+        "IdRefs": "{'idref076733521'}"
+    },
+    {
+        "Name": "306authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref076733521'}"
+    },
+    {
+        "Name": "313authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "314authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "315authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "316authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "31authorshipRecordCluster.json",
+        "IdRefs": "{'idref198220790'}"
+    },
+    {
+        "Name": "320authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "322authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "32authorshipRecordCluster.json",
+        "IdRefs": "{'idref167663666', 'empty', 'idref199796122'}"
+    },
+    {
+        "Name": "330authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "336authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "337authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref157617564'}"
+    },
+    {
+        "Name": "339authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "33authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref095004114'}"
+    },
+    {
+        "Name": "340authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "341authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "342authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "343authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "345authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "346authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "359authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref199386706'}"
+    },
+    {
+        "Name": "35authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "360authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "364authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "365authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "366authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "367authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "368authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "369authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "370authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "371authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "372authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "373authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "377authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "386authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "38authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref159513898'}"
+    },
+    {
+        "Name": "396authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "399authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "39authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "3authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "400authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "401authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "405authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "408authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "409authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "418authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "41authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref188596380'}"
+    },
+    {
+        "Name": "421authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "422authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "42authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref031153909'}"
+    },
+    {
+        "Name": "430authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "432authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "433authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "434authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "435authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref168031159'}"
+    },
+    {
+        "Name": "439authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "43authorshipRecordCluster.json",
+        "IdRefs": "{'idref199386706', 'empty'}"
+    },
+    {
+        "Name": "440authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "445authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "446authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "447authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "448authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "449authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "44authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "450authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref090949390'}"
+    },
+    {
+        "Name": "451authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "454authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "456authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "457authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "458authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "45authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "460authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "461authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "462authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "465authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "469authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "46authorshipRecordCluster.json",
+        "IdRefs": "{'idref155543385', 'empty'}"
+    },
+    {
+        "Name": "471authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref203874471'}"
+    },
+    {
+        "Name": "472authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "473authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "474authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "475authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "478authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "479authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "47authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref192518941'}"
+    },
+    {
+        "Name": "481authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "482authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "483authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "485authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "486authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "487authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "489authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "48authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "491authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "492authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "493authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "494authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "495authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "496authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "497authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "498authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "499authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "49authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "4authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "500authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "501authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "502authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "503authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "507authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "508authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "509authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "510authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "511authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "512authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "513authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "['102authorshipRecordCluster.json', '103authorshipRecordCluster.json']",
+        "IdRefs": "{'idref18124179X', 'empty'}"
+    },
+    {
+        "Name": "519authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "51authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "520authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "522authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "['108authorshipRecordCluster.json', '0authorshipRecordCluster.json']",
+        "IdRefs": "{'idref168649306', 'empty', 'idref250404087', 'idref142459771'}"
+    },
+    {
+        "Name": "526authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "527authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "528authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "529authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "52authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "530authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "531authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "534authorshipRecordCluster.json",
+        "IdRefs": "{'idref190093463'}"
+    },
+    {
+        "Name": "535authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "536authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "537authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "538authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "539authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "540authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "541authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "542authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "543authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "544authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "546authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "547authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "548authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "549authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "550authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "552authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "553authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "554authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "555authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "556authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "557authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "558authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "559authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "55authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "56authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "57authorshipRecordCluster.json",
+        "IdRefs": "{'idref203607457'}"
+    },
+    {
+        "Name": "58authorshipRecordCluster.json",
+        "IdRefs": "{'idref24275189X'}"
+    },
+    {
+        "Name": "5authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "60authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "62authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "63authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "64authorshipRecordCluster.json",
+        "IdRefs": "{'idref139192999'}"
+    },
+    {
+        "Name": "65authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "66authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "67authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref031352146'}"
+    },
+    {
+        "Name": "68authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "69authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "6authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref095004114', 'idref079303846'}"
+    },
+    {
+        "Name": "70authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "71authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "72authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "75authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "77authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref168031159'}"
+    },
+    {
+        "Name": "79authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "7authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "80authorshipRecordCluster.json",
+        "IdRefs": "{'empty', 'idref195124340'}"
+    },
+    {
+        "Name": "81authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "82authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "83authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "84authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "85authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "86authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "87authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "88authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "89authorshipRecordCluster.json",
+        "IdRefs": "{'idref181392577', 'empty'}"
+    },
+    {
+        "Name": "90authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "91authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "['105authorshipRecordCluster.json', '106authorshipRecordCluster.json']",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "94authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "95authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "96authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "97authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "98authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    },
+    {
+        "Name": "9authorshipRecordCluster.json",
+        "IdRefs": "{'empty'}"
+    }
+]

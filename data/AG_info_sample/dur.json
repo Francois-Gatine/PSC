@@ -1,0 +1,534 @@
+[
+    {
+        "id": 0,
+        "name": "0authorshipRecordCluster.json",
+        "idRefs": [
+            "idref150093918",
+            "",
+            "idref112380956"
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ],
+            "123547": [
+                "dur"
+            ],
+            "208500": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 1,
+        "name": "10authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "name": "11authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "327665": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "name": "12authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "name": "14authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 5,
+        "name": "15authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 6,
+        "name": "16authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 7,
+        "name": "17authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 8,
+        "name": "18authorshipRecordCluster.json",
+        "idRefs": [
+            "idref166416681",
+            "",
+            "idref057203148"
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 9,
+        "name": "1authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 10,
+        "name": "20authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 11,
+        "name": "21authorshipRecordCluster.json",
+        "idRefs": [
+            "idref077396855"
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 12,
+        "name": "22authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 13,
+        "name": "23authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 14,
+        "name": "24authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 15,
+        "name": "25authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 16,
+        "name": "26authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 17,
+        "name": "27authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 18,
+        "name": "28authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 19,
+        "name": "29authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "999165": [
+                "dur",
+                "dsa"
+            ]
+        }
+    },
+    {
+        "id": 20,
+        "name": "2authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 21,
+        "name": "30authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "1004688": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 22,
+        "name": "31authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 23,
+        "name": "32authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 24,
+        "name": "33authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 25,
+        "name": "34authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 26,
+        "name": "35authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 27,
+        "name": "36authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 28,
+        "name": "38authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 29,
+        "name": "39authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 30,
+        "name": "3authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "28918": [
+                "dür",
+                "dvo"
+            ]
+        }
+    },
+    {
+        "id": 31,
+        "name": "40authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 32,
+        "name": "41authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 33,
+        "name": "42authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 34,
+        "name": "43authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 35,
+        "name": "44authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 36,
+        "name": "4authorshipRecordCluster.json",
+        "idRefs": [
+            "",
+            "idref05659951X"
+        ],
+        "duplicIds": {
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 37,
+        "name": "6authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "67635": [
+                "dba",
+                "dur"
+            ],
+            "0": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 38,
+        "name": "7authorshipRecordCluster.json",
+        "idRefs": [
+            "idref078744989",
+            ""
+        ],
+        "duplicIds": {
+            "164842": [
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 39,
+        "name": "8authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "210341": [
+                "dna",
+                "dur"
+            ],
+            "232168": [
+                "dna",
+                "dur"
+            ],
+            "818366": [
+                "dna",
+                "dur"
+            ],
+            "834945": [
+                "dna",
+                "dur"
+            ],
+            "439922": [
+                "dna",
+                "dur"
+            ]
+        }
+    },
+    {
+        "id": 40,
+        "name": "9authorshipRecordCluster.json",
+        "idRefs": [
+            ""
+        ],
+        "duplicIds": {
+            "235525": [
+                "dur",
+                "dko"
+            ],
+            "334604": [
+                "dur",
+                "dko"
+            ]
+        }
+    }
+]
