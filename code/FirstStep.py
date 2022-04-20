@@ -146,7 +146,7 @@ def sortShortAndLongNameRecords(ambiguousGroupAddress, resultAddress):
     
     #get the ambiguous group name
     ambiguousGroupName = os.path.basename(ambiguousGroupAddress)
-    ambiguousGroupName = ambiguousGroupName.rstrip(".json")
+    ambiguousGroupName = os.path.splitext(ambiguousGroupName)[0]
     
     #open the files where writes the result
     outputShort_name = resultAddress + "/shortNameRecordsOf" + ambiguousGroupName + ".json"
@@ -165,11 +165,11 @@ def sortShortAndLongNameRecords(ambiguousGroupAddress, resultAddress):
     #variables to store all terms in an authorship record 
     author = ""
     lastName = ""
-    idRef = ""
+    idRef = {}
     coauthors = []
     defaultTitle = ""
     venue = ""
-    duplicId = 0
+    duplicId = {}
     Dict = {}
     
     #counters of authorship records with long name and short name
@@ -181,7 +181,7 @@ def sortShortAndLongNameRecords(ambiguousGroupAddress, resultAddress):
     for authorshipRecord in authorshipRecords :
         
         nb_AR += 1
-        if(nb_AR % 500 == 0): print("read", nb_AR, "Authorship Records (sort Authorship Record)")
+        #if(nb_AR % 500 == 0): print("read", nb_AR, "Authorship Records (sort Authorship Record)")
         
         author = authorshipRecord["author"]
         
@@ -211,11 +211,18 @@ def sortShortAndLongNameRecords(ambiguousGroupAddress, resultAddress):
         
         #write down the authorship record
         lastName = authorshipRecord["last name"]
-        idRef = authorshipRecord["idRef"]
+
+        idRef_dic = authorshipRecord["idRef"]
+        idRef["publications"] = idRef_dic["publications"]
+        idRef["persons"] = [persons for persons in idRef_dic["persons"]]
+
         coauthors = [ coauthor for coauthor in authorshipRecord["coauthors"] ]
         defaultTitle = authorshipRecord["defaultTitle"]
         venue = authorshipRecord["venue"]
-        duplicId = authorshipRecord["duplicId"]
+
+        duplicId_dic = authorshipRecord["duplicId"]
+        duplicId["duplicId"] = duplicId_dic["duplicId"]
+        duplicId["AGs"] = [AG for AG in duplicId_dic["AGs"]]
         
         Dict = {}
         Dict["author"] = author
@@ -238,9 +245,9 @@ def sortShortAndLongNameRecords(ambiguousGroupAddress, resultAddress):
     g.close()
     
     #print the counters
-    print("sort Authorship Records successfully")
-    print("There are", nb_longName, "Authorship Records of long name")
-    print("There are", nb_shortName, "Authorship Records of short name")
+    #print("sort Authorship Records successfully")
+    #print("There are", nb_longName, "Authorship Records of long name")
+    #print("There are", nb_shortName, "Authorship Records of short name")
     
     return
     
@@ -271,11 +278,20 @@ def processList (A, Ci, folderAddress):
         #keep all the variables in memory
         author = authorshipRecord["author"]
         lastName = authorshipRecord["last name"]
-        idRef = authorshipRecord["idRef"]
+
+        idRef = {}
+        idRef_dic = authorshipRecord["idRef"]
+        idRef["publications"] = idRef_dic["publications"]
+        idRef["persons"] = [persons for persons in idRef_dic["persons"]]
+
         coauthors = [ coauthor for coauthor in authorshipRecord["coauthors"] ]
         defaultTitle = authorshipRecord["defaultTitle"]
         venue = authorshipRecord["venue"]
-        duplicId = authorshipRecord["duplicId"]
+
+        duplicId = {}
+        duplicId_dic = authorshipRecord["duplicId"]
+        duplicId["duplicId"] = duplicId_dic["duplicId"]
+        duplicId["AGs"] = [AG for AG in duplicId_dic["AGs"]]
         
         Dict = {}
         Dict["author"] = author
@@ -349,7 +365,7 @@ def processList (A, Ci, folderAddress):
             
     f.close()        
     
-    print("The identifiers of the files which have several Authorship Records",L_severalARs)
+    #print("The identifiers of the files which have several Authorship Records",L_severalARs)
     
     return C0
 
@@ -388,16 +404,25 @@ def processListEfficient (A, Ci, folderAddress):
     for authorshipRecord in authorshipRecords:
         
         nb_AR += 1
-        if(nb_AR % 500 == 0): print("read", nb_AR, "Authorship Records (creat Authorship Record Clusters)")
+        #if(nb_AR % 500 == 0): print("read", nb_AR, "Authorship Records (creat Authorship Record Clusters)")
         
         #keep all the variables in memory
         author = authorshipRecord["author"]
         lastName = authorshipRecord["last name"]
-        idRef = authorshipRecord["idRef"]
+        
+        idRef = {}
+        idRef_dic = authorshipRecord["idRef"]
+        idRef["publications"] = idRef_dic["publications"]
+        idRef["persons"] = [persons for persons in idRef_dic["persons"]]
+
         coauthors = [ coauthor for coauthor in authorshipRecord["coauthors"] ]
         defaultTitle = authorshipRecord["defaultTitle"]
         venue = authorshipRecord["venue"]
-        duplicId = authorshipRecord["duplicId"]
+
+        duplicId = {}
+        duplicId_dic = authorshipRecord["duplicId"]
+        duplicId["duplicId"] = duplicId_dic["duplicId"]
+        duplicId["AGs"] = [AG for AG in duplicId_dic["AGs"]]
         
         Dict = {}
         Dict["author"] = author
@@ -471,8 +496,8 @@ def processListEfficient (A, Ci, folderAddress):
             C0coauthors[-1] += coauthors 
             C0.append(author)
     
-    print("creat Authorship Record Cluters successfully")            
-    print("The identitiers of the files which have several Authorship Records", L_severalARs)
+    #print("creat Authorship Record Cluters successfully")            
+    #print("The identitiers of the files which have several Authorship Records", L_severalARs)
     
     return C0
 
@@ -486,7 +511,7 @@ def firstStep(ambiguousGroupAddress, resultAddress):
     
     #get the ambiguous group name
     ambiguousGroupName = os.path.basename(ambiguousGroupAddress)
-    ambiguousGroupName = ambiguousGroupName.rstrip(".json")
+    ambiguousGroupName = os.path.splitext(ambiguousGroupName)[0]
     
     #folder address where place all the authorship record clusters 
     folderAddress = resultAddress + "/clustersOf" + ambiguousGroupName
@@ -505,8 +530,6 @@ def firstStep(ambiguousGroupAddress, resultAddress):
 
 #test
 if __name__ == '__main__':
-    (C3,folderAddress) = firstStep("../data/AG_sample.json","../data/AG_sample")
+    (C3,folderAddress) = firstStep("./ape.json","./ape")
     print(C3)
     print(folderAddress)
-
-
