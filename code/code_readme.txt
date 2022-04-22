@@ -35,6 +35,7 @@ into CSV (JsonToCSV.py).
 We import the CSV file in a PostgreSQL database and use it to detect anomalies (IdRef_2.py)
 
 
-[Additionnal programs]
+[Additionnal files]
  - dataProfile.py produces the graphs showing the number of files per range of size. It uses
 the list of sizes from all the AG.
+ - librairies.txt lists the librairies we used, and the commands / urls related to them
