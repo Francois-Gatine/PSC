@@ -1,0 +1,19 @@
+[{
+    "author": "Patrick Dupont",
+    "last name": "Dupont",
+    "idRef": {
+        "publications": "",
+        "persons": [
+            "idref444"
+        ]
+    },
+    "coauthors": [],
+    "defaultTitle": "Quantum transport in chemically functionalized graphene at high magnetic field: defect-induced critical states and breakdown of electron-hole symmetry",
+    "venue": "2D Materials",
+    "duplicId": {
+        "duplicId": 0,
+        "AGs": [
+            "pdu"
+        ]
+    }
+}]

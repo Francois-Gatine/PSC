@@ -1,0 +1,34 @@
+[{
+        "publications": [
+            {
+                "publication": "doi10.000",
+                "role": "author"
+            }
+        ],
+        "affiliations": [
+            {
+                "structure": "200711912X",
+                "sources": [
+                    "doi10.1039/c8nj03175d"
+                ]
+            }
+        ],
+        "id": "idref444",
+        "coContributors": [
+            "idref240455576"
+        ],
+        "firstName": "Patrick",
+        "lastName": "Dupont",
+        "fullName": "Patrick Dupont",
+        "gender": "M",
+        "externalIds": [
+            {
+                "type": "idref",
+                "id": "444"
+            },
+            {
+                "type": "id_hal",
+                "id": "180913"
+            }
+        ]
+    }]

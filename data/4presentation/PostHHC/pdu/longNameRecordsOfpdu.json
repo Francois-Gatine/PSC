@@ -1,0 +1,37 @@
+[,{
+    "author": "Pierre Dupond",
+    "last name": "Dupond",
+    "idRef": {
+        "publications": "idref444",
+        "persons": [
+            ""
+        ]
+    },
+    "coauthors": [],
+    "defaultTitle": "Impact of physical processes on the seasonal distribution of the fugacity of CO2 in the western tropical Atlantic",
+    "venue": "Journal of Geophysical Research: Oceans",
+    "duplicId": {
+        "duplicId": 0,
+        "AGs": [
+            "pdu"
+        ]
+    }
+},{
+    "author": "Patrick Dupont",
+    "last name": "Dupont",
+    "idRef": {
+        "publications": "",
+        "persons": [
+            "idref444"
+        ]
+    },
+    "coauthors": [],
+    "defaultTitle": "Quantum transport in chemically functionalized graphene at high magnetic field: defect-induced critical states and breakdown of electron-hole symmetry",
+    "venue": "2D Materials",
+    "duplicId": {
+        "duplicId": 0,
+        "AGs": [
+            "pdu"
+        ]
+    }
+}]

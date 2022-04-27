@@ -1,0 +1,79 @@
+[{
+    "author": "John Smith",
+    "last name": "Smith",
+    "idRef": {
+        "publications": "idref000",
+        "persons": [
+            ""
+        ]
+    },
+    "coauthors": [
+        "Jean Gal"
+    ],
+    "defaultTitle": "Isoprostanes and neuroprostanes: Total synthesis, biological activity biomarkers of oxidative stress in humans",
+    "venue": "Prostaglandins & Other Lipid Mediators",
+    "duplicId": {
+        "duplicId": 0,
+        "AGs": [
+            "jsm"
+        ]
+    }
+},{
+    "author": "John Smith",
+    "last name": "Smith",
+    "idRef": {
+        "publications": "idref001",
+        "persons": [
+            ""
+        ]
+    },
+    "coauthors": [
+        "Jean Gal"
+    ],
+    "defaultTitle": "Biological activities of non-enzymatic oxygenated metabolites of polyunsaturated fatty acids (NEO-PUFAs) derived from EPA and DHA: New anti-arrhythmic compounds?",
+    "venue": "Molecular Aspects of Medicine",
+    "duplicId": {
+        "duplicId": 0,
+        "AGs": [
+            "jsm"
+        ]
+    }
+},{
+    "author": "John Smith",
+    "last name": "Smith",
+    "idRef": {
+        "publications": "idref000",
+        "persons": [
+            ""
+        ]
+    },
+    "coauthors": [
+        "Marie Ano"
+    ],
+    "defaultTitle": "Synthesis, Discovery, and Quantitation of Dihomo-Isofurans: Biomarkers for In Vivo Adrenic Acid Peroxidation",
+    "venue": "Prostaglandins & Other Lipid Mediators",
+    "duplicId": {
+        "duplicId": 0,
+        "AGs": [
+            "jsm"
+        ]
+    }
+},{
+    "author": "John Smith",
+    "last name": "Smith",
+    "idRef": {
+        "publications": "idref333",
+        "persons": [
+            ""
+        ]
+    },
+    "coauthors": [],
+    "defaultTitle": "WELDON: Weakly Supervised Learning of Deep Convolutional Neural Networks",
+    "venue": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2017)",
+    "duplicId": {
+        "duplicId": 0,
+        "AGs": [
+            "jsm"
+        ]
+    }
+}]

@@ -1,0 +1,21 @@
+[{
+    "author": "Marie Ano",
+    "last name": "Ano",
+    "idRef": {
+        "publications": "idref222",
+        "persons": [
+            ""
+        ]
+    },
+    "coauthors": [
+        "John Smith"
+    ],
+    "defaultTitle": "Synthesis, Discovery, and Quantitation of Dihomo-Isofurans: Biomarkers for In Vivo Adrenic Acid Peroxidation",
+    "venue": "Prostaglandins & Other Lipid Mediators",
+    "duplicId": {
+        "duplicId": 0,
+        "AGs": [
+            "man"
+        ]
+    }
+}]

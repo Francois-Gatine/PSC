@@ -1,0 +1,41 @@
+[,{
+    "author": "Jean Gal",
+    "last name": "Gal",
+    "idRef": {
+        "publications": "idref111",
+        "persons": [
+            ""
+        ]
+    },
+    "coauthors": [
+        "John Smith"
+    ],
+    "defaultTitle": "Isoprostanes and neuroprostanes: Total synthesis, biological activity biomarkers of oxidative stress in humans",
+    "venue": "Prostaglandins & Other Lipid Mediators",
+    "duplicId": {
+        "duplicId": 0,
+        "AGs": [
+            "jga"
+        ]
+    }
+},{
+    "author": "Jean Gal",
+    "last name": "Gal",
+    "idRef": {
+        "publications": "idref111",
+        "persons": [
+            ""
+        ]
+    },
+    "coauthors": [
+        "John Smith"
+    ],
+    "defaultTitle": "Biological activities of non-enzymatic oxygenated metabolites of polyunsaturated fatty acids (NEO-PUFAs) derived from EPA and DHA: New anti-arrhythmic compounds?",
+    "venue": "Molecular Aspects of Medicine",
+    "duplicId": {
+        "duplicId": 0,
+        "AGs": [
+            "jga"
+        ]
+    }
+}]

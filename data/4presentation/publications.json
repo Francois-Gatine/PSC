@@ -1,0 +1,345 @@
+[{
+	"id": "doi10.1016/j.prostaglandins.2013.04.003",
+	"language": "en",
+	"source": {
+		"pagination": "95-102",
+		"title": "Prostaglandins & Other Lipid Mediators",
+		"publisher": "Elsevier BV",
+		"journalIssns": [
+			"1098-8823"
+		]
+	},
+	"authors": [
+		{
+			"person": "idref111",
+			"firstName": "Jean",
+			"lastName": "Gal",
+			"fullName": "Jean Gal"
+		},
+		{
+			"person": "idref000",
+			"firstName": "John",
+			"lastName": "Smith",
+			"fullName": "John Smith",
+			"role": "author",
+			"affiliations": [
+				"200711912X"
+			]
+		}
+	],
+	"domains": [
+		{
+			"label": {
+				"en": "Chemical Sciences/Organic chemistry",
+				"fr": "Chimie/Chimie organique",
+				"default": "Chemical Sciences/Organic chemistry Chimie/Chimie organique"
+			},
+			"type": "HAL",
+			"code": "1.chim.orga"
+		}
+	],
+	"title": {
+	"default": "Isoprostanes and neuroprostanes: Total synthesis, biological activity biomarkers of oxidative stress in humans"
+	},
+	"productionType": "publication",
+	"type": "journal-article",
+	"doiUrl": "http://doi.org/10.1016/j.prostaglandins.2013.04.003",
+	"externalIds": [
+		{
+			"type": "docid",
+			"id": "913158"
+		},
+		{
+			"type": "scanr",
+			"id": "10.1016/j.prostaglandins.2013.04.003"
+		}
+	],
+	"citedByCount": 0,
+	"referencesCount": 0,
+	"authorsCount": 15
+},
+{
+	"id": "doi10.1016/j.prostaglandins.2013.04.003",
+	"language": "en",
+	"source": {
+		"pagination": "95-102",
+		"title": "Molecular Aspects of Medicine",
+		"publisher": "Elsevier BV",
+		"journalIssns": [
+			"1098-8823"
+		]
+	},
+	"authors": [
+		{
+			"person": "idref111",
+			"firstName": "Jean",
+			"lastName": "Gal",
+			"fullName": "Jean Gal"
+		},
+		{
+			"person": "idref001",
+			"firstName": "Jonn",
+			"lastName": "Smith",
+			"fullName": "John Smith",
+			"role": "author",
+			"affiliations": [
+				"200711912X"
+			]
+		}
+	],
+	"domains": [
+		{
+			"label": {
+				"en": "Chemical Sciences/Organic chemistry",
+				"fr": "Chimie/Chimie organique",
+				"default": "Chemical Sciences/Organic chemistry Chimie/Chimie organique"
+			},
+			"type": "HAL",
+			"code": "1.chim.orga"
+		}
+	],
+	"title": {
+	"default": "Biological activities of non-enzymatic oxygenated metabolites of polyunsaturated fatty acids (NEO-PUFAs) derived from EPA and DHA: New anti-arrhythmic compounds?"
+	},
+	"productionType": "publication",
+	"type": "journal-article",
+	"doiUrl": "http://doi.org/10.1016/j.prostaglandins.2013.04.003",
+	"externalIds": [
+		{
+			"type": "docid",
+			"id": "913158"
+		},
+		{
+			"type": "scanr",
+			"id": "10.1016/j.prostaglandins.2013.04.003"
+		}
+	],
+	"citedByCount": 0,
+	"referencesCount": 0,
+	"authorsCount": 15
+},
+{
+	"id": "doi10.1016/j.prostaglandins.2013.04.003",
+	"language": "en",
+	"source": {
+		"pagination": "95-102",
+		"title": "Prostaglandins & Other Lipid Mediators",
+		"publisher": "Elsevier BV",
+		"journalIssns": [
+			"1098-8823"
+		]
+	},
+	"authors": [
+		{
+			"person": "idref222",
+			"firstName": "Marie",
+			"lastName": "Ano",
+			"fullName": "Marie Ano"
+		},
+		{
+			"person": "idref000",
+			"firstName": "John",
+			"lastName": "Smith",
+			"fullName": "John Smith",
+			"role": "author",
+			"affiliations": [
+				"200711912X"
+			]
+		}
+	],
+	"domains": [
+		{
+			"label": {
+				"en": "Chemical Sciences/Organic chemistry",
+				"fr": "Chimie/Chimie organique",
+				"default": "Chemical Sciences/Organic chemistry Chimie/Chimie organique"
+			},
+			"type": "HAL",
+			"code": "1.chim.orga"
+		}
+	],
+	"title": {
+	"default": "Synthesis, Discovery, and Quantitation of Dihomo-Isofurans: Biomarkers for In Vivo Adrenic Acid Peroxidation"
+	},
+	"productionType": "publication",
+	"type": "journal-article",
+	"doiUrl": "http://doi.org/10.1016/j.prostaglandins.2013.04.003",
+	"externalIds": [
+		{
+			"type": "docid",
+			"id": "913158"
+		},
+		{
+			"type": "scanr",
+			"id": "10.1016/j.prostaglandins.2013.04.003"
+		}
+	],
+	"citedByCount": 0,
+	"referencesCount": 0,
+	"authorsCount": 15
+},
+{
+	"id": "doi10.1016/j.prostaglandins.2013.04.003",
+	"language": "en",
+	"source": {
+		"pagination": "95-102",
+		"title": "IEEE Conference on Computer Vision and Pattern Recognition (CVPR 2017)",
+		"publisher": "Elsevier BV",
+		"journalIssns": [
+			"1098-8823"
+		]
+	},
+	"authors": [
+		{
+			"person": "idref333",
+			"firstName": "John",
+			"lastName": "Smith",
+			"fullName": "John Smith",
+			"role": "author",
+			"affiliations": [
+				"200711912X"
+			]
+		}
+	],
+	"domains": [
+		{
+			"label": {
+				"en": "Chemical Sciences/Organic chemistry",
+				"fr": "Chimie/Chimie organique",
+				"default": "Chemical Sciences/Organic chemistry Chimie/Chimie organique"
+			},
+			"type": "HAL",
+			"code": "1.chim.orga"
+		}
+	],
+	"title": {
+	"default": "WELDON: Weakly Supervised Learning of Deep Convolutional Neural Networks"
+	},
+	"productionType": "publication",
+	"type": "journal-article",
+	"doiUrl": "http://doi.org/10.1016/j.prostaglandins.2013.04.003",
+	"externalIds": [
+		{
+			"type": "docid",
+			"id": "913158"
+		},
+		{
+			"type": "scanr",
+			"id": "10.1016/j.prostaglandins.2013.04.003"
+		}
+	],
+	"citedByCount": 0,
+	"referencesCount": 0,
+	"authorsCount": 15
+},
+{
+	"id": "doi10.1016/j.prostaglandins.2013.04.003",
+	"language": "en",
+	"source": {
+		"pagination": "95-102",
+		"title": "Journal of Geophysical Research: Oceans",
+		"publisher": "Elsevier BV",
+		"journalIssns": [
+			"1098-8823"
+		]
+	},
+	"authors": [
+
+		{
+			"person": "idref444",
+			"firstName": "Pierre",
+			"lastName": "Dupond",
+			"fullName": "Pierre Dupond",
+			"role": "author",
+			"affiliations": [
+				"200711912X"
+			]
+		}
+	],
+	"domains": [
+		{
+			"label": {
+				"en": "Chemical Sciences/Organic chemistry",
+				"fr": "Chimie/Chimie organique",
+				"default": "Chemical Sciences/Organic chemistry Chimie/Chimie organique"
+			},
+			"type": "HAL",
+			"code": "1.chim.orga"
+		}
+	],
+	"title": {
+	"default": "Impact of physical processes on the seasonal distribution of the fugacity of CO2 in the western tropical Atlantic"
+	},
+	"productionType": "publication",
+	"type": "journal-article",
+	"doiUrl": "http://doi.org/10.1016/j.prostaglandins.2013.04.003",
+	"externalIds": [
+		{
+			"type": "docid",
+			"id": "913158"
+		},
+		{
+			"type": "scanr",
+			"id": "10.1016/j.prostaglandins.2013.04.003"
+		}
+	],
+	"citedByCount": 0,
+	"referencesCount": 0,
+	"authorsCount": 15
+},
+{
+	"id": "doi10.000",
+	"language": "en",
+	"source": {
+		"pagination": "95-102",
+		"title": "2D Materials",
+		"publisher": "Elsevier BV",
+		"journalIssns": [
+			"1098-8823"
+		]
+	},
+	"authors": [
+
+		{
+			"person": "",
+			"firstName": "Patrick",
+			"lastName": "Dupont",
+			"fullName": "Patrick Dupont",
+			"role": "author",
+			"affiliations": [
+				"200711912X"
+			]
+		}
+	],
+	"domains": [
+		{
+			"label": {
+				"en": "Chemical Sciences/Organic chemistry",
+				"fr": "Chimie/Chimie organique",
+				"default": "Chemical Sciences/Organic chemistry Chimie/Chimie organique"
+			},
+			"type": "HAL",
+			"code": "1.chim.orga"
+		}
+	],
+	"title": {
+	"default": "Quantum transport in chemically functionalized graphene at high magnetic field: defect-induced critical states and breakdown of electron-hole symmetry"
+	},
+	"productionType": "publication",
+	"type": "journal-article",
+	"doiUrl": "http://doi.org/10.1016/j.prostaglandins.2013.04.003",
+	"externalIds": [
+		{
+			"type": "docid",
+			"id": "913158"
+		},
+		{
+			"type": "scanr",
+			"id": "10.1016/j.prostaglandins.2013.04.003"
+		}
+	],
+	"citedByCount": 0,
+	"referencesCount": 0,
+	"authorsCount": 15
+}
+]
