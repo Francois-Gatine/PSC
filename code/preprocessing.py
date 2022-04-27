@@ -4,9 +4,9 @@ import os.path
 
 
 # FILE DIRECTORIES
-personsDir = "/home/echarghaoui/github_Aymen/PSC/data/AmbiGroupsVTest2/personsTest.json"
-publiDir = "/home/echarghaoui/github_Aymen/PSC/data/AmbiGroupsVTest2/publicationsTest.json"
-ambiGroupsDir = "/home/echarghaoui/github_Aymen/PSC/data/AmbiGroupsVTest2/"
+personsDir = "persons.json"
+publiDir = "publications.json"
+ambiGroupsDir = "AGs/"
 
 
 # Step 1
@@ -272,7 +272,13 @@ for citationR in publications :
                         IdentifierWithNoAccent.append(''.join((c for c in unicodedata.normalize('NFD', Identifier[-1]) if unicodedata.category(c) != 'Mn')))
 
 
-
+                # all identifiers for this author
+                AllIdentifiers = []
+                for id in Identifier :
+                    AllIdentifiers.append(id)
+                # for id in IdentifierWithNoAccent :
+                #     if (not (id in Identifier)) :
+                #         AllIdentifiers.append(id)
 
                 #if there are special characters, another record with standard characters is created
                 #file and fileNoAccent are opened one at a time, to avoid an obscure mixing bug
@@ -281,7 +287,7 @@ for citationR in publications :
 
                     #Add a new duplication ID, then dump the record twice
                     duplicId+=1
-                    dict['duplicId']=duplicId
+                    dict['duplicId']={"duplicId" : duplicId, "AGs" : AllIdentifiers}
 
                     for identifier in Identifier :
 
@@ -332,7 +338,7 @@ for citationR in publications :
                     #Add a new duplication ID
                     #then dump the record once per distinct identifier
                     duplicId+=1
-                    dict['duplicId']=duplicId
+                    dict['duplicId']={"duplicId" : duplicId, "AGs" : AllIdentifiers}
                     for identifier in list(dict.fromkeys(Identifier)) :
 
                         #If we create a new file, we should add '[' and no comma
@@ -356,7 +362,7 @@ for citationR in publications :
                 #else, no special characters, one last name
                 # => duplicId 0, only one dump
                 else :
-                    dict['duplicId']=0
+                    dict['duplicId']={"duplicId" : 0, "AGs" : AllIdentifiers}
 
                     for identifier in Identifier :
 
