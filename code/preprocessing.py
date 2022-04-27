@@ -4,9 +4,9 @@ import os.path
 
 
 # FILE DIRECTORIES
-personsDir = "/home/arakotoa/Desktop/PSC/persons.json"
-publiDir = "/home/arakotoa/Desktop/PSC/publications.json"
-ambiGroupsDir = "/home/arakotoa/Desktop/PSC/AmbiGroupsV2/"
+personsDir = "persons.json"
+publiDir = "publications.json"
+ambiGroupsDir = "AGs/"
 
 
 # Step 1
@@ -16,7 +16,7 @@ ambiGroupsDir = "/home/arakotoa/Desktop/PSC/AmbiGroupsV2/"
 input=open(personsDir,'r')
 publicationsByAuthor = json_stream.load(input)
 
-# create a hashTable :  key = publicationId ; value = {authorId,authorName} itself being a hashtable
+# create a hashTable :  key = publicationId ; value = {authorName,[authorId]} itself being a hashtable
 publicationTable = {}
 
 
@@ -53,9 +53,11 @@ for publication in publicationsByAuthor :
     for publicationId in publicationIds :
         present = publicationTable.get(publicationId)
         if(present==None) :
-            publicationTable[publicationId] = {authorName:authorId}
-        else :
-            present[authorName]=authorId
+            publicationTable[publicationId] = {authorName:[authorId]}
+        elif present.get(authorName)==None :
+            present[authorName]=[authorId]
+        elif not (authorId in present[authorName]) :
+            present[authorName].append(authorId)
 
 # close persons.json
 input.close()
@@ -169,9 +171,9 @@ for citationR in publications :
             if(authorsWithIds==None or authorsWithIds.get(author_name)==None):
 
                 if(author_initialId != None) :
-                    authorsIds.append(author_initialId)
+                    authorsIds.append({"publications" : author_initialId,"persons" : [""]})
                 else :
-                    authorsIds.append("")
+                    authorsIds.append({"publications" : "","persons" : [""]})
 
             #otherwise
             else :
@@ -180,13 +182,16 @@ for citationR in publications :
                 #in case we find more than one ID
                 #for the same author
                 if (author_id!=None ) :
-                    if(author_initialId!=None
-                        and author_id != author_initialId) :
-
-                        count_different_Ids+=1
-
-                    authorsIds.append(author_id)
-
+                    if(author_initialId!=None):
+                        if not (len(author_id)==1 and author_id[0]==author_initialId) :
+                            count_different_Ids+=1
+                        authorsIds.append({"publications" : author_initialId,"persons" : author_id})
+                    else :
+                        if(len(author_id)>1):
+                            count_different_Ids+=1
+                        authorsIds.append({"publications" : "","persons" : author_id})
+                else :
+                    authorsIds.append({"publications" : "","persons" : [""]})
             authorsLN.append(author_last_name)
             authorsFN.append(author_name)
 
@@ -267,7 +272,13 @@ for citationR in publications :
                         IdentifierWithNoAccent.append(''.join((c for c in unicodedata.normalize('NFD', Identifier[-1]) if unicodedata.category(c) != 'Mn')))
 
 
-
+                # all identifiers for this author
+                AllIdentifiers = []
+                for id in Identifier :
+                    AllIdentifiers.append(id)
+                # for id in IdentifierWithNoAccent :
+                #     if (not (id in Identifier)) :
+                #         AllIdentifiers.append(id)
 
                 #if there are special characters, another record with standard characters is created
                 #file and fileNoAccent are opened one at a time, to avoid an obscure mixing bug
@@ -276,7 +287,7 @@ for citationR in publications :
 
                     #Add a new duplication ID, then dump the record twice
                     duplicId+=1
-                    dict['duplicId']=duplicId
+                    dict['duplicId']={"duplicId" : duplicId, "AGs" : AllIdentifiers}
 
                     for identifier in Identifier :
 
@@ -327,7 +338,7 @@ for citationR in publications :
                     #Add a new duplication ID
                     #then dump the record once per distinct identifier
                     duplicId+=1
-                    dict['duplicId']=duplicId
+                    dict['duplicId']={"duplicId" : duplicId, "AGs" : AllIdentifiers}
                     for identifier in list(dict.fromkeys(Identifier)) :
 
                         #If we create a new file, we should add '[' and no comma
@@ -351,7 +362,7 @@ for citationR in publications :
                 #else, no special characters, one last name
                 # => duplicId 0, only one dump
                 else :
-                    dict['duplicId']=0
+                    dict['duplicId']={"duplicId" : 0, "AGs" : AllIdentifiers}
 
                     for identifier in Identifier :
 
@@ -396,6 +407,6 @@ print("Steps 2 and 3 done.")
 
 
 print(count_different_Ids, " different IDs.")
-print(duplicIds, " duplicIds")
+print(duplicId, " duplicIds")
 
 

@@ -7,3 +7,6 @@ transformers: pip install transformers
 https://huggingface.co/docs/transformers/installation
 sentence_transformers: pip install -U sentence-transformers
 https://www.sbert.net/docs/installation.html
+
+python -m cProfile -o SecondStepTime.prof SecondStep.py
+snakeviz SecondStepTime.prof
