@@ -21,7 +21,7 @@ for i in range(len(files)):
             coauthors += coauthor + '\n'
         idPersons=""
         for idPerson in AR['idRef']['persons']:
-            idPersons += idPersons + '\n'
+            idPersons += idPerson + '\n'
         strTable += "<tr><td>"+AR['author']+"</td><td>"+idPersons+"</td><td>"+AR['idRef']['publications']+"</td><td>"+ coauthors+"</td><td>"+ AR["defaultTitle"]+"</td><td>"+ AR['venue'] +"</td><td>"+ str(AR['duplicId']['duplicId'])+"</td></tr>"
     strTable += "</table>"
     # next and previous button

@@ -3,12 +3,25 @@
 import json
 
 dir = "/home/echarghaoui/github_Aymen/PSC/data/4presentation/"
-file = "publications.json"
+file_pub = "publications.json"
+file_pers = "persons.json"
 
 # List of all citation records present in the file
 
-publications = open(dir+file)
+publications = open(dir+file_pub)
 CRs = json.load(publications)
+
+persons = open(dir+file_pers)
+by_authors = json.load(persons)
+
+# getting all idRefs from persons and storing them in a dictionary
+
+name2id = {}
+for author in by_authors:
+    if not(author["fullName"] in name2id):
+        name2id[author["fullName"]] = []
+    name2id[author["fullName"]].append(author["id"])
+
 
 # building the html page
 # one html page for all citation records
@@ -17,7 +30,13 @@ strTable = "<html><head><style> table, th, td {border: 1px solid black;border-co
 for i in range(len(CRs)):
     authors = ""
     for author in CRs[i]['authors']:
-        authors+=author["fullName"] + " "+author["person"]+'\n'
+        if author["person"] != "":
+            id = author["person"]
+        elif author["fullName"] in name2id:
+            id = name2id[author["fullName"]][0]
+        else :
+            id=""
+        authors+=author["fullName"] + " "+id+'\n'
     strTable += "<tr><td>"+CRs[i]['title']['default']+"</td><td>"+authors+"</td><td>"+CRs[i]['source']['title']+"</td></tr>"
 strTable += "</table></body></html>"
 html = open(dir+"publications.html",'w')
