@@ -11,13 +11,13 @@ str2int = {}
 int2str = {}
 
 map_duplicId={}
-info_dir="/home/echarghaoui/github_Aymen/PSC/code/fusion/info/"
+info_dir="/home/echarghaoui/github_Aymen/PSC/data/AG_info_sample/"
 
 num_clusters = 0
 num_AG = 0
 for AG in os.listdir(info_dir) :
 
-    file = open(info_dir+AG,'r',encoding='utf-8')
+    file = open(info_dir+AG,'r',errors='ignore')
     # example AG = 'dad.json'
     AG_info = json.load(file)
     for cluster in AG_info :
@@ -46,6 +46,16 @@ for duplicId in map_duplicId:
             u.unite(str2int[L[i]],str2int[L[j]])
 
 print("union find data structure is built")
+
+# a test : if a duplicate is present in an equivalence class
+for equiv_set in u.groups() :
+    test = []
+    for i in range(len(equiv_set)):
+        if(int2str[equiv_set[i]] in test):
+            print("error")
+        test.append(int2str[equiv_set[i]])
+
+
 # generate files
 
 num_equiv=0
@@ -60,29 +70,38 @@ for equiv_set in u.groups() :
 
         for i in range(len(equiv_set)) :
             dir = info_dir+int2str[equiv_set[i]][:3]+".json"
-            file = open(dir,'r',encoding='utf-8')
+            file = open(dir,'r',errors='ignore')
             AG = json.load(file)
-            cluster = AG[int(int2str[equiv_set[i]][-1])]
+            cluster = AG[int(int2str[equiv_set[i]][3:])]
             if("idRefs" in cluster):
                 idRefs.extend(cluster["idRefs"])
             if("name" in cluster):
                 names.append(cluster["name"])
             file.close()
         idRefs = list(dict.fromkeys(idRefs))
+        print(names)
         names = list(dict.fromkeys(names))
+        #print(idRefs)
+        #print(names)
         print("getting info from "+ str(num_equiv) +" AGs done")
+
+
+
+
+
         # building the merged info
 
         visitedAGs = {}
 
+
         for i in range(len(equiv_set)):
             dir = info_dir+int2str[equiv_set[i]][:3]+".json"
-            file = open(dir,'r+',encoding='utf-8')
+            file = open(dir,'r+',errors='ignore')
             AG = json.load(file)
             copyOfAg = []
             id_count = 0
             for cluster_id in range(len(AG)) :
-                if(cluster_id != int(int2str[equiv_set[i]][-1])):
+                if(cluster_id != int(int2str[equiv_set[i]][3:])):
                     dict={}
                     dict["id"] = AG[cluster_id]["id"]
                     if("name" in AG[cluster_id]):
@@ -95,22 +114,27 @@ for equiv_set in u.groups() :
                     if("id" in AG[cluster_id]):
                         dict["id"] = AG[cluster_id]["id"]
 
-                    dict["name"] = [names[j] for j in range(len(names)) if int2str[j][:-1]==int2str[equiv_set[i]][:3] ]
+                    dict["name"] = [names[j] for j in range(len(names))]
+                    # if int2str[j][:3]==int2str[equiv_set[i]][:3]
                     dict["idRefs"] = list(dict.fromkeys(idRefs))
                     copyOfAg.append(dict)
                     visitedAGs[int2str[equiv_set[i]][:3]]=0
+
                 else :
 
-                    copyOfAg.append({}) ## to ensure that AG[cluster_id] works later!
+                    copyOfAg.append({"id":cluster_id}) ## to ensure that AG[cluster_id] works later!
+
             file.seek(0)
             json.dump(copyOfAg,file,ensure_ascii=False, indent=4)
             file.truncate()
         print("writing to " + str(num_equiv) +"AGs done")
 
+
+
 # cleaning empty json objects
 
 for AG in os.listdir(info_dir) :
-    file = open(info_dir+AG,'r+',encoding='utf-8')
+    file = open(info_dir+AG,'r+',errors='ignore')
     # example AG = 'dad.json'
     AG_info = json.load(file)
     copyOfAg = []
@@ -124,6 +148,5 @@ for AG in os.listdir(info_dir) :
     json.dump(copyOfAg,file,ensure_ascii=False, indent=4)
     file.truncate()
 print("cleaning step done")
-
 
 

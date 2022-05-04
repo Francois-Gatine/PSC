@@ -5,7 +5,7 @@ import json
 dir = "/home/echarghaoui/github_Aymen/PSC/data/4presentation/"
 file_pub = "publications.json"
 file_pers = "persons.json"
-
+dir_PostPrep = "/home/echarghaoui/github_Aymen/PSC/data/4presentation/PostPreProcessing/html_files/jga.html"
 # List of all citation records present in the file
 
 publications = open(dir+file_pub)
@@ -38,7 +38,7 @@ for i in range(len(CRs)):
             id=""
         authors+=author["fullName"] + " "+id+'\n'
     strTable += "<tr><td>"+CRs[i]['title']['default']+"</td><td>"+authors+"</td><td>"+CRs[i]['source']['title']+"</td></tr>"
-strTable += "</table></body></html>"
+strTable += "</table>"+"<a href=" + '"'+'file://'+dir_PostPrep+ '"' + ">Next Step : PreProcessing</a>"+"</html>""</body></html>"
 html = open(dir+"publications.html",'w')
 html.write(strTable)
 html.close()

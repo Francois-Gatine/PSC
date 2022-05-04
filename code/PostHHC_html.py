@@ -18,7 +18,7 @@ for i in range(len(all_clusters)):
     AG,cluster_last = all_clusters[i]
     cluster = open(dir+AG+"/"+dir_subfolder+AG+"/"+cluster_last)
     cluster = json.load(cluster)
-    strTable = "<html><style> table, th, td { width: 80%;border: 1px solid black;} </style><table><tr><th>Title</th><th>Venue</th></tr>"
+    strTable = "<html><head><style> table, th, td { width: 80%;border: 1px solid black;} </style><title> PostHHC </title></head><table><tr><th>Title</th><th>Venue</th></tr>"
     idRefs=[]
     for AR in cluster:
         strTable += "<tr><td>"+AR["defaultTitle"]+ "</td><td>"+AR["venue"]+"</td></tr>"
